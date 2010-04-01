@@ -44,23 +44,20 @@ sub atom(){
 		"http://github.com/BigRedS/play/commits/master.atom",
 		"http://github.com/BigRedS/Work/commits/master.atom",
 		"http://github.com/BigRedS/work-web/commits/master.atom",
-		"http://github.com/BigRedS/dotfiles/commits/master.atom"
+		"http://github.com/BigRedS/dotfiles/commits/master.atom",
 		"http://github.com/BigRedS/website/commits/master.atom"
 	);
 	my %return;
 
 	foreach my $url (@urls){
-		my $feed = XML::FeedPP->new( $url );
+		if (my $feed = XML::FeedPP->new( $url )){
 
-		foreach my $item ( $feed->get_item() ) {
-			my $d = DateTime::Format::Atom->new();
-			my $dt = $d->parse_datetime( $item->pubDate );
-			my $time = $dt->epoch;
-#			if ($url =~ /github/){
-#				$return{ $time } = [$item->link, $item->description()];
-#			}else{
+			foreach my $item ( $feed->get_item() ) {
+				my $d = DateTime::Format::Atom->new();
+				my $dt = $d->parse_datetime( $item->pubDate );
+				my $time = $dt->epoch;
 				$return{ $time } = [$item->link, $item->title()];
-#			}
+			}
 		}
 	}
 	return %return;
