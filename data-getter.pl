@@ -45,6 +45,7 @@ sub atom(){
 		"http://github.com/BigRedS/Work/commits/master.atom",
 		"http://github.com/BigRedS/work-web/commits/master.atom",
 		"http://github.com/BigRedS/dotfiles/commits/master.atom"
+		"http://github.com/BigRedS/website/commits/master.atom"
 	);
 	my %return;
 
