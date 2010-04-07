@@ -3,6 +3,10 @@
 use strict;
 use 5.010;
 
+push (@INC, "/home/avi/bin");
+
+require website::fun;
+
 print "Content-type: text/html\n\n\n";
 
 my $data = "./data";
@@ -11,6 +15,9 @@ open(DATA, "<$data")
  or print "Error opening data file";
 
 &start_html();
+
+&mainpage_header();
+
 {
 	local $/ = "";
 	while (<DATA>){
@@ -18,6 +25,7 @@ open(DATA, "<$data")
 		&make_tr($date, $link, $content);
 	}
 }
+&mainpage_footer();
 &end_html();
 
 close DATA;
@@ -96,41 +104,49 @@ sub friendly_date() {
 }
 
 
-sub start_html() {
-
-print <<EOF
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<link rel='stylesheet' type='text/css' href='./styles.css'/>
-		<title>Avi</title>
-	</head>
-	<body>
-		<div class='head'>
-			<p class='avi'>
-				Avi :)
-			</p>
-			<p>
-				There are several hundred thousand terabytes of data on The Internet. Here are my latest contributions to it:
-			</p>
-		</div>
-		<div class='content'>
-			<table class='main'>
-
-EOF
-}
-
-sub end_html() {
-print <<EOF
-			</table>
-		</div>
-		<div class='footer'>
-			<a href='http://github.com/BigRedS/play/tree/master/website/'>Git</a>
-		</div>
-	</body>
-</html>
-EOF
-}
+#sub start_html() {
+#
+#print <<EOF
+#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+#"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+#
+#<html xmlns="http://www.w3.org/1999/xhtml">
+#	<head>
+#<!--		<link rel='stylesheet' type='text/css' href='./styles.css'/>-->
+#		<link rel='stylesheet' type='text/css' href='http://localhost/styles.css'/>
+#		<title>Avi</title>
+#	</head>
+#	<body>
+#		<div id='top'>
+#			<div class='avi' id='left'>
+#				Avi :)
+#			</div>
+#			<div class='links' id='right'>
+#					<a href='./doc/'> doc</a> 
+#					<a href='./blog/'>blog</a> 
+#					<a href='./about/'>about</a> 
+#					<a href='./contact/'>contact</a>
+#			</div>
+#		</div>	
+#			<div class='intro'>
+#				There are several hundred thousand terabytes of data on The Internet. Here are my latest contributions to it:
+#			</div>
+#		</div>
+#		<div id='middle'>
+#			<table class='main'>
+#
+#EOF
+#}
+#
+#sub end_html() {
+#print <<EOF
+#			</table>
+#		</div>
+#		<div class='footer'>
+#			<a href='http://github.com/BigRedS/play/tree/master/website/'>Source</a>
+#		</div>
+#	</body>
+#</html>
+#EOF
+#}
 

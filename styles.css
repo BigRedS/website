@@ -21,16 +21,23 @@ body {
 	background-color: #c9c9c9;
 }
 
-.content{
+#middle{
 	width:40%;
 	margin-left: auto;
 	margin-right: auto;
+//	border:4px solid white;
+	float:none;
 }
 
-.head{
-	width:80%;
+
+#top{
+	width:60%;
+	height: 50px;
 	margin-left: auto;
 	margin-right: auto;
+//	border:4px solid yellow;
+	clear:both;
+	overflow:hidden;
 }
 .footer{
 	width:80%;
@@ -39,9 +46,56 @@ body {
 }
 
 
-p.avi{
+#left{
+	float:left;
+}
+
+#right{
+	float:right;
+}
+
+.avi{
 	font-size:40px;
 	color:blue;
+	width:40%;
+	height:60px;
+//	border:3px solid blue;
+}
+.links{
+	margin-right:0;
+	height:60px;
+	width:40%;
+	text-align:right;
+	text-vertical-align:middle;
+	color:#a5a5a5;
+}
+.links a:link{
+	color:#a5a5a5;
+}
+
+.intro{
+	width:60%;
+	margin:auto;
+	height:20px;
+	vertical-align:middle;
+}
+
+.content{
+	width:80%;
+	margin:auto;
+}
+
+.content a:link{
+	color:#00F;
+}
+
+#doc{
+	width:30%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#doc a:link{
+	color:#00F;
 }
 
 // Table and rows:
@@ -61,7 +115,24 @@ table.main{
 	font-size:7pt;
 }
 
-// Misc:
+
+label {
+	width: 20em;
+	float: left;
+	text-align: right;
+	margin-right: 0.5em;
+	font-family:sans-serif;
+	display: block
+}
+
+.submit input{
+	margin-left:26em;
+}
+
+#message-body{
+	width:75em;
+}
+
 img{
 	border: none;
 }
