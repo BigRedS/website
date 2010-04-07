@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:github.com,2008:/BigRedS/Work/commits/master</id>
+  <link type="text/html" href="http://github.com/BigRedS/Work/commits/master/" rel="alternate"/>
+  <link type="application/atom+xml" href="http://github.com/BigRedS/Work/commits/master.atom" rel="self"/>
+  <title>Recent Commits to Work:master</title>
+  <updated>2010-03-12T06:56:04-08:00</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/13261b493d7545719158a60297b4e476cc250425</id>
+    <link type="text/html" href="http://github.com/BigRedS/Work/commit/13261b493d7545719158a60297b4e476cc250425" rel="alternate"/>
+    <title>Added bat files</title>
+    <updated>2010-03-12T06:56:04-08:00</updated>
+    <content type="html">&lt;pre&gt;+ bats/copytostartup.bat
++ bats/docs.bat
++ bats/extend.bat
++ bats/jb.bat
++ bats/jb_perms.bat
++ bats/regsvr.bat
++ bats/sigs.bat
+
+Added bat files&lt;/pre&gt;</content>
+    <author>
+      <name>Avi Greenbury</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/733268d0330cce18bdb740050d37378970cfd978</id>
+    <link type="text/html" href="http://github.com/BigRedS/Work/commit/733268d0330cce18bdb740050d37378970cfd978" rel="alternate"/>
+    <title>removed dupes.</title>
+    <updated>2010-03-10T02:22:43-08:00</updated>
+    <content type="html">&lt;pre&gt;- maps.pl
+- pissartist
+- report
+- synergy.sh
+- testing
+
+removed dupes.&lt;/pre&gt;</content>
+    <author>
+      <name>Avi Greenbury</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c4e3183cd2ee904ec380b2605bef7dc520a44bab</id>
+    <link type="text/html" href="http://github.com/BigRedS/Work/commit/c4e3183cd2ee904ec380b2605bef7dc520a44bab" rel="alternate"/>
+    <title>Changed ftp server name. more braces removal.</title>
+    <updated>2010-03-10T02:07:45-08:00</updated>
+    <content type="html">&lt;pre&gt;- backup
+m ftp
+
+Changed ftp server name. more braces removal.&lt;/pre&gt;</content>
+    <author>
+      <name>Avi Greenbury</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f100f3d957666c92ef17d1c2ff646b79a049d761</id>
+    <link type="text/html" href="http://github.com/BigRedS/Work/commit/f100f3d957666c92ef17d1c2ff646b79a049d761" rel="alternate"/>
+    <title>s/10.0.7.1/jup-svr02/g - only ~24months after the change was made....</title>
+    <updated>2010-03-10T01:58:28-08:00</updated>
+    <content type="html">&lt;pre&gt;m live/pissartist
+
+s/10.0.7.1/jup-svr02/g - only ~24months after the change was made....&lt;/pre&gt;</content>
+    <author>
+      <name>Avi Greenbury</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c5b04fa7ab358c63a84284ac58c8a3dc32eed88d</id>
+    <link type="text/html" href="http://github.com/BigRedS/Work/commit/c5b04fa7ab358c63a84284ac58c8a3dc32eed88d" rel="alternate"/>
+    <title>removed daft braces</title>
+    <updated>2010-03-10T01:52:05-08:00</updated>
+    <content type="html">&lt;pre&gt;m live/pissartist
+
+removed daft braces&lt;/pre&gt;</content>
+    <author>
+      <name>Avi Greenbury</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f9db18a1c51cb518099d0d0460598f5ef2bb131a</id>
+    <link type="text/html" href="http://github.com/BigRedS/Work/commit/f9db18a1c51cb518099d0d0460598f5ef2bb131a" rel="alternate"/>
+    <title>Started script for parsing CA xml reports. Bad XML. Put off until I can have a better look at what xml perl modules are available.</title>
+    <updated>2010-02-26T04:35:04-08:00</updated>
+    <content type="html">&lt;pre&gt;+ ca/reports.xml.pl
++ ca/sample.xml
+
+Started script for parsing CA xml reports. Bad XML. Put off until I can have a better look at what xml perl modules are available.&lt;/pre&gt;</content>
+    <author>
+      <name>Avi Greenbury</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4ff63ce044d74f513f89059bf18b22c95fa0853d</id>
+    <link type="text/html" href="http://github.com/BigRedS/Work/commit/4ff63ce044d74f513f89059bf18b22c95fa0853d" rel="alternate"/>
+    <title>Current 'production' version</title>
+    <updated>2010-02-19T07:39:25-08:00</updated>
+    <content type="html">&lt;pre&gt;+ dad/linebreaks.pl
+
+Current 'production' version&lt;/pre&gt;</content>
+    <author>
+      <name>AviG</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4f1e14016facf50416399358bf4d6fcb0ea6142a</id>
+    <link type="text/html" href="http://github.com/BigRedS/Work/commit/4f1e14016facf50416399358bf4d6fcb0ea6142a" rel="alternate"/>
+    <title>Made CGI version that does downloads too</title>
+    <updated>2010-02-19T07:32:24-08:00</updated>
+    <content type="html">&lt;pre&gt;+ dell/dell_cgi.pl
+
+Made CGI version that does downloads too&lt;/pre&gt;</content>
+    <author>
+      <name>AviG</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/00dbd76f6ff60e21203b5fc28ea750aa1a9af3f3</id>
+    <link type="text/html" href="http://github.com/BigRedS/Work/commit/00dbd76f6ff60e21203b5fc28ea750aa1a9af3f3" rel="alternate"/>
+    <title>Working. Just need to add html goodies</title>
+    <updated>2010-02-19T07:22:02-08:00</updated>
+    <content type="html">&lt;pre&gt;m dell/warranty.pl
+
+Working. Just need to add html goodies&lt;/pre&gt;</content>
+    <author>
+      <name>AviG</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/29d56d4f7bc6c10303ac779c5ef39c3cf3296ab3</id>
+    <link type="text/html" href="http://github.com/BigRedS/Work/commit/29d56d4f7bc6c10303ac779c5ef39c3cf3296ab3" rel="alternate"/>
+    <title>Resolved copy-paste fail.</title>
+    <updated>2010-02-19T07:15:42-08:00</updated>
+    <content type="html">&lt;pre&gt;m dell/warranty.pl
+
+Resolved copy-paste fail.&lt;/pre&gt;</content>
+    <author>
+      <name>AviG</name>
+    </author>
+  </entry>
+</feed>

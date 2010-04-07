@@ -1,0 +1,14 @@
+RewriteEngine on
+
+#RewriteRule ^/~avi/website/doc([A-Za-z0-9p]+)$ /~avi/website/doc/index.pl?doc=$1
+RewriteRule ^([A-Za-z0-9p]+).html$ /~avi/website/doc/index.pl?doc=$1
+
+#RewriteRule ^styles.css ../styles.css [L]
+#RewriteRule ^index.pl index.pl[L]
+#RewriteRule ^(.*) index.pl?file=$1
+
+#RewriteRule ^wiki.css ../usemodwiki/wiki.css [L]
+#RewriteRule ^cookie.jpg ../usemodwiki/cookie.jpg [L]
+#RewriteRule ^index.pl(.*) ../usemodwiki/index.pl$1 [L]
+#RewriteRule ^(.*) ../usemodwiki/index.pl?$1
+

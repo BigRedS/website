@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:github.com,2008:/BigRedS/work-web/commits/master</id>
+  <link type="text/html" href="http://github.com/BigRedS/work-web/commits/master/" rel="alternate"/>
+  <link type="application/atom+xml" href="http://github.com/BigRedS/work-web/commits/master.atom" rel="self"/>
+  <title>Recent Commits to work-web:master</title>
+  <updated>2010-03-29T08:22:25-07:00</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6fd6a20a04fbf563b938a899753f033eb02b03e9</id>
+    <link type="text/html" href="http://github.com/BigRedS/work-web/commit/6fd6a20a04fbf563b938a899753f033eb02b03e9" rel="alternate"/>
+    <title>method='post'</title>
+    <updated>2010-03-29T08:22:25-07:00</updated>
+    <content type="html">&lt;pre&gt;m mobex/update/revert.pl
+
+method='post'&lt;/pre&gt;</content>
+    <author>
+      <name>Avi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/09c173492e7057d08c19ef492c458a7956a54c71</id>
+    <link type="text/html" href="http://github.com/BigRedS/work-web/commit/09c173492e7057d08c19ef492c458a7956a54c71" rel="alternate"/>
+    <title>added update function</title>
+    <updated>2010-03-29T06:49:14-07:00</updated>
+    <content type="html">&lt;pre&gt;m files/filefinder.log
+m files/files
+m mobex/index.pl
+m mobex/styles.css
++ mobex/update/index.pl
++ mobex/update/revert.pl
+- sites/2.pl
+- sites/b-s
+- sites/hayes
+- sites/index.pl
+- sites/ip
+- sites/nottingham
+- sites/scanachrome
+- sites/template
+- sites/wandsworth
+
+added update function&lt;/pre&gt;</content>
+    <author>
+      <name>Avi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/df9ee608a513e0a9ba331130c75254d1cd431e2c</id>
+    <link type="text/html" href="http://github.com/BigRedS/work-web/commit/df9ee608a513e0a9ba331130c75254d1cd431e2c" rel="alternate"/>
+    <title>added deskphone/mobile columns</title>
+    <updated>2010-02-08T03:09:54-08:00</updated>
+    <content type="html">&lt;pre&gt;m mobex/index.pl
+
+added deskphone/mobile columns&lt;/pre&gt;</content>
+    <author>
+      <name>AviG</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1a8f5983ae36babee1a6e1aed3a962eb9009ba01</id>
+    <link type="text/html" href="http://github.com/BigRedS/work-web/commit/1a8f5983ae36babee1a6e1aed3a962eb9009ba01" rel="alternate"/>
+    <title>first commit</title>
+    <updated>2010-02-08T03:08:04-08:00</updated>
+    <content type="html">&lt;pre&gt;+ cgi-bin
++ cgi/nph-zms
++ cgi/passwords.pl
++ cgi/passwords.pl~
++ cgi/src/passwords.txt
++ checkpoint/BigAndFastIV.doc
++ checkpoint/index.pl
++ dell/dell.pl
++ dell/index.pl
++ drivers
++ excel-scripts
++ files/briefexplanation
++ files/extensions
++ files/filefinder.log
++ files/filefinder.txt
++ files/files
++ files/files.txt
++ files/index.pl
++ files/index.txt
++ files/usersfilefinder.log
++ index.pl
++ inet
++ isos
++ kbox/.2label.pl.swp
++ kbox/.2label.txt.swp
++ kbox/label.pl
++ kbox/label.txt
++ list.pl
++ mobex/.directory
++ mobex/.log
++ mobex/index.pl
++ mobex/styles.css
++ mobex/test/.directory
++ mobex/test/index.pl
++ mobex/test/styles.css
++ monitor
++ osx/ds_store.sh
++ osx/rdp_client_osx.dmg
++ osx/tharstern_pc.rdp
++ osx/tharstern_pc.rdp.cp
++ pl
++ sgl/sigimages/Thumbs.db
++ sgl/sigimages/logo_bs_white.gif
++ sgl/sigimages/logo_jd_white.gif
++ sgl/sigimages/logo_pr_white.gif
++ sgl/sigimages/logo_sc_white.gif
++ sgl/sigimages/logo_se_white.gif
++ sgl/sigimages/logo_sg_white.gif
++ sgl/sigimages/logo_sp_white.gif
++ sgl/sigimages/logo_sr_white.gif
++ sgl/sigimages/slogans_bs_white.gif
++ sgl/sigimages/slogans_jd_white.gif
++ sgl/sigimages/slogans_pr_white.gif
++ sgl/sigimages/slogans_sc_white.gif
++ sgl/sigimages/slogans_se_white.gif
++ sgl/sigimages/slogans_sg_white.gif
++ sgl/sigimages/slogans_sp_white.gif
++ sgl/sigimages/slogans_sr_white.gif
++ sites/2.pl
++ sites/b-s
++ sites/hayes
++ sites/index.pl
++ sites/ip
++ sites/nottingham
++ sites/scanachrome
++ sites/template
++ sites/wandsworth
++ walker
++ wandsworth.svg
++ win
+
+first commit&lt;/pre&gt;</content>
+    <author>
+      <name>AviG</name>
+    </author>
+  </entry>
+</feed>

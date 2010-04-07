@@ -1,0 +1,79 @@
+#! /usr/bin/perl
+
+use strict;
+
+sub start_html() {
+
+print <<EOF
+content-type: text/html
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+<!--		<link rel='stylesheet' type='text/css' href='./styles.css'/>-->
+		<link rel='stylesheet' type='text/css' href='http://localhost/styles.css'/>
+		<title>Avi</title>
+	</head>
+	<body>
+		<div id='top'>
+			<div class='avi' id='left'>
+				Avi :)
+			</div>
+			<div class='links' id='right'>
+					<a href='./doc/'> doc</a> 
+					<a href='./blog/'>blog</a> 
+					<a href='./about/'>about</a> 
+					<a href='./contact/'>contact</a>
+			</div>
+	</div>
+EOF
+}
+
+sub end_html() {
+print <<EOF
+		</div>
+	</body>
+</html>
+EOF
+}
+
+sub header(){
+print <<EOF
+	<div class='content'>
+EOF
+}
+
+
+sub footer(){
+print <<EOF
+	</div>
+EOF
+}
+
+sub mainpage_header(){
+
+print <<EOF
+		<div>
+			<div class='intro'>
+				There are several hundred thousand terabytes of data on The Internet. Here are my latest contributions to it:
+			</div>
+		</div>
+		<div id='middle'>
+			<table class='main'>
+EOF
+}
+
+sub mainpage_footer(){
+print <<EOF
+
+		<div class='footer'>
+			<a href='http://github.com/BigRedS/play/tree/master/website/'>Source</a>
+		</div>
+			</table>
+EOF
+}
+1

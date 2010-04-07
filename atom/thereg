@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:theregister.co.uk,2005:feed/user/theregister.co.uk/40790</id>
+  <title type="html">El Reg forum user: BigRedS</title>
+  <link rel="self" type="application/atom+xml" href="http://forums.theregister.co.uk/feed/user/40790"/>
+  <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/user/40790/"/>
+  <updated>2010-03-24T15:59:17Z</updated>
+  <rights>Copyright © 2010, Situation Publishing Ltd.</rights>
+  <author>
+    <name>BigRedS</name>
+    <uri>http://forums.theregister.co.uk/user/40790/</uri>
+  </author>
+  <icon>http://www.theregister.co.uk/Design/graphics/icons/favicon.png</icon>
+  <logo>http://www.theregister.co.uk/Design/graphics/Reg_default/The_Register_r.png</logo>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/725291</id>
+    <updated>2010-03-24T15:59:17Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/725291"/>
+    <title type="text">Linuxy cost savings</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/725152</id>
+    <updated>2010-03-24T14:06:56Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/725152"/>
+    <title type="text">Exactly!</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/718033</id>
+    <updated>2010-03-16T14:11:05Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/718033"/>
+    <title type="text">My word, they are delusional</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/717567</id>
+    <updated>2010-03-16T10:23:30Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/717567"/>
+    <title type="text">There's fantastic reason for the owner to own their device</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/716005</id>
+    <updated>2010-03-12T20:20:30Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/716005"/>
+    <title type="text">Hit 400 staff?</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/715542</id>
+    <updated>2010-03-12T14:09:33Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/715542"/>
+    <title type="text">Cripes! Freedom to take and publish photos!</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/712350</id>
+    <updated>2010-03-09T14:28:56Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/712350"/>
+    <title type="text">No, A* at GCSE</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/710880</id>
+    <updated>2010-03-08T10:26:11Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/710880"/>
+    <title type="text">I'd presumed this was by design</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/710912</id>
+    <updated>2010-03-08T10:22:22Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/710912"/>
+    <title type="text">Web monkeys taking a stand</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/710328</id>
+    <updated>2010-03-05T18:51:03Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/710328"/>
+    <title type="text">Unfortunate tagline.</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/710320</id>
+    <updated>2010-03-05T18:51:03Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/710320"/>
+    <title type="text">I'm not convinced they want it</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/710316</id>
+    <updated>2010-03-05T18:51:03Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/710316"/>
+    <title type="text">Predictably, I'd disagree with that...</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/709837</id>
+    <updated>2010-03-05T12:48:25Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/709837"/>
+    <title type="text">RE: Will we know the next time?</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/708763</id>
+    <updated>2010-03-04T13:00:06Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/708763"/>
+    <title type="text">I quite like it</title>
+  </entry>
+  <entry>
+    <id>tag:theregister.co.uk,2005:post/707938</id>
+    <updated>2010-03-03T15:33:43Z</updated>
+    <link rel="alternate" type="text/html" href="http://forums.theregister.co.uk/forum/containing/707938"/>
+    <title type="text">because it's easier to</title>
+  </entry>
+</feed>
