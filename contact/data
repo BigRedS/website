@@ -1,0 +1,324 @@
+1270212893
+http://identi.ca/notice/26976717
+hates web programming.
+
+1270161151
+http://identi.ca/notice/26901610
+still having a bit of trouble filtering the April Fools 'news' from the actual real-life news...
+
+1270142803
+http://slashdot.org/comments.pl?sid=1603562&amp;amp;cid=31701476&amp;from=rss
+Here, in the UK, it's not people telling funny jokes. It's people pulling practical jokes on other people.Perhaps this is another of the US/UK differences (or maybe US/everywhere else). All my other (UK-based) news sources took the opportunity for so
+
+1270141198
+http://github.com/BigRedS/website/commit/64dd1b6404601e831b60ea1d72be9f40af668fe4
+typo fix, doesn't fail completely if one feed doesn't download
+
+1270140731
+http://github.com/BigRedS/website/commit/9bc436359644969677c61512b63a57ef832e3ed5
+added website repo
+
+1270139149
+http://github.com/BigRedS/website/commit/18c9108603de2bf2f36e8b97e63ed48d6c8cbc89
+Amusingly all those commit messages involving '&amp;' broke the validity. This appears to leave us with valid xhtml. hopefully. Ruddy standards
+
+1270138825
+http://github.com/BigRedS/website/commit/cfa57ccb33812761badc3faa9220434ca0e252cd
+It works! And is now flooded with ruddy github commit messages....
+
+1270138029
+http://github.com/BigRedS/website/commit/b784d0c5e215e3e59b5f51b249f6f32e42ee853b
+curse of the superfluous mys
+
+1270137953
+http://github.com/BigRedS/website/commit/4a33b228a6e505a31d863874e7cffb2c17ab3c9d
+added ;...
+
+1270137883
+http://github.com/BigRedS/website/commit/c6f221247aee159d865d818b4f6e77fcf972565f
+cleans up &lt; and &gt;
+
+1270137749
+http://github.com/BigRedS/website/commit/3714957a9e8268cb9f43124f76549a94c734fbac
+validated urls containing &amp;
+
+1270137725
+http://github.com/BigRedS/website/commit/8ae3bb7bd472a9f4d5fa7347eedce225e2758c53
+added content length check
+
+1270135752
+http://github.com/BigRedS/website/commit/7056fe3ca5436a9189472c650c6685bb54a09cf1
+Tidying the code
+
+1270134927
+http://github.com/BigRedS/play/commit/af1325efa6a49a69694cff9a588fd942747cd797
+Split index.pl up into data-getter and index
+
+1270129066
+http://github.com/BigRedS/play/commit/28b5baccdba1c0bebc719ba3fac615cc2ee75df6
+Valid! Not quite. Need to escape all &amp;s
+
+1270028751
+http://identi.ca/notice/26696128
+Clattered in on the CX today :)
+
+1269968386
+http://slashdot.org/comments.pl?sid=1600616&amp;amp;cid=31673364&amp;from=rss
+What about censorship of political, religious, and controversial viewpoints? This is about Freedom of expression and Freedom of communication more than it is about any single issue.
+
+
+I don't know. It's still Google turning round to a country and say
+
+1269876145
+http://github.com/BigRedS/work-web/commit/6fd6a20a04fbf563b938a899753f033eb02b03e9
+method='post'
+
+1269870554
+http://github.com/BigRedS/work-web/commit/09c173492e7057d08c19ef492c458a7956a54c71
+added update function
+
+1269852386
+http://identi.ca/notice/26475155
+Yay. Spending the morning waiting in a closed factory for a van. No internet = no work so it's not so bad...
+
+1269446357
+http://forums.theregister.co.uk/forum/containing/725291
+Linuxy cost savings
+
+1269439616
+http://forums.theregister.co.uk/forum/containing/725152
+Exactly!
+
+1269360523
+http://identi.ca/notice/25795244
+Gah. Five days and two boots in to my new xp install and it bsods... http://ur1.ca/rd4o
+
+1269272150
+http://slashdot.org/comments.pl?sid=1589918&amp;amp;cid=31569474&amp;from=rss
+I don't really want to learn any more of the above, but I'd like to have already learned more of several of them.My crapness at pure maths is probably most irritating, so I went with that.
+
+1269271062
+http://identi.ca/notice/25660205
+Just discovered windows' find command/builtin! Why was I not informed earlier?
+
+1269264049
+http://slashdot.org/comments.pl?sid=1590826&amp;amp;cid=31566374&amp;from=rss
+If you really want to be sure you avoid being part of a botnet, then yes, Windows is not one of the choices you have. It cant be secured, its like going down the rapids in a colander while trying to plug the holes with cabbage.
+
+
+Thing is, though, *e
+
+1269255727
+http://identi.ca/notice/25637127
+gah. Why does OSX have capital letters all over the place?
+
+1269025218
+http://slashdot.org/comments.pl?sid=1588514&amp;amp;cid=31542046&amp;from=rss
+Yeah, I thought that.This was on Monday that I went through the IE preferences windows to get at the browser choice screen, though, and that was one from an update.
+
+1269007292
+http://slashdot.org/comments.pl?sid=1588514&amp;amp;cid=31536364&amp;from=rss
+During the latest (or a recent) Windows Update it presents itself, but only if you have no browsers other than IE installed. It also appears to do it pre-update on new (XP) builds since then, too.
+ 
+Amusingly, it's presented by IE, so you still have 
+
+1268910743
+http://identi.ca/notice/25170712
+wondering why the OS that needs reinstalling most often is also the hardest to install... &lt;windows-isn't-compatible-with-anything-rant&gt;
+
+1268748665
+http://forums.theregister.co.uk/forum/containing/718033
+My word, they are delusional
+
+1268735010
+http://forums.theregister.co.uk/forum/containing/717567
+There's fantastic reason for the owner to own their device
+
+1268688397
+http://identi.ca/notice/24873826
+Canvassing opinions on filesystem for ~1TB of SMB/NFS share in Linux. Anyone who suggests ntfs gets a slap.
+
+1268425230
+http://forums.theregister.co.uk/forum/containing/716005
+Hit 400 staff?
+
+1268405764
+http://github.com/BigRedS/Work/commit/13261b493d7545719158a60297b4e476cc250425
+Added bat files
+
+1268402973
+http://forums.theregister.co.uk/forum/containing/715542
+Cripes! Freedom to take and publish photos!
+
+1268383667
+http://slashdot.org/comments.pl?sid=1579398&amp;amp;cid=31449460&amp;from=rss
+They are mostly aspartame based glass these days, I think.
+
+1268302912
+http://identi.ca/notice/24383031
+I just accidentally put milk in my coffee. I think it's going to be one of those days.
+
+1268245466
+http://identi.ca/notice/24314886
+Handy hint: Pissing about with LVMs is about as easy as everyone else says it is: http://aviswebsite.co.uk/wiki/LVMOnlineResize
+
+1268216563
+http://github.com/BigRedS/Work/commit/733268d0330cce18bdb740050d37378970cfd978
+removed dupes.
+
+1268215665
+http://github.com/BigRedS/Work/commit/c4e3183cd2ee904ec380b2605bef7dc520a44bab
+Changed ftp server name. more braces removal.
+
+1268215108
+http://github.com/BigRedS/Work/commit/f100f3d957666c92ef17d1c2ff646b79a049d761
+s/10.0.7.1/jup-svr02/g - only ~24months after the change was made....
+
+1268214725
+http://github.com/BigRedS/Work/commit/c5b04fa7ab358c63a84284ac58c8a3dc32eed88d
+removed daft braces
+
+1268144936
+http://forums.theregister.co.uk/forum/containing/712350
+No, A* at GCSE
+
+1268125173
+http://identi.ca/notice/24163570
+Argh! Attack of the flying (falling) scsi cables. The robots are rising... http://ur1.ca/ovj4
+
+1268043971
+http://forums.theregister.co.uk/forum/containing/710880
+I'd presumed this was by design
+
+1268043742
+http://forums.theregister.co.uk/forum/containing/710912
+Web monkeys taking a stand
+
+1267970710
+http://slashdot.org/comments.pl?sid=1573976&amp;amp;cid=31389316&amp;from=rss
+On a personal note, I owe you nothing. If you think your content is worth charging for, charge for it. If you provide your content, I will take it, just as I am happy with people taking the fruits of my labour as published on the Internet (and sharin
+
+1267914615
+http://github.com/BigRedS/dotfiles/commit/5dae11600e1adb6e3daf3c2373c07b06d36b09ab
+Made partman kill everything. Added root's zshrc, too.
+
+1267912140
+http://science.slashdot.org/story/10/03/06/1937255/Popular-Science-Frees-Its-137-Year-Archives?from=rss
+DesScorp writes "Popular Science magazine has scanned every issue they've ever produced, and posted the archives at their website, at no charge. 'We've partnered with Google to offer our entire 137-year archive for free browsing. Each issue appears j
+
+1267905484
+http://github.com/BigRedS/dotfiles/commit/1515fbb9b512f67dac1e739c18a97a613b7a9781
+All the obvious settings. Need to check IP address
+
+1267904763
+http://github.com/BigRedS/dotfiles/commit/c32e372887e688fd2b65f5aaf67991f98f70fab8
+Merge branch 'master' of git@github.com:BigRedS/dotfiles
+
+1267904660
+http://github.com/BigRedS/dotfiles/commit/3b3a091081825a706e8fa041b9a889a2789305ef
+Shamelessly copied from example at http://www.debian.org/releases/etch/example-preseed.txt
+
+1267815063
+http://forums.theregister.co.uk/forum/containing/710316
+Predictably, I'd disagree with that...
+
+1267793305
+http://forums.theregister.co.uk/forum/containing/709837
+RE: Will we know the next time?
+
+1267741302
+http://identi.ca/notice/23748585
+That's a whole bunch of really big numbers: http://ur1.ca/oe88 and it's is a Microsoftie architecture, too
+
+1267724124
+http://github.com/BigRedS/dotfiles/commit/ceb06ff602dff0f07195adff7bd71dff22165085
+c+p'd fstab
+
+1267723931
+http://github.com/BigRedS/dotfiles/commit/0cb1135db4022f377755ca0fc9038f1c193807b5
+Merge branch 'master' of github.com:BigRedS/dotfiles
+
+1267723761
+http://github.com/BigRedS/dotfiles/commit/2242802375415a40bf9f1f50966cd2f5f9434880
+Possibly added link to /etc/fstab
+
+1267707606
+http://forums.theregister.co.uk/forum/containing/708763
+I quite like it
+
+1267705462
+http://identi.ca/notice/23702566
+still dreaming of a working privilege authorisation mechanism for Windows. Would it be too much hassle for MS to clone sudo?
+
+1267630423
+http://forums.theregister.co.uk/forum/containing/707938
+because it's easier to
+
+1267617300
+http://slashdot.org/comments.pl?sid=1569544&amp;amp;cid=31343436&amp;from=rss
+I gather they're pretty open source in the backend already. They're historically a Solaris house, but a lot of their web presence is Linux, and about half the Perl programmers in London seem to work for the BBC.
+
+1267279253
+http://github.com/BigRedS/dotfiles/commit/79bb536974354fdc1865be2a2e72bd843096a566
+Colours!
+
+1267187704
+http://github.com/BigRedS/Work/commit/f9db18a1c51cb518099d0d0460598f5ef2bb131a
+Started script for parsing CA xml reports. Bad XML. Put off until I can have a better look at what xml perl modules are available.
+
+1267097787
+http://github.com/BigRedS/dotfiles/commit/dd1360498d355e7da273e2a7093ac3e1b6c8a3c3
+my first zshrc
+
+1267043000
+http://github.com/BigRedS/dotfiles/commit/4f77321806904d490805128fbfda44347e7379bc
+merged with laptop config
+
+1266924798
+http://identi.ca/notice/22877404
+Disk failures are no fun
+
+1266863067
+http://identi.ca/notice/22825853
+Today's irritation is provided by the infamous collaboration of #MS Windows 'server' and CA Arcserve 'backup'
+
+1266593965
+http://github.com/BigRedS/Work/commit/4ff63ce044d74f513f89059bf18b22c95fa0853d
+Current 'production' version
+
+1266593544
+http://github.com/BigRedS/Work/commit/4f1e14016facf50416399358bf4d6fcb0ea6142a
+Made CGI version that does downloads too
+
+1266592922
+http://github.com/BigRedS/Work/commit/00dbd76f6ff60e21203b5fc28ea750aa1a9af3f3
+Working. Just need to add html goodies
+
+1266592542
+http://github.com/BigRedS/Work/commit/29d56d4f7bc6c10303ac779c5ef39c3cf3296ab3
+Resolved copy-paste fail.
+
+1266489211
+http://identi.ca/notice/22383787
+Competition: make something funny out of these words. Winner gets their phrase stuck on something of mine. http://ur1.ca/mn4g
+
+1266352449
+http://identi.ca/notice/22220901
+what the hell is it with Canonical and pointlessly non-free software?
+
+1266315332
+http://identi.ca/notice/22174257
+How do I configure Outlook 2007 to stop converting all incoming mail to plain text? It was so easy to make 2003 start doing it...
+
+1266244221
+http://identi.ca/notice/22091591
+Apparently if I don't drink it by this evening, it'll explode: http://ur1.ca/meay
+
+1265627394
+http://github.com/BigRedS/work-web/commit/df9ee608a513e0a9ba331130c75254d1cd431e2c
+added deskphone/mobile columns
+
+1265627284
+http://github.com/BigRedS/work-web/commit/1a8f5983ae36babee1a6e1aed3a962eb9009ba01
+first commit
+
