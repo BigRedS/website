@@ -5,29 +5,20 @@ use 5.010;
 use CGI;
 use Text::Markdown 'markdown'; # libtext-markdown-perl
 
-push (@INC, "/home/avi/bin");
+push (@INC, "/home/avi/www");
 
-require website::fun;
+require fun;
 
 
 &start_html();
 &header();
-&start();
+#&start();
 
 my $dir = "./dir";
+
 if (CGI::param('doc') !~ /^$/){
-
-	my $doc = CGI::param('doc');
-
-	open(D, "<$dir");
-	my $file;
-	while(<D>){
-		if (/^$doc\t/){
-			$file = (split(/\t/, $_))[1];
-			last;
-		}
-	}
-
+	my $file = CGI::param('doc');
+	$file.=".mkd";
 	open (F, "<$file");
 	my $text;
 	{
@@ -35,26 +26,30 @@ if (CGI::param('doc') !~ /^$/){
 		$text = <F>;
 	}
 	my $html = markdown($text);
-#my $html ="3";
 	say $html;
 }else{
 
 	open (D,"<$dir");
-	my (@names, @descriptions);
+	my (@names, @filenames, @descriptions);
 	while (<D>){
 		if ($_ !~ /^#/){
-			my ($name, $description) = (split(/\t/, $_))[0,2];
+			my ($name,$filename, $description) = (split(/\t/, $_))[0,1,2];
+			$filename =~ s/mkd$/html/;
 			push(@names, $name);
+			push(@filenames, $filename);
 			push(@descriptions, $description);
 		}
 	}
-
+	say "<div id='doc'>";
 	for(my $i = 0; $i<=@names; $i++){
-		say "<a href='./$names[$i].html'>$names[$i]</a> $descriptions[$i]";
+		if ($names[$i] !~ /^$/){
+			say "<a href='./$filenames[$i]'>$names[$i]</a> $descriptions[$i] <br />";
+		}
 	}
+	say "</div>";
 }
 
-&end();
+#&end();
 &footer();
 &end_html();
 

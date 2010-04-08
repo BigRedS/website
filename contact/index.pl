@@ -4,8 +4,8 @@ use strict;
 use 5.010;
 use CGI;
 
-push(@INC, "/home/avi/bin");
-require website::fun;
+push(@INC, "/home/avi/www");
+require fun;
 
 my ($subject, $body, $from, $given_answer);
 
@@ -48,20 +48,20 @@ if ($submit =~ /Go/){
 	my $content = $body; 
 	my $to = "To: avi";
 
-	open(SENDMAIL, "|$sendmail") or die "Cannot open $sendmail: $!"; 
-		print SENDMAIL $reply_to; 
-		print SENDMAIL $subject; 
-		print SENDMAIL $to; 
-		print SENDMAIL "Content-type: text/plain\n\n"; 
-		print SENDMAIL $content; close(SENDMAIL); 
-	close SENDMAIL;
+#	open(SENDMAIL, "|$sendmail") or die "Cannot open $sendmail: $!"; 
+#		print SENDMAIL $reply_to; 
+#		print SENDMAIL $subject; 
+#		print SENDMAIL $to; 
+#		print SENDMAIL "Content-type: text/plain\n\n"; 
+#		print SENDMAIL $content; close(SENDMAIL); 
+#	close SENDMAIL;
 	
 
 		say "<h3>Message sent:</h3>";
 		say "<tt>From: $from</tt><br />";
 		say "<tt>To: Avi</tt><br />";
 		say "<tt>Subject: $subject</tt><br />";
-		say "<pre width='75'>$body</tt>";
+		say "<pre id='mail' width='75'>$body</tt>";
 	}
 
 }else{

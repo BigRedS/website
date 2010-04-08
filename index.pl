@@ -3,11 +3,9 @@
 use strict;
 use 5.010;
 
-push (@INC, "/home/avi/bin");
+push (@INC, "/home/avi/www");
 
-require website::fun;
-
-print "Content-type: text/html\n\n\n";
+require fun;
 
 my $data = "./data";
 

@@ -14,20 +14,19 @@ content-type: text/html
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-<!--		<link rel='stylesheet' type='text/css' href='./styles.css'/>-->
-		<link rel='stylesheet' type='text/css' href='http://localhost/styles.css'/>
+		<link rel='stylesheet' type='text/css' href='/styles.css'/>
 		<title>Avi</title>
 	</head>
 	<body>
 		<div id='top'>
 			<div class='avi' id='left'>
-				Avi :)
+				<a href='/'>Avi</a> :)
 			</div>
 			<div class='links' id='right'>
-					<a href='./doc/'> doc</a> 
-					<a href='./blog/'>blog</a> 
-					<a href='./about/'>about</a> 
-					<a href='./contact/'>contact</a>
+					<a href='/doc/'> doc</a> 
+					<a href='/blog/'>blog</a> 
+<!--					<a href='/about/'>about</a> 	-->
+					<a href='/contact/'>contact</a>
 			</div>
 	</div>
 EOF
@@ -70,10 +69,10 @@ EOF
 sub mainpage_footer(){
 print <<EOF
 
-		<div class='footer'>
-			<a href='http://github.com/BigRedS/play/tree/master/website/'>Source</a>
-		</div>
 			</table>
+			<div class='footer'>
+				<a href='http://github.com/BigRedS/play/tree/master/website/'>Source</a>
+			</div>
 EOF
 }
 1

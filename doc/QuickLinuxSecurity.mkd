@@ -1,0 +1,76 @@
+15 minutes of Linux security
+============================
+
+This is a list of some really quick and quite effective things you can do to make a Linux box more secure. It should take about 15 minutes to implement, though longer if you're going to read while you do it.
+
+This is a starting point, and is nowhere near a guide to a bulletproof box. You should be doing what's listed below at the very least.
+
+Secure the Secure Shell
+-----------------------
+
+The easiest bit is to secure SSH. This involves reconfiguring (and restarting) the ssh daemon, sshd. This does not kill current connections, though, so the standard procedure is to have one ssh session in which you're editng and restarting, and spawn a new one to test without closing the first. It's also nice to have a way of getting into the box round a broken sshd - most hosting guys will provide a serial interface, for example. Here're the lines I change on mine:
+port 443
+    AllowUsers jim bob joe 
+    LoginGraceTime 20
+    PermitRootLogin no
+Switching the listening port to 443 doesn't make it a more secure daemon, but makes it a less targeted one. And it means you can ssh to your box from any network that permits https, which is handy.
+Defining those users who are allowed to log in implicitly bans those who are not named. Setting <tt>PermitRootLogin</tt> to no is unnecessary with AllowUsers defined, but doesn't hurt either.
+
+Most ideal is to configure SSH for public key encryption, but that takes most of the 15mins I've got here. Follow this guide: http://sial.org/howto/openssh/publickey-auth/
+
+
+Paranoid Mounting
+------------------
+In order for it to function, everyone needs read and write access to <tt>/tmp</tt>. By default it's generally just a subdir of <tt>/</tt>, so it inherits whatever mount options that has. This is bad, since it means that if/when someone breaks in, they've got a big bunch of space to play with. If we remove exec rights from <tt>/tmp</tt>, anyone not root who wants to run anything must do it inside their own $HOME, which makes damage limitation easier (<tt>rm -rf ~baduser</tt>). So, let's make a loop filesystem and mount it at <tt>/tmp</tt>:
+    /dev/tmpfs	/tmp 	tmpfs loop,nosuid,noexec,rw 0 0
+
+    # dd if=/dev/zero of=/dev/tmpfs bs=1024 count=1000000
+    # /sbin/mkfs.ext3 /dev/tmpfs
+    # /dev/tmpfs /tmp ext3 loop,nosuid,noexec,rw 0 0
+    # chmod 1777 /tmp
+
+And then either reboot, or run
+    # cp -Rpf /tmp /tmp2
+    # mount -o loop,noexec,nosuid,rw /dev/tmpfs /tmp
+    # cp -Rpf /tmp2/* /tmp/
+
+<tt>/var/tmp</tt> need not be distinct from /tmp, so make it a symlink to /tmp:
+    # mv /var/tmp /var/tmp2
+    # ln -s /tmp /var/tmp
+    # cp -R /var/tmp2/* /var/tmp
+
+/dev/shm is a shared memory device. It's implemented with [http://en.wikipedia.org/wiki/Tmpfs tmpfs], which is basically a filesystem that exists entirely in memory. It's generally mounted exec for some reason, you want to change that to noexec, by having the following in /etc/fstab
+    none /dev/shm tmpfs defaults,nosuid,noexec,rw 0 0
+And, again, if you don't want to reboot you need to 
+    # mount -o remount /dev/shm
+and restart anything that might be using it.
+
+Firewall
+--------
+
+Configure a firewall. Linux uses IPTables for its firewall which, in the greatest tradition of these things, requires understanding and a keyboard to implement. If that puts you off, [http://www.fs-security.com/ Firestarter] is highly regarded for generating IPTables rules and probably in your repos.
+
+Rootkit Detection
+------------------
+
+The problem with rootkits is that they are, by definition, pretty well hidden. They're difficult to sniff out because they replace the usual tools for finding compromises with compromised versions. Cunning.
+You need, therefore, to install the rootkit detectors *before* you get compromised, else you're likely to not notice them. The two biggies are Rootkit Hunter and Rootcheck. They're also trivial to install:
+
+For rootcheck, copy and paste the instructions (seriously, it's 4 commnands) from [a href="http://www.ossec.net/main/rootcheck here] to make sure you get the latest version.
+Go [http://www.rootkit.nl/projects/rootkit_hunter.html here] to get the latest download link, then modify the below accordingly:
+
+    # wget http://downloads.rootkit.nl/rkhunter-1.2.7.tar.gz
+    # tar -zxvf rkhunter-1.2.7.tar.gz
+    # cd rkhunter-1.2.7
+    # ./installer.sh
+    # rkhunter --update
+That's it installed and updated. Now run an initial scan for it to work out how it should all be:
+    # /usr/local/bin/rkhunter -c
+
+Then it's worth setting up a daily scan. Create a script at /etc/cron.daily/rkhunter, containing
+    #!/bin/bash
+    /usr/local/bin/rkhunter -c --cronjob 2>&1 mail -s "RKHunter Scan Report" name@example.com
+
+and make it executable:
+    # chmod +x /etc/cron.daily/rkhunter
+

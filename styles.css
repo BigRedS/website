@@ -67,7 +67,7 @@ body {
 	width:40%;
 	text-align:right;
 	text-vertical-align:middle;
-	color:#a5a5a5;
+	color:#d5d5d5;
 }
 .links a:link{
 	color:#a5a5a5;
@@ -90,12 +90,18 @@ body {
 }
 
 #doc{
-	width:30%;
+	width:40%;
 	margin-left:auto;
 	margin-right:auto;
 }
 #doc a:link{
 	color:#00F;
+}
+#doc a:visited{
+	color:#00F;
+}
+#doc a:hover{
+	text-decoration: underline;
 }
 
 // Table and rows:
@@ -135,4 +141,23 @@ label {
 
 img{
 	border: none;
+}
+
+
+pre {
+        padding: 0.2em 0.5em;
+	background-color:#000;
+	font-family: courier, monospace;
+	font-weight: bold;
+	color: #ddd;
+        white-space:pre-wrap;
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+	
+
+pre.mail{
+
 }

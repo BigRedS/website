@@ -10,7 +10,7 @@ use LWP::Simple;
 use DateTime;
 use DateTime::Format::Atom;
 
-my $file = "./data";
+my $file = "/home/avi/www/data";
 
 my %stuff = (&slashdot(), &atom());
 
@@ -44,8 +44,8 @@ sub atom(){
 		"http://github.com/BigRedS/play/commits/master.atom",
 		"http://github.com/BigRedS/Work/commits/master.atom",
 		"http://github.com/BigRedS/work-web/commits/master.atom",
-		"http://github.com/BigRedS/dotfiles/commits/master.atom",
-		"http://github.com/BigRedS/website/commits/master.atom"
+		"http://github.com/BigRedS/dotfiles/commits/master.atom"
+#		"http://github.com/BigRedS/website/commits/master.atom"
 	);
 	my %return;
 
