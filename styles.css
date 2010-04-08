@@ -59,8 +59,8 @@ body {
 	color:blue;
 	width:40%;
 	height:60px;
-//	border:3px solid blue;
 }
+
 .links{
 	margin-right:0;
 	height:60px;
@@ -70,14 +70,21 @@ body {
 	color:#d5d5d5;
 }
 .links a:link{
-	color:#a5a5a5;
+	color:#000;
+}
+.links a:visited{
+	color:#000;
+}
+.links a:hover{
+	color:#00F;
+	text-decoration:underline;
 }
 
 .intro{
 	width:60%;
 	margin:auto;
-	height:20px;
-	vertical-align:middle;
+	height:20px
+//	vertical-align:middle;
 }
 
 .content{

@@ -54,7 +54,7 @@ sub get_icon{
 			$link = "http://www.slashdot.org";
 		}
 		when(/theregister/){
-			$url = "/images/theregsiter.ico";
+			$url = "/images/theregister.ico";
 			$alt = "The Register";
 			$link = "http://theregister.co.uk";
 		}

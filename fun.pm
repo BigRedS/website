@@ -20,13 +20,14 @@ content-type: text/html
 	<body>
 		<div id='top'>
 			<div class='avi' id='left'>
-				<a href='/'>Avi</a> :)
+				Avi :)
 			</div>
 			<div class='links' id='right'>
+					<a href='/'>home</a> 
 					<a href='/doc/'> doc</a> 
-					<a href='/blog/'>blog</a> 
 <!--					<a href='/about/'>about</a> 	-->
 					<a href='/contact/'>contact</a>
+					<a href='/blog/'>blog</a> 
 			</div>
 	</div>
 EOF

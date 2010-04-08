@@ -12,7 +12,6 @@ require fun;
 
 &start_html();
 &header();
-#&start();
 
 my $dir = "./dir";
 
@@ -29,6 +28,7 @@ if (CGI::param('doc') !~ /^$/){
 	say $html;
 }else{
 
+	&intro();
 	open (D,"<$dir");
 	my (@names, @filenames, @descriptions);
 	while (<D>){
@@ -49,17 +49,14 @@ if (CGI::param('doc') !~ /^$/){
 	say "</div>";
 }
 
-#&end();
 &footer();
 &end_html();
 
-sub start(){
+sub intro(){
 print <<EOF
-	<div id='doc'>
-EOF
-}
-sub end(){
-print <<EOF
-	</div>
+<div class='intro'>
+	<p>Here's a bunch of stuff I've written at some point and been called upon at some other point to reproduce. It's a mix of useful information and ranting.</p>
+</div>
+
 EOF
 }
