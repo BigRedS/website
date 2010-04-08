@@ -49,22 +49,22 @@ sub get_icon{
 	my ($url, $alt, $link);
 	given (@_[0]){
 		when(/slashdot/){
-			$url = "http://www.slashdot.org/favicon.ico";
+			$url = "/images/slashdot.ico";
 			$alt = "Slashdot";
 			$link = "http://www.slashdot.org";
 		}
 		when(/theregister/){
-			$url = "http://www.theregister.co.uk/favicon.ico";
+			$url = "/images/theregsiter.ico";
 			$alt = "The Register";
 			$link = "http://theregister.co.uk";
 		}
 		when(/identi/){
-			$url = "http://identi.ca/favicon.ico";
+			$url = "/images/identi.ico";
 			$alt = "Identi.ca";
 			$link = "http://identi.ca";
 		}
 		when(/github/){
-			$url = "http://github.com/favicon.ico";
+			$url = "/images/github.ico";
 			$alt = "GitHub";
 			$link = "http://github.com";
 		}
