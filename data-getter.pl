@@ -39,13 +39,13 @@ close FILE;
 sub atom(){
 
 	my @urls = (
-#		"http://identi.ca/api/statuses/user_timeline/99267.atom", 
-#		"http://forums.theregister.co.uk/feed/user/40790", 
-#		"http://github.com/BigRedS/play/commits/master.atom",
-#		"http://github.com/BigRedS/Work/commits/master.atom",
-#		"http://github.com/BigRedS/work-web/commits/master.atom",
-#		"http://github.com/BigRedS/dotfiles/commits/master.atom"
-#		"http://github.com/BigRedS/website/commits/master.atom",
+		"http://identi.ca/api/statuses/user_timeline/99267.atom", 
+		"http://forums.theregister.co.uk/feed/user/40790", 
+		"http://github.com/BigRedS/play/commits/master.atom",
+		"http://github.com/BigRedS/Work/commits/master.atom",
+		"http://github.com/BigRedS/work-web/commits/master.atom",
+		"http://github.com/BigRedS/dotfiles/commits/master.atom",
+		"http://github.com/BigRedS/website/commits/master.atom"
 #		"http://api.flickr.com/services/feeds/photos_public.gne?id=12396343\@N06&lang=en-us&format=atom"
 	);
 	my %return;
@@ -57,8 +57,8 @@ sub atom(){
 				my $d = DateTime::Format::Atom->new();
 				my $dt = $d->parse_datetime( $item->pubDate );
 				my $time = $dt->epoch;
-#				$return{ $time } = [$item->link, $item->title()];
-				$return{ $time } = [$item->link, $item->description()];
+				$return{ $time } = [$item->link, $item->title()];
+#				$return{ $time } = [$item->link, $item->description()];
 
 			}
 		}
@@ -85,16 +85,11 @@ sub rss(){
 	my $url = shift; 
 	my $part = shift; 
 
-#	my $url = "http://picasaweb.google.com/data/feed/base/user/ialoneambest?alt=rss&kind=photo&hl=en_US";
-#	my $url = "http://ws.audioscrobbler.com/1.0/user/lordandmaker/recenttracks.rss";
-#	my $url = "http://api.flickr.com/services/feeds/photos_public.gne?id=12396343\@N06&lang=en-us&format=rss";
-#	my $url = "http://slashdot.org/firehose.pl?op=rss&content_type=rss&view=userhomepage&fhfilter=%22home%3Alordandmaker%22&orderdir=DESC&orderby=createtime&color=black&duration=-1&startdate=&user_view_uid=960504&logtoken=960504%3A%3AqQuPZQpQoZTAkoJGfmbG6g";
 	my $content = get($url);
 	my $rai = XML::RAI->parse_string($content);
 	foreach my $item ( @{$rai->items} ) {
 		$content = substr($item->content, 0, 100);
 		$content.="...";  
-#		$content = $item->content;
 		$content = $item->$part;
 
 

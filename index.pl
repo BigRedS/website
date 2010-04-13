@@ -68,7 +68,7 @@ sub get_icon{
 			$alt = "GitHub";
 			$link = "http://github.com";
 		}
-		when(/github/){
+		when(/picasa/){
 			$url = "/images/picasa.ico";
 			$alt = "Picasa";
 			$link = "http://picasa.com";
@@ -106,7 +106,10 @@ sub friendly_date() {
 			$time =int $interval/3600;
 			return "$time hours ago";
 		}
+		when ($interval < 6048000){
+			return "ages ago";
+		}
+	return "before the dawn of time";
 	}
-	return "ages ago";
 
 }
