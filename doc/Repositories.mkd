@@ -1,0 +1,87 @@
+A really rough draft explanation of repositories
+=============
+
+
+Please [Email me](/contact/) fixes, and/or wait until I've the time to spot them please.
+
+This is here because I keep trying to tell people how wonderful software repositories are, as found in
+Linux, going off to find the explanation and failing. It's aimed at Windows users from a Linuxy person,
+but it probably works to OSX users from another *nixy person.
+
+
+Firstly, Windows and Linux disagree on several points, one of which is what constitutes an operating
+system, and another constitutes how that operating system is contructed.
+
+What is an operating system?
+----------------------------
+
+For Windows, there is a clearly defined set of things that makes up the Operating System that is
+Windows. It doesn't, for example, include an office suite, a copy of DoomII or an iso burner. Whenever
+you get Windows, wherever you get it from, it's always the same collection of tools.
+
+Linux exists as a number of 'distributions'. Linux itself is just a kernel, and is useless on its own. It
+manages the hardware, but doesn't interact with the user. A Linux distribution is therefore the Linux
+kernel with some collection of software on top of it, exactly which software is inculded is determined by
+the distributor. Though, for some reason, the term 'distribution' has come to mean both the operating
+system (that is the Linux kernel and the tools), and the organisation that collated and distributes it.
+Some popular distributions are Ubuntu, RedHat, Suse and Fedora Core. These are all generally termed
+'Linux' but are often, mildly more accurately, termed 'GNU/Linux' in recognition of the amount of tools
+that are the product ofthe GNU project. The software is, typically, the product of many many projects,
+GNU has traditionally been the largest contributior. 
+
+And how are they made?
+----------------------
+
+With Windows the Operating System is as defined by Microsoft. There's little to no scope for swapping
+bits out or replacing some component with your own. In general, all Microsoft Windows installs are
+identical.
+
+With Linux, the whole operating system is modular and replaceable. If you don't like the way the bit of
+code that detects your monitor resolution works, you can replace it with some part that you do agree
+with. 
+
+In short, Linux is very modular, Windows is monolithic.
+
+
+Repositories
+-------------
+
+The repository, in Linux, is a collection of everything the distributor will support as part of the Linux
+operating system they distribute. It's basically a massive collection of software maintained by the
+distributor.
+
+Because of the modular and changeable nature of Linux, and the interpretations of exactly what an
+Operating System is constituted of there is *a lot* of software in these. As well as everything you'd
+expect as part of an operating system (the kernel, windowing manager, software installers, Solitaire),
+these contain software you're just likely to want on a computer - office suites, web browsers, games,
+screensavers, image editors and the like. With a modern distribution it's rare to need to find software
+anywhere but the repository.
+For some idea of the kinds of software in repositories, here's the web search for the repositories for
+the distributions I mentioned above:
+
+* [Ubuntu](http://packages.ubuntu.com/)
+* [Suse](http://software.opensuse.org/search)
+
+Benefits
+--------
+
+You've already decided that the provider of your operating system (Microsoft for Windows, the distributor
+for a Linux) is trustworthy, and to take their word for it when they tell you their software is secure
+and good and stable<sup>2</sup>
+
+With the Windows way, you then need to do it again for all the other software providers. Your DVD
+software, video player, office suite, image editor all need the same vetting for security, stability and
+compatibility. You might also want support.
+
+With the repository system, you just still trust the same entity, and they also test compatibility and
+stability for you (since the rest of the environment is their repsonisbility, too). It's rare for support
+contracts to not include the software, too (since, again, it's difficult to work out which software is
+'operating system' and which is 'applications').
+
+------
+------
+1. Ex
+2. Linux has the obvious advantage of being open sourced so, if you're that way inclined, you can
+   actually poke around in the source and check it's all good.
+
+

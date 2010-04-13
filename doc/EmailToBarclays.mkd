@@ -1,0 +1,14 @@
+> I'm just trying to register for the online service, and I've two 
+> questions about the security details, the answers to which I can't find 
+> in your FAQs:
+>
+> Will my username be displayed as a username, or as a password, as I type
+> it in? I've a number of password strings that meet the criteria (8-16 character
+> alphanumeric), but none I'd particularly like others to see me entering. The 
+> fact it's called a 'username', though, implies it's to be displayed.
+>
+> Why is the password restricted to 6 numeric characters? I don't know of a 
+> 6 digit numerical string that I'd remember well, though something like 
+> appending two zeros to my PIN strikes me as a simple workaround. Why no letters, and why only six characters?
+
+

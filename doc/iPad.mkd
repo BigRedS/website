@@ -1,0 +1,46 @@
+Why I don't like the iPad
+=========================
+
+Yeah, this is another freedom rant. 
+
+There are two really bad things about the iPad, and they're both the restrictions placed upon it by Apple. In
+short, you may only do with your iPad as Apple deem appropriate. 
+You may only install apps approved by Apple, and if Apple want you to have a particular update, they can force
+it upon you (as in the recent [Amazon Kindle debacle](http://www.nytimes.com/2009/07/18/technology/companies/18amazon.html?_r=1)). 
+In order to put music or video, or much other media, on the device, you must wrap it in Apple's DRM, and so 
+in order to publish to the device, Apple must also approve.
+
+That's a hell of a lot of power over the device given to Apple. Aside from the other i* devices, I can't think 
+of anything that comes close.
+
+Now, I know, this hardly affects the average user. Generally, the average user doesn't really care about the
+'freedom' associated with their kit. They just want it to work. And, generally the updates don't break things, 
+and they've not started [removing features](http://blog.us.playstation.com/2010/03/28/ps3-firmware-v3-21-update/). 
+
+So, all is well and good, then?
+
+Not really, firstly there's the idea of Apple doing Bad Things with their control, like censoring news or videos,
+or removing media it deems inappropriate. One of the benefits of a free market is that it is competetive by
+default, but a downside is it doesn't need be so. In deferring responsibility for deciding which products are
+acceptible to the manufacturer(s), the users are removing the competition, and therefore the incentive for
+progression in the manufacturers. Whoever gets to produce the authoritative version of the GPS software just
+needs to make some GPS software. It doesn't need to be particularly good, since you're hardly going to go
+elsewhere - Apple wont let you.
+
+But the thing really worrying me thing isn't so much that Apple retains control over 'your' iPad, it's that
+the notion of the manufacturer retaining this control is being so widely and easily accepted. The prospect of
+a future where computers are little more than mildly interactive TVs scares the crap out of me - half the fun
+of the computer is making it do what you want it to do - that has, after all, long been half the point.
+
+More importantly perhaps, is the fact that all the good developers and hackers today are so because they grew
+up on quite free PCs. They cut their teeth on PCs, ATs, Amigas, Commodores. All tinkerer-friendly platforms,
+and ones that didn't try to stop you experimenting, they practically encouraged it.
+
+Even modern Windows really isn't that bad. Sure, it doesn't come with any reasonable programming environments
+out of the box, but thanks to the internet they're not far away. But it also doesn't complain when you mess
+around with the booting, as the popular changes to the bootup and shutdown images demonstrate.
+
+Computers like this, which enable the curious to experiment, foster and encourage the passion required to make
+really good hackers. And we need really good hackers to have really good developments. Things like the
+Internet and Google weren't created out of boredom, it was through a genuine passion for computing, which
+would be mostly killed off in an age where computers are audience-only devices.

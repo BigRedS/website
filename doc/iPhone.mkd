@@ -1,0 +1,71 @@
+iPhones, and why I have no intention of buying one
+==================================================
+Being mildly geeky and having a long-standing preference for smartphones, I get told rather often to go
+and buy an iPhone because they're amazing. Here's why I don't want to:
+
+1. They're not *that* great
+---------------------------
+
+Basically, they're just another iteration of smartphones. When the first iPhone was launched, it was a
+pretty big leap, admittedly. It's biggies as far as extra features were:
+
+* Multitouch screen
+* App store (though not at launch)
+* Blindingly good UI
+* Positional sensors (gps, orientation etc.)
+* Easy API (to help populate the app store)
+* High spec - fast CPU, bags of memory
+
+And, back then (it was only 2007, mind), the smartphone market was pretty stagnant. Windows Mobile was
+the default smartphone OS, Blackberrys were being sold to businesses, and things like the N95 passed as
+'iPhone rivals' for people neither masochistic enough to buy a Windows Mobile device nor boring enough to
+buy a Blackberry.
+
+So, the launch of the iPhone *was* a sudden jump in the goodness of the market. But it wasn't anywhere
+near an impossible one. Sure, Windows Mobile stayed shit until, hopefully, the middle of 2010, but
+everyone else just started making good smartphones. Apple weren't achieving the impossible or
+unimaginable, it was just that everyone else had sort of got bored of innovating. But it's not as if they
+forgot how to, within a year Apple's only real claim to the throne was that they used better hardware
+than anyone else (with a matching price tag) and they had that wonderful UI, including multitouch.
+
+2. They're never really yours
+-----------------------------
+
+When I buy something, I want it to be mine to do with as I wish. In apple's eyes, the fact they made the
+device grants them rights to decide what you may or may not do with it. This is understandable - it means
+they can guarantee some level of usability and compatibility, which is clearly in some demand. But it's
+not what I want and, frankly, I can't be arsed to jump through jailbreaking hoops just so I can use my
+device, and then run the risk of each update bricking it. I just want to use my phone, not evade the
+manufacturer.
+
+When I want to 'void the warranty' and make changes to it or run daft bits of code I've written on it, I
+want to get straight to the fun bit - writing/compiling/adjusting - not read up on how to get round the
+restrictions put in place on firmware version 1.2.77.81, and the extra precautions to take if you've got
+1.2.77.86. That's just not fun. Sticking cyanogenmod on my G1 took less than an hour, half of which was
+waiting for things to download. That's what re-ROMing is supposed to be like.
+
+
+3. There's no hardware keyboard
+--------------------------------
+This is entirely personal preference, but it's something I *really* want. I know the on-screen keyboard's
+really good, but it's still substantially less good than a reasonable real-life keyboard. And I don't
+want to take up half the screen with keys, I want to use half the screen to display half the application
+I'm running.
+
+4. That single-task thing
+--------------------------
+Again, I can see the benefit here, since it eliminates the problem of running so many apps you run out of
+resources without having to resort to closing apps without telling the user (since they always know the
+last one will die on opening a new one, they've no room to expect it to stay live for the next few hours
+of knobbing about). But it's an always-on mobile internet thing, surely it's mildly redundant if you
+can't leave your IM, IRC, VoIP, ssh etc. clients running while you take a photo or something.
+
+5. They require iTunes, which requires Windows or OSX
+-----------------------------------------------------
+I don't see the need for iTunes myself - it's a mobile phone designed with always-on wireless Internet in
+mind, so it shouldn't need a PC. But I know that much of Apple's support involves interfering with the
+iPhone through iTunes, and I gather they wont support a scenario where you don't install iTunes.
+
+iTunes is only released for OSX and Windows. I don't run either personally, and I don't want to bank on
+always having ready access to a machine running either. They're not particularly easy operating systems
+to get hold of and install.

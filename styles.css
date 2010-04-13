@@ -96,6 +96,9 @@ body {
 	color:#00F;
 }
 
+.content a:visited{
+	color:#00f;
+}
 #doc{
 	width:40%;
 	margin-left:auto;
@@ -109,6 +112,10 @@ body {
 }
 #doc a:hover{
 	text-decoration: underline;
+}
+
+.doclist {
+	padding:10px; 0;
 }
 
 // Table and rows:
@@ -164,7 +171,70 @@ pre {
         word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 	
+dl.find
+{
+	float: left;
+	width: 520px;
+	margin: 1em 0;
+	padding: 0;
+/*	border-bottom: 1px solid #999; */
+}
 
-pre.mail{
+.find dt
+{
+	clear: left;
+	float: left;
+	width: 200px;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+	font-weight: bold;
+	text-align: right;
+}
 
+.find dd
+{
+	float: left;
+	width: 200px;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+}
+
+
+
+dl.doc
+{
+	float: left;
+	width: 40em;
+	margin: 1em 0;
+	padding: 0;
+	border-bottom: 1px solid #999; 
+}
+
+.doc dt
+{
+	clear: left;
+	float: left;
+	width: 10em;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+	font-weight: bold;
+	text-align: right;
+}
+
+.doc dd
+{
+	float: left;
+	width: 27em;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+}
+
+
+blockquote{
+	border-left: 6px double #a9a9a9;
+	padding-left: 4px;
 }

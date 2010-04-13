@@ -1,0 +1,279 @@
+How to not look stupid when asking questions
+==
+
+Introduction
+------------
+
+Back in the day, when you had to be fairly intelligent to be able to use the internet, and lucky to have
+a connection (I'm talking back when 28.8 was fast), you would join a forum or a mailing list to get
+advice, and that was about it. Because there were so few people about, each forum very quickly became a
+small community, there'd be up to 100 people on a forum, for example. During this time, the basis of
+'netiquette' formed. When you joined the forum, you respected everyone on it - it was right and normal to
+assume that since they'd been there longer, they knew more than you (yes, this logic is flawed, but
+that's how it was). Most importantly, before asking a question you would research your arse off. You'd
+read documentation, you'd Alta Vista your question, you'd search the forum for answers, and then, and
+only then, would you post your question. You'd include details of what you've looked at and why it wasn't
+helpful. You would work to not annoy anyone until you stopped being a newbie, and became a respected
+member yourself. Until that point, you could expect abuse for asking 'obvious' questions and giving wrong
+answers. You had to live through that (ideally through avoiding asking 'obvious' questions, and certainly
+by avoiding giving wrong answers). There was no definite cut-off where you knew you'd stopped being a
+newbie and had become a respected member, though, but as you stopped asking so many questions, and
+started answering them, you could tell when the respect was formed.
+
+Now, every man and his dog has a 2mb connection, and kids with no manners are allowed to pollute the
+internet. The idea of netiquette has disappeared from their minds - they've had unlimited access to the
+internet since they were 12, and it's become far easier to use. They've noticed the complete anonymity,
+so they don't care what anyone thinks of them, and they use web forums to inflate their egos. This is
+bad..
+
+I've written this in an attempt to provide a brief outline of how you should and shouldn't act on forums.
+It's not absolutely universal, but it's general enough to be applied to most forums. Any
+omissions/corrections/suggestions, email me. Finding my address is, for now, left as an excercise for the
+reader.
+
+
+
+
+When you join a forum
+----------------------
+
+The first thing you should do upon joining a forum is to check the FAQ and the rules. Usually these will
+be either linked to from the main page, or in the most general sub-forum. The FAQ will most likely tell
+you what you can and can't do so far as formatting and linking goes. The rules will tell you what you can
+and can't do so far as content goes.
+
+Next, you want to watch this flash animation, replacing all references to 'steam forums' with whichever
+forum you've just joined.
+
+You then want to read some of the posts of the forum. This will give you an idea of the atmosphere of the
+forum, and let you know which sub-forum (if any) your question belongs in.
+
+If there is a sub-forum to do so, or it is commonplace, introduce yourself on the forum. On some forums
+this is frowned upon, so use your judgement. If in doubt, no-one will mind if you don't.
+
+If you don't have an urgent question, it is well worth 'lurking' as much as possible. Read loads of
+topics on anything that looks interesting, you'll learn more about how the forum works, what's permitted
+and, most importantly, about whatever it is you joined the forum to ask questions about.
+
+Don't complain about attitude problems or how the forum is laid out. Or anything else, for that matter.
+It is not your forum. Not yet, anyway.
+
+
+
+Asking a question
+-----------------
+
+### Before you ask
+
+Before you ask a question, do some research to try to find an answer. A forum isn't necessarily a last
+resort, but it's hardly a first port of call. Before you ask:
+- Check any relevant manuals (paper ones, and .pdfs etc, on the manufacturer's site)
+- Search the web
+- Search any forums (use the site:www.domain.com/forum syntax in Google if necessary)
+- Experiment
+
+If you find another post on a forum that's asking the same question, use that info first. If the answers
+don't help, post in the older thread rather than starting a new one.
+
+When you have done these things, and you post your question, mention that in the question. Also, say what
+results you found and why they were not helpful.
+
+Think through what you're going to ask. The easier the question is to read, the more likely you are to
+get an answer. Give as much information as you can about where and when you have the problem. Give
+details of what you've tried, and what these things did or didn't do.
+
+If there are any locked topics, have a look at them and see why they were locked (the moderators normally
+post a note saying what was wrong with it).
+
+
+
+### Title
+
+Put as much information as the forum will let you in the title. It doesn't need to be grammatically
+perfect, but it must be understandable. Use of the words 'urgent', 'please help' etc. will most likely
+result in your post being ignored.
+
+Don't flag it as 'urgent' or 'very important'. Even if it is to you, it isn't to anyone else.
+
+Using caps and/or non alphanumeric characters will have similar results.
+
+It should be possible to be half-way to answering your question just by reading the title.
+
+### Body
+
+This should be easy to read and in proper English. Re-read it when you've finished, to make sure it makes
+sense. If your question isn't important enough to you for you to make the minimal effort to word your
+question properly, why should it be important enough to anyone else for them to work out what the answer
+is.
+
+Cut out any background information that isn't necessary, but put in all the useful information you have.
+If you're not sure whether something is useful or not, put it at the bottom.
+
+Say what went wrong, and when. Describe what you've tried, and the results of that.
+
+Describe the symptoms of the problem as accurately as possible, and don't make guesses as to what might
+be causing the problem. The closer the information you give the forum is to the raw information you see,
+the more likely you are to get a relevant answer.
+
+Ask accurate questions. Asking "i need some information about ______" will not get you a useful answer.
+You need to specify what information you want and, if necessary, why. If your question can be answered
+with a 'yes' or 'no', you will likely get that answer.
+
+If your question involves a long link, either use a 'forum code' (it will be in the FAQ if there is one)
+or use www.tinyurl.com to shorten it. On some forums, long links do all sorts of bad things to the forum
+layout.
+
+If it involves a large body of text and you do not have access to somewhere else to store it, make use of
+pastebin which has good support for posting edits. It is often considered polite to post the bit that
+turned out to be the problem, and its accompanying solution, when you say the problem's been solved, so
+that all the material is on the forum for easy reference.
+
+Don't ask people to e-mail you their answers - they won't. Instead, make the forum e-mail you when there
+is a reply (usually called 'subscribe to thread' or similar).
+
+Don't use all caps, don't flood the post with smileys.
+
+### Using the reply
+
+If you get the answer 'RTFM', chances are the responder feels you could have found your answer if only
+you'd bothered to Read The Fucking Manual. Similarly, if you get the response 'STFW', you should Search
+The Fucking Web (this is often censored to 'Google is your friend').
+
+In general, in this instance, the person responding has the web-page, or manual, open in front of them as
+they type. Their answer is therefore an implication that the information is very easy to find. Go find
+it.
+
+A 'yes' or 'no' answer means you've worded your question badly.
+
+If you don't get an answer, it does not mean you are being ignored, it means that no-one who has looked
+at your question has answered it. This could be because thy don't know the answer, or because they don't
+understand the question. 'bumping' the question (where you post in the thread purely to put it at the top
+of the thread list) is not a good way to solve this problem. Re-read the original post, and see if you
+can re-write it in an easier-to-understand form.
+
+If you don't understand the answer, don't immediately ask for more help. Use the same techniques you used
+before asking the original question to get clarification - look in manuals and online for mentions of
+processes described in the answer.
+
+If that doesn't help, ask for clarification, but say that you've looked already, and say what you found.
+
+- If it all works, and you solve the problem, tell the people that helped you. It means that anyone in
+  future who has a similar problem knows that this will help. It also gives the people who helped you a
+  nice feeling of closure; they know the problem is fixed. If it was a very difficult problem (i.e. it
+  took a guru a while to work out the answer) the feeling of satisfaction at overcoming it is of immense
+  importance. Finally, it means other people will stop looking for answers for you, and let the forum get
+  back to answering questions that haven't been answered yet.
+
+There is a difference between a forum and a chatroom, treat the forum as such. Don't use it for inane
+banter; if you want to change the subject, start a new thread.
+
+
+
+## Posting an opinion
+
+If you're posting for the purposes of propagating your opinion on something, first check no-one else has
+just done that. If someone's posted what you were about to post, or the opposite, contribute to that
+discussion.
+
+It is not worth expressing your opinion if you cannot back it up reliably - the thread will degenerate
+into a flame war, and then no-one is happy.
+
+Remember that everyone else is as entitled to their opinion as you are to yours. Don't dismiss them out
+of hand.
+
+Forums are places for discussion, not playground spats.
+
+
+
+## Replying
+
+- Give a worthwhile reply. Don't just respond with 'I don't know'. Don't put 'RTFM' unless the answer's
+  in the documentation.
+
+- If you know an easier way of doing something than the one the person's suggesting, tell them. Don't
+  just help them work out how to do something the hard way when there's an easy way.
+
+- If you *think* you know the answer, say so. Don't authoritatively state that a complete guess is
+  correct.
+
+- If you did some research for the answer, explain what you did. You may reveal a resource they didn't
+  know about, or just offer a hint that would otherwise have gone unrealised.
+
+
+
+### Being subjected to abuse
+
+If you get abuse, or 'flamed' on a forum, in general, you've done something wrong.
+
+Asking a decent question will almost never result in a flaming. Asking a bad question, or a good question
+badly worded or spelt, almost certainly will. Regular forum-users tire of having to decipher bad English,
+so will enjoy the chance to relieve some pent-up anger.
+
+Posting inane comments purely to boost your post-count (on forums with this feature) will annoy people.
+Many forums will ban you for it. When you join a forum, you've got to bear in mind that the members are
+most likely perfectly happy with the forum as it is. The onus is therefore on you to act in such a way as
+to make them feel you are a valuable addition to their forum. Don't expect the forum to adapt to how you
+want it to work/be, it is up to you to make yourself suit it.
+
+In general, the best response to abuse or flaming is to ignore it. If you can't see anything wrong with
+your post, and they don't say what's wrong in their replies, just leave it and try another forum.
+
+
+
+## Some common forum abbreviations
+
+Use these sparingly, if at all. You'll never get bonus points for using them, you may well loose points
+though. This is here as a dictionary, not as advice:
+
++ AFAIK = As Far As I Know
++ BTA = But Then Again
++ FFS = For Fuck's Sake
++ FWIW = For What It's Worth
++ FYI = For Your Information
++ GIYF = Google Is Your Friend (polite form of STFW)
++ IANAL = I Am Not A Lawyer (what follows is not to be taken as legal advice)
++ IIRC = If I Remember Correctly
++ IME = In My Experience
++ IMHO = In My Honest/Humble Opinion
++ IMO = In My Opinion
++ IYSWIM = If You See What I Mean
++ JIC = Just In Case
++ OP = Original Poster
++ QFE = Quoted For Emphasis
++ QFT = Quoted For Truth
++ RTFM = Read The Fucking Manual
++ STFW = Search The Fucking Web
++ STFA = Search the Fucking Archives
++ TBF = To Be Frank
++ TBH = To Be Honest
++ TFA = The Full/Fucking Article/Archives
++ YMMV = Your Mileage May Vary (the fact it worked this time for me doesn't mean it will work next time for you)
+
+In addition, asterisks, slashes and underscores are sometimes used to add emphasis to a word.
+Historically, asterisks denote bold, underscores underline and slashes italics.
+
+> "I don't *think* that's fatal
+
+> "You do _not_ want to try that"
+
+> "Why didn't you do that /before/ it broke?"
+
+## Where to search the web
+
+Google - Incredibly popular search engine, but few people use the advanced search features.
+Wikipedia and Wiktionary - Two incredibly useful resources. Being wiki based, their definitions and
+			   explanations reflect the current usage of terms.
+Answers.com - A mirror of, amongs other things, Wikipedia and Wiktionary.
+Dictionary.com and Thesaurus.com - Dictionary and thesaurus that reference online versions of the
+			           'official' texts.
+
+
+
+## Why this is here
+
+Inspired by How To Ask Questions The Smart Way by Eric Steven Raymond and Rick Moen, made necessary by
+the users of the MBUK.com forum which is now partly UKMB and partly Bike Radar, written by Avi.
+Proof read repeatedly by Sami, who also suggested content.
+
+Copyright (c) 2006 Avi Greenbury. This text released under the GNU Free Documentation License because i'm
+nice like that. If you copy it, you need to attribute this to me, and link back to it.

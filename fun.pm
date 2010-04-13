@@ -4,8 +4,13 @@ use strict;
 
 sub start_html() {
 
+	my $title = shift;
+	my $head_lines = shift;
+#	my $head_lines = "\t\t".$head_lines;
+
 print <<EOF
-content-type: text/html
+content-type: text/html; charset=utf-8;
+content-language: en
 
 
 
@@ -15,7 +20,10 @@ content-type: text/html
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link rel='stylesheet' type='text/css' href='/styles.css'/>
-		<title>Avi</title>
+		$head_lines
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Avi $title</title>
 	</head>
 	<body>
 		<div id='top'>
@@ -27,15 +35,15 @@ content-type: text/html
 					<a href='/doc/'> doc</a> 
 <!--					<a href='/about/'>about</a> 	-->
 					<a href='/contact/'>contact</a>
+					<a href='/find/'>find</a>
 					<a href='/blog/'>blog</a> 
 			</div>
-	</div>
+		</div>
 EOF
 }
 
 sub end_html() {
 print <<EOF
-		</div>
 	</body>
 </html>
 EOF

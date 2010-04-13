@@ -1,0 +1,10 @@
+If you're going to do A, read B
+================================
+
+Here's a bunch of other people's writing that I've pointed people at, in the form of 'If you're going to
+do A, read B'.
+
+
+* Try Linux - [Linux Is Not Windows](http://linux.oneandoneis2.org/LNW.htm)
+* Grumble about a forum - [How To Ask Questions The Smart
+* Way](http://www.catb.org/~esr/faqs/smart-questions.html)

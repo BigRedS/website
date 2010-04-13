@@ -10,13 +10,17 @@ push (@INC, "/home/avi/www");
 require fun;
 
 
-&start_html();
-&header();
 
 my $dir = "./dir";
 
 if (CGI::param('doc') !~ /^$/){
-	my $file = CGI::param('doc');
+
+
+my $file = CGI::param('doc');
+	my $head_lines = "<link rel='alternate' href='$file.txt' type='text/plain' />";
+	&start_html(" | doc | $file", $head_lines);
+	&header();
+
 	$file.=".mkd";
 	open (F, "<$file");
 	my $text;
@@ -28,6 +32,8 @@ if (CGI::param('doc') !~ /^$/){
 	say $html;
 }else{
 
+	&start_html(" | doc");
+	&header();
 	&intro();
 	open (D,"<$dir");
 	my (@names, @filenames, @descriptions);
@@ -41,11 +47,14 @@ if (CGI::param('doc') !~ /^$/){
 		}
 	}
 	say "<div id='doc'>";
+	say "<dl class='doc'>";
 	for(my $i = 0; $i<=@names; $i++){
 		if ($names[$i] !~ /^$/){
-			say "<a href='./$filenames[$i]'>$names[$i]</a> $descriptions[$i] <br />";
+#			say "<div class='doclist'><a href='./$filenames[$i]'>$names[$i]</a> $descriptions[$i] </div>";
+			say "<dt><a href='./$filenames[$i]'>$names[$i]</a></dt><dd>$descriptions[$i]</dd>";
 		}
 	}
+	say "</dl>";
 	say "</div>";
 }
 
@@ -55,7 +64,7 @@ if (CGI::param('doc') !~ /^$/){
 sub intro(){
 print <<EOF
 <div class='intro'>
-	<p>Here's a bunch of stuff I've written at some point and been called upon at some other point to reproduce. It's a mix of useful information and ranting.</p>
+	<p>Here's a bunch of stuff I've written at some point and been called upon at some other point to reproduce. It's a mix of useful information and ranting. Currently it's a bit empty while I slowly get round to finding and markdowning all the rest.</p>
 </div>
 
 EOF

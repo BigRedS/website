@@ -3,36 +3,47 @@
 use strict;
 use 5.010;
 use CGI;
+#use CGI::Carp qw(WarningsToBrowser FatalsToBrowser);
 
 push(@INC, "/home/avi/www");
 require fun;
 
 my ($subject, $body, $from, $given_answer);
 
-&start_html();
-&header();
+start_html(" | contact");
+header();
 
 my $submit = CGI::param('submit');
+
 #my $submit = "Go";
 
 if ($submit =~ /Go/){
+
+#		&start_html(" | contact | mail sent");
+#		&header();
+
 	my $from 	= CGI::param('from');
 	my $subject	= CGI::param('subject');
 	my $body 	= CGI::param('body');
 	my $antispam	= CGI::param('antispam');
 	my $pos		= CGI::param('pos');
 	my $string	= CGI::param('string');
-	
+	$string =~ s/ //g;
 	$pos--;
+
+
+
 	my $error;
-	if ((substr($string, 0, $pos, 1) != $antispam) || ($antispam !~ m/^\d+$/)){
-		$error.= "incorrect antispam value: $antispam <br />";
+	if ((substr($string, $pos, 1) != $antispam) || ($antispam !~ m/^\d+$/)){
+		my $expected = substr($string, 0, $pos, 1);
+		$error.= "incorrect antispam value: $antispam expected $expected <br />";
+		print "<!-- string = $string , pos = $pos , expected = $expected , antispam = $antispam -->";
 	}
 	if ($subject =~ /^$/){
 		$error.= "No Subject Line<br />";
 	}
 	if ($body =~ /^$/){
-		$error.= "No message body<br >";
+		$error.= "No message body<br />";
 	}
 
 	if (length($error) > 1){
@@ -45,17 +56,20 @@ if ($submit =~ /Go/){
 	my $sendmail = "/usr/sbin/sendmail -t"; 
 	my $reply_to = "Reply-to: $from\n"; 
 	my $subject = "Subject: $subject\n"; 
-	my $content = $body; 
-	my $to = "To: avi";
+	my $content = $body."\n";
+	my $to = "To: avi\@aviswebsite.co.uk\n";
 
-#	open(SENDMAIL, "|$sendmail") or die "Cannot open $sendmail: $!"; 
-#		print SENDMAIL $reply_to; 
-#		print SENDMAIL $subject; 
-#		print SENDMAIL $to; 
+	open(SENDMAIL, "|$sendmail") or die "Cannot open $sendmail: $!"; 
+		print SENDMAIL $reply_to; 
+		print SENDMAIL $subject; 
+		print SENDMAIL $to; 
 #		print SENDMAIL "Content-type: text/plain\n\n"; 
-#		print SENDMAIL $content; close(SENDMAIL); 
-#	close SENDMAIL;
+		print SENDMAIL $content; close(SENDMAIL); 
+	close SENDMAIL;
 	
+
+#	&start_html(" | contact | mail sent");
+#	&header();
 
 		say "<h3>Message sent:</h3>";
 		say "<tt>From: $from</tt><br />";
@@ -65,6 +79,9 @@ if ($submit =~ /Go/){
 	}
 
 }else{
+
+#	&start_html(" | contact");
+#	&header();
 	&form;
 }
 
@@ -115,13 +132,15 @@ sub form{
 	my $message_height = 5 + int(rand(35));
 	
 	say "	<form action='#' method='post'>";
-	say "		<p><label for='from'>Your Email:</label><input type='text' name='from' value='$from' size='$from_width'></p>";
-	say "		<p><label for='subject'>Subject:</label><input type='text' name='subject' value='$subject' size='$subject_width'></p>";
-	say "		<p><label for='body'>Message:</label><textarea name='body' cols='$message_width' rows='$message_height'>$body</textarea></p>";
-	say "		<p><label for='antispam'>Antispam: What is the $pos_string digit in <br /> <tt>$big_number</tt>?</label><input type='text' name='antispam' value=$given_answer></p>";
-	say "		<input type='hidden' name='string' value='$big_number' />";
-	say "		<input type='hidden' name='pos' value='$pos' />";
-	say "		<p class='submit'><input type='submit' value='Go Go Gadget emailer!' name='submit'></p>";
+	say "		<p><label for='from'>Your Email:</label><input type='text' name='from' id='from' value='$from' size='$from_width' /></p>";
+	say "		<p><label for='subject'>Subject:</label><input type='text' name='subject' id='subject' value='$subject' size='$subject_width' /></p>";
+	say "		<p><label for='body'>Message:</label><textarea name='body' id='body' cols='$message_width' rows='$message_height'>$body</textarea></p>";
+	say "		<p><label for='antispam'>Antispam: What is the $pos_string digit in <br /> <tt>'$big_number'</tt>?</label><input type='text' name='antispam' id='antispam' value='' /></p>";
+	say "		<p>";	
+	say "			<input type='hidden' name='string' value='$big_number' />";
+	say "			<input type='hidden' name='pos' value='$pos' />";
+	say "		</p>";
+	say "		<p class='submit'><input type='submit' value='Go Go Gadget emailer!' name='submit' /></p>";
 	say "	</form>";
 }
 

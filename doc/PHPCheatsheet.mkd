@@ -1,0 +1,100 @@
+Sami's PHP Cheatsheet
+=====================
+
+
+Database Name:  MyDatabase
+
+Table Name:     users
+
+Table Schema:
+
+    ID        int           auto_increment  primary
+    name      varchar(15)
+    password  varchar(15)
+    letter    varchar(1)
+
+<table style='border:1px solid black;'>
+	<tr>
+		<th>id</th><th>name</th><th>password</th><th>letter</th>
+	</tr>
+	<tr>
+		<td>1</td><td>Sami</td><td>Horse</td><td>A</td>
+	</tr>
+	<tr>
+		<td>2</td><td>Avi</td><td>banana</td><td>B</td>
+	</tr>
+	<tr>
+		<td>3</td><td>Joel</td><td>tomato</td><td>B</td>
+	</tr>
+	<tr>
+		<td>4</td><td>Roni</td><td>cheese</td><td>C</td>
+	</tr>
+</table>
+
+Connection
+-----------
+
+    mysql_connect ("localhost","username","password") or die ('I cannot connect to the database because: ' . mysql_error());
+    mysql_select_db("MyDatabase");
+
+Sets up the connection to the database, and selects which database to use.
+
+You can assign the connection to a variable with $con = mysql_connect() and then specify it as the second
+parameter in the mysql_select_db(). But thats just to make things more confusing :)
+
+
+Insert
+-------
+    mysql_query("INSERT INTO `users` (name, password, letter) VALUES ('dad','spam','A')");
+This will delete Avi's record.
+
+Update
+------
+    $newpassword = "fish";
+    $newpassword = sha1($newpassword);
+    mysql_query("UPDATE `users` SET `password`='$newpassword' WHERE `name`='Sami'");
+This will change Samis password to the SHA1 hash of 'fish'
+
+Delete
+-------
+    mysql_query("DELETE FROM `users` WHERE id='2' [AND|OR] `name`='Avi'");
+This will delete Avi's record.
+
+Select One
+----------
+    $result = mysql_query("SELECT name, password FROM `users` WHERE id='4'");
+
+For one result:
+    list($name, $password) = mysql_fetch_array($result);
+This takes the values 'name' and 'password' from the table and puts them into the variables.
+
+Select Lots
+-----------
+
+    $result = mysql_query("SELECT name, letter FROM `users` WHERE letter='B' ORDER BY `id` [DESC|ASC]");
+    while(list($name, $letter) = mysql_fetch_array($result)){
+        echo ("
+                <tr>
+                        <td>$name</td>
+                        <td>$letter</td>
+                </tr>
+        ");
+    }
+
+Puts the results into $result as with the other things 'While' will run whats in its brackets each loop
+until it equates to False. mysql_fetch_array works its way through the rows, and returns false when it
+runs out.
+
+
+Checking the Result
+-------------------
+    if(mysql_query($query)){
+        echo "The Query Worked!";
+    }else{
+        echo "Error:".mysql_error();
+    }
+or:
+    
+    echo mysql_query($query) ? "Worked" : "Didnt Work";
+      
+   

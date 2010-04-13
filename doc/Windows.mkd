@@ -1,0 +1,197 @@
+Windows
+=======
+
+Yes, this is all about XP. It's the only one I have to use regularly. I'm guessing it mostly applies to
+Vista and 7 too, though. MS are hardly known for innovation. It's also a rant. It's not supposed to be
+reasoned and balanced.
+
+File extensions dictate the executability of the file
+-----------------------------------------------------
+
+This is plain retarded. I'm not sur the removal of the need to explicitly say "yes, I do want to execute
+this file" before letting it have its wicked way with your files needs explaining.
+
+If you're not aware, I'm not about to try to explain its direct bad consequences, but the massive
+irritation that gets in my way is that it means I can't send executables out to people who run Windows.
+Because nobody bothered to implement a reasonable way of telling what can and cannot run, in general
+anything that can be executed is barred at a firewall or mailserver. Of course, since all one needs to do
+to a file to make Windows try to run it is make the filename end in '.exe', I just need to rename them
+before sending them out. And the end user then needs to rename it before trying to run it.
+
+Aside from the fact that this is more hassle than the method MS presumably felt would get in the way of
+their 'user friendly' Windows experience - setting something as executable - this also means that every
+file needs a file extension in order for Windows to know what to do with it. And, in another desperate
+bid to make computers look idiot proof, Windows doesn't show the file extension if it knows what to do 
+with it. Which is really handy - if I can get a file onto a Windows desktop and call it "porn.jpg.exe", 
+I can pretty much guarantee my executable will be run. Which is handy for people with malicious intent, 
+but pretty stupid from a security standpoint.
+
+Rebooting on installing/updating
+--------------------------------
+
+Seriously, this is the 21st century. And it was the 21st Century when XP was first released. But even in 
+the 20th century I came to expect uptimes greater than four weeks.
+
+Hardware compatibility
+----------------------
+
+Windows XP does not have hardware compatibility. MS, quite understandably, view themselves as being in a 
+dominant enough position that if someone is to make some hardware and they want it to work in Windows,
+they can jolly well write the drivers themselves. Not releasing Windows drivers is not an option for
+commodity hardware. Hardware is therefore compatible with Windows, rather than Windows being compatible
+with Hardware.
+
+This has a number of downsides, the most major one being that the drivers are generally crap. Second to
+that by a tiny margin is that they're all over the place. There is no one place to go to update all the
+drivers, you need to go to the people that made your motherboard, and then your USB controller, and your
+VGA adaptor, and you network controller and your disk controllers. Each individually, and hunt around
+through all these discrete systems for the 'right' newer driver, which is probably shit anyway.
+
+Most amusingly, you have to do that immediately after installing. Hardware support can't be built into
+the installer CD, oh no. You've got to install, and hope that either an ethernet or a usb controller
+works and get drivers that way. Generally, in my experience, USB controllers work but ethernet ones
+don't. This kind of leads on to what I've, with some hubris, termed the Windows Paradox:
+
+> When looking for a driver for a piece of hardware, in order for Windows to tell you what it is, the
+> driver needs to be installed already.
+
+Which is, in short, fucking retarded. I use Linux LiveCDs to get round it, Dell engineers request copies
+of receipts to see what's in the box. I don't know if either of those count as 'elegant', but I suppose
+they each work.
+
+It's a single-user system
+-------------------------
+
+Someone on my network is using a computer. I want to connect to it, upgrade Firefox and log out. I want
+to do this without getting in their way. This is entirely technically feasible (even Windows can do it,
+given the right license), but for whatever reason MS thought they'd lose money if they let people
+actually use their PCs, so you can only have one person logged in at a time.
+
+How on earth this made it to the standard corporate desktop OS I've no idea, but I think MS genuinely
+have to be saluted for their achievement. Supporting XP is a nightmare.
+
+There's More Than One Way To Do It
+----------------------------------
+
+This probably looks mildly odd from a perly person, but it's a pretty good way to sum up the problem. On
+practically any Windows system, there are two ways to configure the WiFi. You can either use Windows, or
+an application provided by the manufacturer of the WiFi chipset. These two ways are generally mutually
+exclusive, but sometimes, if you're really lucky, they'll both be under the impression they're the only
+wifi-configuration-thing available and you'll just have to use a cable.
+
+I don't know why the WiFi chip manufacturers keep making their own. Sure, the Windows one isn't great,
+but it's hardly as if any of them have made anything better (if they have, I've missed it, and probably
+have no intention of finding it). But I find it really hard to believe this situation is actually better
+than every Windows PC configuring WiFi in the same way. This doesn't just affect WiFi. I've seen it on
+graphics cards, network cards, power management and input devices. Printers probably get it worst. In
+fact, problems with Windows printing are probably deserving of an entire rant to themselves.
+
+Discrete Updates
+-----------------
+
+No, this isn't the fault of MS. But if anyone can fix it, it's Microsoft.
+
+With my usual OS, when I want to update all the software, I open an application, say 'update everything'
+and it wanders off and gets the updates for the OS, applications (Firefox, office suite, music players,
+pdf viewers, mail readers etc.) and all hardware drivers. And it's all been tested as working together by
+the people that ship the operating system.
+
+When I want to update all the software on a Windows box, I go to Windows Update. If I'm lucky there's
+only one reboot. If I'm particularly awake I'll use Microsoft Update and get MS Office updates in there,
+too. Then I'll use the Java, Flash, Acrobat and Firefox updaters. Then I do the software that doesn't
+have built-in updaters - the ISO burner, the DVD player, my music player - by browsing to their websites
+and comparing the available version with what's installed. And then I can go through the drivers if I
+like and see what of those are now out of date and see what I can find on the manufacturers' websites.
+And I pray to someone that this all happens to work together, likely through fluke more than anything
+else.
+
+Everything is in binary, particularly the registry
+--------------------------------------------------
+
+Again, I don't know what to say beyond the title to explain why this is a monumentally bad idea.
+
+Most obvious as examples go of why text files are handy is when changing configuration options on
+high-availability machines. You cannot afford to take the system down during the day to change the
+configuration, especially since you might get it wrong. So you do it at night. With a text file config
+(or a better binary one) you craft the new configuration during the day, then apply it at night. If it
+doesn't work, you revert and fiddle the next day. The Windows Way would be to allow several hours of
+fiddling overnight, and concoct some form of a backup in case it gets to 3am and you're still not
+entirely sure why IIS will only serve pages out of c:/documents and settings/administrator/porn.
+
+I suppose anyone who's been able to fix a machine with a LiveCD and ten minutes probably appreciates how
+many better ways there are of configuring things than with files that can't be read by humans. I'm going
+to lump in here an insistence on configuring everything via a series of checkboxes and radio buttons,
+rather than just letting the user say what they want the thing to do.
+
+Installer distribution is still pre-internet
+--------------------------------------------
+
+It's all based off a do-not-copy CD that is trivial to copy. Given the abundance of Windows installer CD
+images knocking around on the internet, I'm a bit perplexed as to why MS make it so hard to find the
+correct CD.
+
+A year after I buy my PC, when it's time for its first rebuild, I can't find the Windows disk. It would
+be reasonable to assume that I could go to some website, and download a signed CD image file, to burn an
+image. 
+
+There's patently no checking of the validity of the CD anyway, given the popularity of pirated Windows
+CDs - all that matters is that the key's valid and WGA checks out.
+
+Doing this, I'd know I'm getting a genuine Windows CDs, and there's no malware (obvious comments about
+the quality of Windows aside) or other crap in it. In short, it's more convenient and secure for me, and
+MS lose nothing. Except the odd 500mb download, which is nothing, really (have you seen the size of
+Windows Updates?).
+
+Software distribution is still pre-internet
+--------------------------------------------
+
+Firstly, there's no repositories. Those don't have a bad side.
+
+More irritatingly, when I need a `.dll` file for some reason, and I don't have an installed and
+non-broken PC from which to copy it, I cannot go to some trusted site, say microsoft.com, and just
+download it. No, I need to google the name of the `dll`, pick the result that looks the least nefarious
+download a file that could be anything, really. And then put it in my system folder and let Windows run
+it with Administrative rights.
+
+
+The installers are crap
+-----------------------
+
+There is no standardisation whatsoever with software installation. There isn't even a standard for guis.
+But the complete absence of a reasonable, standardised, universal means of installation is irritating as
+soon as there's more than on PC, or you're maintaining someone else's computer. You can't script update
+installation without seven or eight goes first to make sure the script is correct. For each install.
+
+Yes, I know, `.exe` files are the standard installer file format. Well, those and `.msi` and `.cab`. Obviously,
+there are other ways of doing it (I've seen both `.bat` and `.vbs` installers), but that's getting towards
+the fault of the software developer.
+
+The biggie is that running `install-software.exe --quiet` for example doesn't work. Actually, it probably
+does for four or five completely unrelated applications. 
+
+Sure *something* works to do a silent install accepting all defaults, but that something is different for
+every piece of software. It's not even consistent from the same developer. Windows needs something
+analogous to Debian's `apt-get -i software.deb`.
+
+And repositories.
+
+It's unsupported
+----------------
+
+Not in the hardware sense of the word - that's further up. No, when Windows fails, there's nowhere to
+turn to to say what happened and find a solution. There are, yes, thousands of forums where you can post
+a question and perhaps a few tens of uninvolved people will read it and maybe in a couple of days someone
+who's seen the problem before will come along with a solution.
+
+And that's all well and good. Except you *pay for* Windows, and one of the things I'm told you're paying
+for is support. But there isn't any.
+
+
+The installer is crap
+---------------------
+
+Seriously, it's difficult to find evidence that any thought at all went into its 'design'. It's even
+worse when you consider that reinstall-from-scratch is a part of Windows' routine maintenance - it is
+both the only OS where it's expected that you will reinstall about every 12 months, and the one with the
+worst installer. There's not much outright *wrong* with the thing, but the whole process is clunky,
+distinctly non-linear and incredibly counter-intuitive..
