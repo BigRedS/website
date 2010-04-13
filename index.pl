@@ -68,6 +68,16 @@ sub get_icon{
 			$alt = "GitHub";
 			$link = "http://github.com";
 		}
+		when(/github/){
+			$url = "/images/picasa.ico";
+			$alt = "Picasa";
+			$link = "http://picasa.com";
+		}
+		when(/last\.fm/){
+			$url = "/images/last.fm.ico";
+			$alt = "Last.fm";
+			$link = "http://last.fm";
+		}
 	}
 	return "<a href='$link'><img src='$url' alt='$alt' style='border:none;' /></a>";
 }
@@ -100,51 +110,3 @@ sub friendly_date() {
 	return "ages ago";
 
 }
-
-
-#sub start_html() {
-#
-#print <<EOF
-#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-#"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-#
-#<html xmlns="http://www.w3.org/1999/xhtml">
-#	<head>
-#<!--		<link rel='stylesheet' type='text/css' href='./styles.css'/>-->
-#		<link rel='stylesheet' type='text/css' href='http://localhost/styles.css'/>
-#		<title>Avi</title>
-#	</head>
-#	<body>
-#		<div id='top'>
-#			<div class='avi' id='left'>
-#				Avi :)
-#			</div>
-#			<div class='links' id='right'>
-#					<a href='./doc/'> doc</a> 
-#					<a href='./blog/'>blog</a> 
-#					<a href='./about/'>about</a> 
-#					<a href='./contact/'>contact</a>
-#			</div>
-#		</div>	
-#			<div class='intro'>
-#				There are several hundred thousand terabytes of data on The Internet. Here are my latest contributions to it:
-#			</div>
-#		</div>
-#		<div id='middle'>
-#			<table class='main'>
-#
-#EOF
-#}
-#
-#sub end_html() {
-#print <<EOF
-#			</table>
-#		</div>
-#		<div class='footer'>
-#			<a href='http://github.com/BigRedS/play/tree/master/website/'>Source</a>
-#		</div>
-#	</body>
-#</html>
-#EOF
-#}
-
