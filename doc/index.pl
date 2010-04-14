@@ -18,7 +18,7 @@ if (CGI::param('doc') !~ /^$/){
 
 my $file = CGI::param('doc');
 	my $head_lines = "<link rel='alternate' href='$file.txt' type='text/plain' />";
-	&start_html(" | doc | $file", $head_lines);
+	&start_html(": doc : $file", $head_lines);
 	&header();
 
 	$file.=".mkd";
@@ -32,7 +32,7 @@ my $file = CGI::param('doc');
 	say $html;
 }else{
 
-	&start_html(" | doc");
+	&start_html(" : doc ");
 	&header();
 	&intro();
 	open (D,"<$dir");

@@ -20,10 +20,13 @@ content-language: en
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link rel='stylesheet' type='text/css' href='/styles.css'/>
+
 		$head_lines
-		
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Avi $title</title>
+		<meta name='author' value='Avi Greenbury' />
+		<meta name='description' value='Avi's Website' />
+
+		<title>Avi's Website $title</title>
 	</head>
 	<body>
 		<div id='top'>

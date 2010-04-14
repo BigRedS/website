@@ -10,12 +10,14 @@ use LWP::Simple;
 use DateTime;
 use DateTime::Format::Atom;
 
+
 my $file = "/home/avi/www/data";
 
 my %stuff = (&slashdot(), &picasa(),  &atom(), &lastfm);
 
 
 open (FILE , ">$file") || die ("Error opening $file");
+binmode FILE, ":utf8";
 for my $key (reverse sort (%stuff)){
 	if ($stuff{$key}){			# This shouldn't be necessary.
 		my $date = $key;
@@ -31,7 +33,7 @@ for my $key (reverse sort (%stuff)){
 		$content =~ s/>/&gt;/g;
 
 
-		print FILE "$date\n$url\n$content\n\n";
+		print FILE "$date\n$url\n","$content\n\n";
 	}
 }
 close FILE;

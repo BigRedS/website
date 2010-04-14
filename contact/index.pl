@@ -10,8 +10,8 @@ require fun;
 
 my ($subject, $body, $from, $given_answer);
 
-start_html(" | contact");
-header();
+&start_html(" : contact");
+&header();
 
 my $submit = CGI::param('submit');
 
