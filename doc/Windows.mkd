@@ -8,7 +8,7 @@ reasoned and balanced.
 File extensions dictate the executability of the file
 -----------------------------------------------------
 
-This is plain retarded. I'm not sur the removal of the need to explicitly say "yes, I do want to execute
+This is plain retarded. I'm not sure the removal of the need to explicitly say "yes, I do want to execute
 this file" before letting it have its wicked way with your files needs explaining.
 
 If you're not aware, I'm not about to try to explain its direct bad consequences, but the massive
@@ -58,6 +58,15 @@ don't. This kind of leads on to what I've, with some hubris, termed the Windows 
 Which is, in short, fucking retarded. I use Linux LiveCDs to get round it, Dell engineers request copies
 of receipts to see what's in the box. I don't know if either of those count as 'elegant', but I suppose
 they each work.
+
+Windows 7 was my idea
+---------------------
+
+Seriously? Listening to customers is now a plus point? Some kind of nice-to-have extra? Some innovation
+in Windows 7?
+
+Explains why most of the rest of Windows are so horribly user unfriendly, I suppose. But to advertise the
+fact you've not listened for the first 25 or so years of producing software?
 
 It's a single-user system
 -------------------------

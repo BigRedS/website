@@ -30,6 +30,9 @@ my $file = CGI::param('doc');
 	}
 	my $html = markdown($text);
 	say $html;
+	say "<hr />";
+	&footer();
+	&end_html("/doc/", "back to docs");
 }else{
 
 	&start_html(" : doc ");
@@ -56,10 +59,10 @@ my $file = CGI::param('doc');
 	}
 	say "</dl>";
 	say "</div>";
-}
 
-&footer();
-&end_html();
+	&footer();
+	&end_html();
+}
 
 sub intro(){
 print <<EOF

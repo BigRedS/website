@@ -69,16 +69,18 @@ sub atom(){
 }
 
 sub slashdot(){
-	my %return = rss("http://slashdot.org/firehose.pl?op=rss&content_type=rss&view=userhomepage&fhfilter=%22home%3Alordandmaker%22&orderdir=DESC&orderby=createtime&color=black&duration=-1&startdate=&user_view_uid=960504&logtoken=960504%3A%3AqQuPZQpQoZTAkoJGfmbG6g", "content");
+	my %return = &rss("http://slashdot.org/firehose.pl?op=rss&content_type=rss&view=userhomepage&fhfilter=%22home%3Alordandmaker%22&orderdir=DESC&orderby=createtime&color=black&duration=-1&startdate=&user_view_uid=960504&logtoken=960504%3A%3AqQuPZQpQoZTAkoJGfmbG6g", "content");
 	return %return;
 }
 
 sub picasa(){
-	my %return = rss("http://picasaweb.google.com/data/feed/base/user/ialoneambest?alt=rss&kind=photo&hl=en_US", "title");
+	my %drop_box = &rss("http://picasaweb.google.com/data/feed/base/user/ialoneambest/albumid/5369778250591696225?alt=rss&kind=photo&hl=en_GB", "title");
+	my %albums = &rss("http://picasaweb.google.com/data/feed/base/user/ialoneambest?alt=rss&kind=album&hl=en_GB", "title");
+	my %return = (%drop_box, %albums);
 	return %return;
 }
 sub lastfm(){
-	my %return = rss("http://ws.audioscrobbler.com/1.0/user/lordandmaker/recenttracks.rss", "title");
+	my %return = &rss("http://ws.audioscrobbler.com/1.0/user/lordandmaker/recenttracks.rss", "title");
 	return %return;
 }
 

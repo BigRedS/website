@@ -1,0 +1,48 @@
+Firstly, this isn't an attempt at conversion. It's here becaue I keep getting asked why I tend to send
+and prefer to read mail in plain text. 
+
+I read my mail in plain text, so it makes little odds what you send it in, so long as there's a plain
+text part.
+
+
+When you send me an email, all I want is the words. I've spent much time experimenting with different
+fonts, point sizes and colour combinations and I know what works for me. It is ~7pt white monospace on
+dark grey. I don't particularly like having to read emails in other formats, particularly not the current
+vogue of sans-serif black on white, and if I'm honest I don't see why I should - I don't recall ever
+recieving an email where the font face or colour scheme bore much of an effect on my understanding of the
+contents beyond my ability to read it comfortably.
+
+
+Similarly, I accept that you probably don't want to read your emails as if it's some kind of inverse
+midget typewriter, and I will never send you an email that requires you to. If I send you an email, I
+will send you nothing more than a string of words, and leave it entirely up to you (and the configuration
+of whatever you choose to read your mail with) do dictate what it looks like when you read it.
+
+
+Much as there is an html standard, there are several differences in its implementation; formatting a
+mail message in HTML will only ever create an email that renders as you designed it in some fraction of
+mail clients. Microsoft are the traditional champions of standards deviation, and they also produce what
+appears to be the most populous mail reader. Creating an html email in whatever you use to write emails
+is therefore unlikely to render in mine in the same way, and neither needs to be particularly incorrect
+for this to happen.
+
+
+This makes sense, though. Email has never been a means of sending beautiully typeset documents - it's for
+exchanging messages. If the formatting of a document is of particular importance, it should be stored in
+some format that always renders correctly, something like pdf or DjVu.
+
+
+Plain text is substantially smaller than HTML. While I'm not on a limited mobile broadband contract, I'm
+still subject to the relentless advance of technology in the UK, and as such rarely come close to the
+3mbps that T-Mobile promise me. HTML email takes longer to download than plain text, because it takes a
+whole bunch of characters to document the layout. Since I'm going to do my best to ignore these in any
+case, I'd rather not download them.
+
+
+Plain text email doesn't feature images and obsfucated links - a URL in a plain text email can only
+possibly be a link to the url displayed, since there is no way of encoding it otherwise.
+
+
+Finally, I like the convenience of being able to use a plain text mail reader. Wherever I am, if I want
+to read my mail I can log in to my mailserver, fire up mutt and read the mail. In plain text.
+

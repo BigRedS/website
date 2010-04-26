@@ -1,0 +1,174 @@
+What I Miss When I'm Using Something That's Not Linux
+===============
+
+This is here as a response to "but what's wrong with Windows?", and it's aiming to be as non-prostelytic
+as it can be. It's got some way to go.
+
+I don't necessarily want you to use Linux - if I've pointed you here I probably just want you to stop 
+telling me to stop.
+
+This is one of those things that's always difficult to explain. The bits of Linux that I miss on other
+platforms are not things that you immediately see as being of particular importance. The best example of
+this is the freedom - why would I care that I'm free to do as I please with this software? I've no idea,
+if I'm perfectly honest. But what follows is a list of the things I miss the most when I find myself on
+something else (most often WinXP).
+
+It Makes Sense
+-------------
+
+To me, that is. The logic Linux is built upon makes a wonderful amount of sense to me. Things that makes
+sense are easier.
+
+There's not much more to say, really, this is both the most important reason and the most personal one.
+
+Customisation
+--------------
+
+With very little in the way of limitations, I can make it look and behave how I want it to. Most
+obviously, I can customise the taskbars and notification areas, add monitoring icons, change colours,
+configure keyboard shortcuts and the like. But I can also tear out bits of the system that I don't
+particularly want, optionally replacing them with options I prefer. Or just use daft keyboard mappings
+where every key acts as if it was three to the left or something.
+
+The important bit is that, generally, I get to tell it how it will work, rather than having to work
+around its limitations.
+
+Two Clipboards
+---------------
+
+In xorg, the most prolific window server on Linux, you have two clipboards. One is the 'normal' one which
+you manually insert stuff into through `<ctrl>+<c>` or `<ctrl>+<shift>+<del>` and pasted with
+`<ctrl>+<v>` or `<ctrl>+<shift>+<ins>`. The other is automatically populated by highlighting text with
+the mouse cursor and pasted with the middle mouse click. It's a fantastically quick way of copying and 
+pasting.
+
+Multiple Workspaces
+-------------------
+
+If you've used them you're probably nodding in agreement. They're called 'screens' in OSX, virtual
+desktops in some other places and are sort-of possible in Windows.
+
+If you look at your monitor, you see your desktop. It's probably got a taskbar, maybe a menu of some
+sort, a clock and probably some windows open. 
+
+In Linux, this is a 'Workspace', and you can have several of them. You can flick between them in a
+sort-of-similar fashion to tabs in web browsers, usually through either a key combination or selecting
+one from a workspace chooser of some sort. 
+
+They're amazing.
+
+Always On Top
+-------------
+
+I know Windows Task Manager can do it, but that's about the only window I've never wanted to keep on top
+of the others.
+
+
+Text Based
+-----------
+
+Linux is mostly text-based in its configuration, and is generally blessed with at least three sets of
+wonderfully powerful text processing tools (the shell, Perl/Python and GNU Utils). This means that batch
+changes to configurations are really easy, as is exporting particular bits of configuration and importing
+them to somewhere else. Also, the fact that the shell is as powerful as the clicky interface means that 
+pretty much anything you might want to do can be automated. Which brings me on to:
+
+Automation
+---------- 
+
+Windows in particular seems to have a bit of an aversion to automating things. I don't know if it's just
+the Windows environments I've found myself in, the fact that most tasks are easier (if substantially more
+time consuming) with a mouse than on the command line, or because the batch file setup is crap, but there
+seems to be something about a Windows environment that lends itself very well to the pointless
+replication of manual work.
+
+Linux encourages you to automate things - its roots as an operating system by programers for programmers
+means it suits laziness _really_ well.
+
+Repositories
+------------
+
+If I want a gopher client, I open up my repository client, search for 'gopher client', read the
+descriptions of what it shows up, download what looks best and start using it.
+This software has come from the same place as the operating system, so I can trust that it is not
+malware, that the description is accurate and that it will be compatible with my system. It will also be
+upgraded when I update the system.
+
+It's easier, more secure, faster and more convenient than the Windows way of trawling the net and trying
+to work out on what basis to judge the trustworthiness of a particular application. Though if I'm that
+way inclined, the repository system doesn't stop me doing that.
+
+Hardware Compatability
+----------------------
+
+Maybe I'm just unlucky, but most times I've installed Windows, I've then spent a couple of hours visiting
+manufacturer's websites trying to find drivers for my hardware so I can get anything at all working.
+
+Sometimes on a fresh install I have a working network, but generally I've needed to find graphics, wifi,
+usb, audio and various chipset drivers at the very least, quite often ethernet ones, too. It's not helped
+by the fact that Windows is apparently completely unaware of what hardware's in the box until you've
+installed the correct driver for it, which makes working out which driver you need more a game of chance
+than a methodical process.
+
+Modular and integrated
+----------------------
+
+The unix philosophy is for software to be small, simple and have a single well-served purpose. This is
+generally adhered to in the free software world, mostly because it's a pretty good approach.
+
+For example, I have aspell installed. It's a spellchecker and it checks spelling. It does so in my web
+browser, mail client, IM client and office suite. If i typed in anything else, it'd probably work there,
+too. This means I only ever need to add words to the dictionary once, and it'll be considered valid
+everywhere. It also means that the people who develop my web browser and mail client can concentrate on
+developing good web browsers and mail clients, and leave the spell checking up to the people who develop
+spell checkers.
+
+The Community and its support
+-----------------------------
+
+It's massive. Or, perhaps rather, they're massive. And useful. I'm on a number of mailing lists and
+forums dedicated to sharing tips and helping people with free software. If I'm having trouble with
+anything Linux based, there're three or four pools of several thousand enthusiasts who are not only
+likely to know or be able to find an answer, but will probably enjoy doing it. And they run across the
+spectra of difficulty, use cases and user stupidity.
+
+No Marketing Department
+-----------------------
+
+One fantastically huge advantage of free software is that there's no incentive to make it popular. In
+contrast to commercial software where the aim to sell as many licenses as possible, the only possible aim
+of free software is to produce the best software possible. Any large free software project has this aim,
+since there is no other way to be popular. This is brilliant, for several reasons:
+
+1. The software tends to turn out pretty good. There's lots of discussion as to why this is.
+
+2. Features are useful rather than pretty. There's no 3D-accelerated solitaire, but there are multiple
+   workspaces and out-of-the-box compatibility with almost everything.
+
+3. There's no need to lie. The objective is good rather than popular, so it has to actually be good. Bugs
+   are generally aired in the open, documentation contains descriptions of what is known to fail.
+
+Freedom!
+--------
+
+This has to go at the bottom, really, otherwise I look like another freedom hippy. There's a funny trend
+I've noticed, though - most people I speak to started using Linux for a number of reasons, almost none of
+them for the freedom. But the freedom, or perhaps absence of taken-for-granted restrictions, becomes more
+and more important as time goes on. Things I particularly like about the freedom are:
+
+1. No forced upgrades. If I *really* like Version 1 even after the release of Version 14, I have the
+   code, I can hire someone to support it for me. 
+
+2. No Genuine CDs or keys to lose. Really, this is a biggie. When I want to install it, I just donwload
+   it and install it. After two years supporting Windows, the idea of having a safe full of install CDs
+   and license keys still seems rather bizarre.
+
+3. Everything happens in the open. Mistakes, bugs, arguments, the lot. Which means they get resolved
+   quickly, and that the users can be brilliantly well informed.
+
+4. Improvements are rapid. If you really wish some piece of software had an additional feature, there's
+   probably a programmer thinking the same thing, and he's probably adding the feature. And, if the
+   people who made that software don't think it needs the software, the programmer can just release his
+   own, or his modifications as a patch.  
+
+

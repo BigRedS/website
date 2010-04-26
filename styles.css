@@ -41,8 +41,17 @@ body {
 }
 .footer{
 	width:80%;
+	padding-top:3em;
+	padding-bottom:3em;
+/*	border-bottom:3px solid #a9a9a9;	*/
 	margin-left: auto;
 	margin-right: auto;
+}
+.footer a:link{
+	color:#00F;
+}
+.footer a:visited{
+	color:#00F;
 }
 
 
@@ -100,7 +109,7 @@ body {
 	color:#00f;
 }
 #doc{
-	width:40%;
+	width:41em;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -237,4 +246,20 @@ dl.doc
 blockquote{
 	border-left: 6px double #a9a9a9;
 	padding-left: 4px;
+}
+
+hr {
+	width:80%;
+	color:#a9a9a9;
+	height:3px;
+
+}
+
+.footerImages{
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:3em;
+	padding-bottom:3em;
+	width:416px;
+	
 }

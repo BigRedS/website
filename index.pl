@@ -20,7 +20,9 @@ open(DATA, "<$data")
 	local $/ = "";
 	while (<DATA>){
 		my ($date, $link, $content) = (split(/\n/, $_))[0,1,2];
-		&make_tr($date, $link, $content);
+		if ($content =~ m/^[A-Za-z]/){
+			&make_tr($date, $link, $content);
+		}
 	}
 }
 &mainpage_footer();

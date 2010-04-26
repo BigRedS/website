@@ -1,6 +1,7 @@
 #! /usr/bin/perl
 
 use strict;
+use 5.010;
 
 sub start_html() {
 
@@ -23,8 +24,8 @@ content-language: en
 
 		$head_lines
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name='author' value='Avi Greenbury' />
-		<meta name='description' value='Avi's Website' />
+		<meta name='author' content='Avi Greenbury' />
+		<meta name='description' content='Avis Website' />
 
 		<title>Avi's Website $title</title>
 	</head>
@@ -46,7 +47,24 @@ EOF
 }
 
 sub end_html() {
+	my $back_to_url = shift;
+	my $back_to_link = shift;
 print <<EOF
+
+		</div>
+		<div class='footer'>
+			<a href='$back_to_url'>$back_to_link</a>
+		</div>
+		<div class='footerImages'>
+			<a href='http://validator.w3.org/check?uri=referrer'><img src='/images/footer/xhtml.png' alt='valid XHTML' /></a>
+<!--			<a href='http://jigsaw.w3.org/validator'><img src='/images/footer/css.png' alt='valid CSS' /></a>	-->
+			<a href='http://vim.org'><img src='/images/footer/vim.gif' alt='Vim' /></a>
+			<a href='http://perl.org'><img src='/images/footer/perl.png' alt='Perl' /></a>
+			<a href='http://httpd.apache.org'><img src='/images/footer/apache.png' alt='Apache'/></a>
+			<a href='http://debian.org'><img src='/images/footer/debian.png' alt='Debian' /></a>
+			<br />
+			<p style='text-align:center;'><a href='http://github.com/BigRedS/play/tree/master/website/'>View Source</a></p>
+		</div>
 	</body>
 </html>
 EOF
@@ -82,9 +100,6 @@ sub mainpage_footer(){
 print <<EOF
 
 			</table>
-			<div class='footer'>
-				<a href='http://github.com/BigRedS/play/tree/master/website/'>Source</a>
-			</div>
 EOF
 }
 1
