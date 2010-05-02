@@ -21,17 +21,20 @@ the default smartphone OS, Blackberrys were being sold to businesses, and things
 'iPhone rivals' for people neither masochistic enough to buy a Windows Mobile device nor boring enough to
 buy a Blackberry.
 
-So, the launch of the iPhone *was* a sudden jump in the goodness of the market. But it wasn't anywhere
-near an impossible one. Sure, Windows Mobile stayed shit until, hopefully, the middle of 2010, but
-everyone else just started making good smartphones. Apple weren't achieving the impossible or
-unimaginable, it was just that everyone else had sort of got bored of innovating. But it's not as if they
-forgot how to, within a year Apple's only real claim to the throne was that they used better hardware
-than anyone else (with a matching price tag) and they had that wonderful UI, including multitouch.
+So, yes, the launch of the iPhone *was* a sudden jump in the goodness of the market. But it wasn't anywhere
+near an impossible one. It was more down to no-one else having really bothered to innovate (due to the
+apparent lack of market) than any technical leap on Apple's part. Apple saw a market no-one else did,
+and made a product for it.
+
+Sure, Windows Mobile stayed shit until, hopefully, the middle of 2010, but everyone else just started
+making good smartphones. Within a year Apple's only real claim to the throne was that they used better
+hardware than anyone else (with a matching price tag) and they had that wonderful UI, including
+multitouch.
 
 2. They're never really yours
 -----------------------------
 
-When I buy something, I want it to be mine to do with as I wish. In apple's eyes, the fact they made the
+When I buy something, I want it to be mine to do with as I wish. In Apple's eyes, the fact they made the
 device grants them rights to decide what you may or may not do with it. This is understandable - it means
 they can guarantee some level of usability and compatibility, which is clearly in some demand. But it's
 not what I want and, frankly, I can't be arsed to jump through jailbreaking hoops just so I can use my

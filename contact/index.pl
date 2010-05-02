@@ -10,7 +10,7 @@ require fun;
 
 my ($subject, $body, $from, $given_answer);
 
-&start_html(" : contact");
+&start_html("contact");
 &header();
 
 my $submit = CGI::param('submit');
@@ -82,6 +82,7 @@ if ($submit =~ /Go/){
 
 #	&start_html(" | contact");
 #	&header();
+	&intro();
 	&form;
 }
 
@@ -135,7 +136,7 @@ sub form{
 	say "		<p><label for='from'>Your Email:</label><input type='text' name='from' id='from' value='$from' size='$from_width' /></p>";
 	say "		<p><label for='subject'>Subject:</label><input type='text' name='subject' id='subject' value='$subject' size='$subject_width' /></p>";
 	say "		<p><label for='body'>Message:</label><textarea name='body' id='body' cols='$message_width' rows='$message_height'>$body</textarea></p>";
-	say "		<p><label for='antispam'>Antispam: What is the $pos_string digit in <br /> <tt>'$big_number'</tt>?</label><input type='text' name='antispam' id='antispam' value='' /></p>";
+	say "		<p><label for='antispam'>Antispam: <br />What is the $pos_string digit in <br /> <tt>'$big_number'</tt>?</label><input type='text' name='antispam' id='antispam' value='' /></p>";
 	say "		<p>";	
 	say "			<input type='hidden' name='string' value='$big_number' />";
 	say "			<input type='hidden' name='pos' value='$pos' />";
@@ -144,4 +145,13 @@ sub form{
 	say "	</form>";
 }
 
+sub intro{
+print <<EOF
 
+<div class='intro'>
+	<p>I have several email addresses. The ones I most check are those that contain my name.</p>
+
+	<p>If you don't have any of those (or even if you do) you can email me below.</p>
+</div>
+EOF
+}

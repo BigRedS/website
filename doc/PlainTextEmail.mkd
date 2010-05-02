@@ -1,3 +1,6 @@
+Why I Send Plain Text Email
+===========================
+
 Firstly, this isn't an attempt at conversion. It's here becaue I keep getting asked why I tend to send
 and prefer to read mail in plain text. 
 

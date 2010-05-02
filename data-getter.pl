@@ -13,7 +13,7 @@ use DateTime::Format::Atom;
 
 my $file = "/home/avi/www/data";
 
-my %stuff = (&slashdot(), &picasa(),  &atom(), &lastfm);
+my %stuff = (&slashdot(), &picasa(),  &atom(), &blog());
 
 
 open (FILE , ">$file") || die ("Error opening $file");
@@ -47,7 +47,9 @@ sub atom(){
 		"http://github.com/BigRedS/Work/commits/master.atom",
 		"http://github.com/BigRedS/work-web/commits/master.atom",
 		"http://github.com/BigRedS/dotfiles/commits/master.atom",
-		"http://github.com/BigRedS/website/commits/master.atom"
+		"http://github.com/BigRedS/java/commits/master.atom",
+		"http://github.com/BigRedS/website/commits/master.atom",
+		"http://en.wikipedia.org/w/index.php?title=Special:Contributions/Lordandmaker&feed=atom&limit=50&target=Lordandmaker&year=&month="
 #		"http://api.flickr.com/services/feeds/photos_public.gne?id=12396343\@N06&lang=en-us&format=atom"
 	);
 	my %return;
@@ -81,6 +83,11 @@ sub picasa(){
 }
 sub lastfm(){
 	my %return = &rss("http://ws.audioscrobbler.com/1.0/user/lordandmaker/recenttracks.rss", "title");
+	return %return;
+}
+
+sub blog(){
+	my %return = &rss("http://aviswebsite.co.uk/blog/feed/", "content");
 	return %return;
 }
 

@@ -1,7 +1,7 @@
 How to not look stupid when asking questions
 ==
 
-Introduction
+<a id='intro'>Introduction</a>
 ------------
 
 Back in the day, when you had to be fairly intelligent to be able to use the internet, and lucky to have
@@ -33,7 +33,7 @@ reader.
 
 
 
-
+<a id='join'></a>
 When you join a forum
 ----------------------
 
@@ -59,10 +59,11 @@ Don't complain about attitude problems or how the forum is laid out. Or anything
 It is not your forum. Not yet, anyway.
 
 
-
+<a id='ask'></a>
 Asking a question
 -----------------
 
+<a id='before_ask'></a>
 ### Before you ask
 
 Before you ask a question, do some research to try to find an answer. A forum isn't necessarily a last
@@ -87,6 +88,7 @@ post a note saying what was wrong with it).
 
 
 
+<a id='title'></a>
 ### Title
 
 Put as much information as the forum will let you in the title. It doesn't need to be grammatically
@@ -99,6 +101,8 @@ Using caps and/or non alphanumeric characters will have similar results.
 
 It should be possible to be half-way to answering your question just by reading the title.
 
+
+<a id='body'></a>
 ### Body
 
 This should be easy to read and in proper English. Re-read it when you've finished, to make sure it makes
@@ -133,6 +137,7 @@ is a reply (usually called 'subscribe to thread' or similar).
 
 Don't use all caps, don't flood the post with smileys.
 
+<a id='reply'></a>
 ### Using the reply
 
 If you get the answer 'RTFM', chances are the responder feels you could have found your answer if only
@@ -168,7 +173,7 @@ There is a difference between a forum and a chatroom, treat the forum as such. D
 banter; if you want to change the subject, start a new thread.
 
 
-
+<a id='opinion></a>
 ## Posting an opinion
 
 If you're posting for the purposes of propagating your opinion on something, first check no-one else has
@@ -184,7 +189,7 @@ of hand.
 Forums are places for discussion, not playground spats.
 
 
-
+<a id='replying'></a>
 ## Replying
 
 - Give a worthwhile reply. Don't just respond with 'I don't know'. Don't put 'RTFM' unless the answer's
@@ -200,7 +205,7 @@ Forums are places for discussion, not playground spats.
   know about, or just offer a hint that would otherwise have gone unrealised.
 
 
-
+<a id='abuse'></a>
 ### Being subjected to abuse
 
 If you get abuse, or 'flamed' on a forum, in general, you've done something wrong.
@@ -219,7 +224,7 @@ In general, the best response to abuse or flaming is to ignore it. If you can't 
 your post, and they don't say what's wrong in their replies, just leave it and try another forum.
 
 
-
+<a id='abbreviations'></a>
 ## Some common forum abbreviations
 
 Use these sparingly, if at all. You'll never get bonus points for using them, you may well loose points
@@ -268,7 +273,7 @@ Dictionary.com and Thesaurus.com - Dictionary and thesaurus that reference onlin
 			           'official' texts.
 
 
-
+<a id='why'></a>
 ## Why this is here
 
 Inspired by How To Ask Questions The Smart Way by Eric Steven Raymond and Rick Moen, made necessary by

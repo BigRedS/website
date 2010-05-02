@@ -1,11 +1,15 @@
 Windows
 =======
 
-Yes, this is all about XP. It's the only one I have to use regularly. I'm guessing it mostly applies to
-Vista and 7 too, though. MS are hardly known for innovation. It's also a rant. It's not supposed to be
-reasoned and balanced.
+Here be rants. I've annoyed too many people by venting into IRC or instant messaging, so I just do it
+here now. It's less agressive - if you want to know why I'm swearing at my computer, I'll point you here.
 
-File extensions dictate the executability of the file
+This is mostly about XP. It's the only one use. I like to think some of these are unbroken in later
+versions of Windows, but given that most microsofties disagree with me on the idea that these are
+problems, I'm not holding my breath.
+
+
+File extensions dictate the executability of the file		<a id='exe'></a>
 -----------------------------------------------------
 
 This is plain retarded. I'm not sure the removal of the need to explicitly say "yes, I do want to execute
@@ -26,13 +30,36 @@ with it. Which is really handy - if I can get a file onto a Windows desktop and 
 I can pretty much guarantee my executable will be run. Which is handy for people with malicious intent, 
 but pretty stupid from a security standpoint.
 
-Rebooting on installing/updating
---------------------------------
+No tools							<a id='impotent'></a>
+--------
+
+It's damn hard to get anything done on a Windows PC. Even a stable one.
+
+Firstly, it ships with approximately nothing of use whatsoever besides an OS. You can play solitaire, or
+write documents in WordPad. Sometimes you get MS Works, which is peculiarly incompatile with any MS
+Office version.
+
+But there's no tools, either. I know it's not a particularly text-based environment, but MS does seem to
+be half-arsedly chasing the xml bandwagon. And if there's any kind of plain text file format that
+requires a grep, it's XML. But it's not just grep it's missing:
+
+* A reasonable command line interface. (might be fixed with Powershell)
+* file
+* find
+* grep
+* sed/awk
+* apt-get (ha!)
+* shell scripting (again, possibly non-portably 'fixed' with powershell')
+* compatibility with anything else at all
+
+
+Endless Rebooting						<a id='reboot'></a>
+------------------
 
 Seriously, this is the 21st century. And it was the 21st Century when XP was first released. But even in 
 the 20th century I came to expect uptimes greater than four weeks.
 
-Hardware compatibility
+Hardware compatibility						<a id='incompatibility'></a>
 ----------------------
 
 Windows XP does not have hardware compatibility. MS, quite understandably, view themselves as being in a 
@@ -59,7 +86,7 @@ Which is, in short, fucking retarded. I use Linux LiveCDs to get round it, Dell 
 of receipts to see what's in the box. I don't know if either of those count as 'elegant', but I suppose
 they each work.
 
-Windows 7 was my idea
+Windows 7 was my idea						<a id='notmyfault'></a>
 ---------------------
 
 Seriously? Listening to customers is now a plus point? Some kind of nice-to-have extra? Some innovation
@@ -68,7 +95,18 @@ in Windows 7?
 Explains why most of the rest of Windows are so horribly user unfriendly, I suppose. But to advertise the
 fact you've not listened for the first 25 or so years of producing software?
 
-It's a single-user system
+Documentation							<a id='documentation'></a>
+--------------
+
+Where the hell is it?
+
+Open up your event log (start->run then `eventvwr` and hit enter), find a non-self-explanatory error and
+see how long it takes to find an explanation of a fix.
+
+Now try finding one from Microsoft.
+
+
+It's a single-user system					<a id='singleuser'></a>
 -------------------------
 
 Someone on my network is using a computer. I want to connect to it, upgrade Firefox and log out. I want
@@ -79,7 +117,7 @@ actually use their PCs, so you can only have one person logged in at a time.
 How on earth this made it to the standard corporate desktop OS I've no idea, but I think MS genuinely
 have to be saluted for their achievement. Supporting XP is a nightmare.
 
-There's More Than One Way To Do It
+There's More Than One Way To Do It				<a id='tmtowtdi'></a>
 ----------------------------------
 
 This probably looks mildly odd from a perly person, but it's a pretty good way to sum up the problem. On
@@ -95,7 +133,7 @@ than every Windows PC configuring WiFi in the same way. This doesn't just affect
 graphics cards, network cards, power management and input devices. Printers probably get it worst. In
 fact, problems with Windows printing are probably deserving of an entire rant to themselves.
 
-Discrete Updates
+Discrete Updates						<a id='dredge-for-updates'></a>
 -----------------
 
 No, this isn't the fault of MS. But if anyone can fix it, it's Microsoft.
@@ -114,7 +152,15 @@ like and see what of those are now out of date and see what I can find on the ma
 And I pray to someone that this all happens to work together, likely through fluke more than anything
 else.
 
-Everything is in binary, particularly the registry
+Drive letters								<a id='c'></a>
+-------------
+
+Operating systems are supposed to provide a useful abstraction of the hardware to users and applications.
+Making the distinction between drives an inconvenience is not a useful abstraction. It's hardly an
+abstraction at all.
+
+
+Everything is in binary, particularly the registry			<a id='blobs'></a>
 --------------------------------------------------
 
 Again, I don't know what to say beyond the title to explain why this is a monumentally bad idea.
@@ -132,7 +178,7 @@ many better ways there are of configuring things than with files that can't be r
 to lump in here an insistence on configuring everything via a series of checkboxes and radio buttons,
 rather than just letting the user say what they want the thing to do.
 
-Installer distribution is still pre-internet
+Installer distribution is still pre-internet				<a id='cd'></a>
 --------------------------------------------
 
 It's all based off a do-not-copy CD that is trivial to copy. Given the abundance of Windows installer CD
@@ -151,7 +197,7 @@ the quality of Windows aside) or other crap in it. In short, it's more convenien
 MS lose nothing. Except the odd 500mb download, which is nothing, really (have you seen the size of
 Windows Updates?).
 
-Software distribution is still pre-internet
+Software distribution is still pre-internet				<a id='internet'></a>
 --------------------------------------------
 
 Firstly, there's no repositories. Those don't have a bad side.
@@ -163,7 +209,7 @@ download a file that could be anything, really. And then put it in my system fol
 it with Administrative rights.
 
 
-The installers are crap
+The installers are crap							<a id='exemsicab'></a>
 -----------------------
 
 There is no standardisation whatsoever with software installation. There isn't even a standard for guis.
@@ -184,7 +230,7 @@ analogous to Debian's `apt-get -i software.deb`.
 
 And repositories.
 
-It's unsupported
+It's unsupported							<a id='unsupport'></a>
 ----------------
 
 Not in the hardware sense of the word - that's further up. No, when Windows fails, there's nowhere to
@@ -196,7 +242,7 @@ And that's all well and good. Except you *pay for* Windows, and one of the thing
 for is support. But there isn't any.
 
 
-The installer is crap
+The installer is crap							<a id='installer'></a>
 ---------------------
 
 Seriously, it's difficult to find evidence that any thought at all went into its 'design'. It's even

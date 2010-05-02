@@ -51,34 +51,44 @@ sub get_icon{
 	my ($url, $alt, $link);
 	given (@_[0]){
 		when(/slashdot/){
-			$url = "/images/slashdot.ico";
+			$url = "/icos/slashdot.ico";
 			$alt = "Slashdot";
 			$link = "http://www.slashdot.org";
 		}
 		when(/theregister/){
-			$url = "/images/theregister.ico";
+			$url = "/icos/theregister.ico";
 			$alt = "The Register";
 			$link = "http://theregister.co.uk";
 		}
 		when(/identi/){
-			$url = "/images/identi.ico";
+			$url = "/icos/identi.ico";
 			$alt = "Identi.ca";
 			$link = "http://identi.ca";
 		}
 		when(/github/){
-			$url = "/images/github.ico";
+			$url = "/icos/github.ico";
 			$alt = "GitHub";
 			$link = "http://github.com";
 		}
 		when(/picasa/){
-			$url = "/images/picasa.ico";
+			$url = "/icos/picasa.ico";
 			$alt = "Picasa";
 			$link = "http://picasa.com";
 		}
 		when(/last\.fm/){
-			$url = "/images/last.fm.ico";
+			$url = "/icos/last.fm.ico";
 			$alt = "Last.fm";
 			$link = "http://last.fm";
+		}
+		when (/aviswebsite/){
+			$url = "/icos/wordpress.gif";
+			$alt = "My blog";
+			$link = "http://aviswebsite.co.uk/blog";
+		}
+		when (/wiki/){
+			$url = "icos/wiki.ico";
+			$alt = "wikipedia";
+			$link = "http://en.wikipedia.org/";
 		}
 	}
 	return "<a href='$link'><img src='$url' alt='$alt' style='border:none;' /></a>";

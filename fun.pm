@@ -9,6 +9,10 @@ sub start_html() {
 	my $head_lines = shift;
 #	my $head_lines = "\t\t".$head_lines;
 
+	if ($title !~ /\w/){
+		$title = "Avi's Website";
+	}
+
 print <<EOF
 content-type: text/html; charset=utf-8;
 content-language: en
@@ -21,13 +25,14 @@ content-language: en
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link rel='stylesheet' type='text/css' href='/styles.css'/>
+		<link rel='shortcut icon' type='image/png' href='/favicon.png' />
 
 		$head_lines
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name='author' content='Avi Greenbury' />
 		<meta name='description' content='Avis Website' />
 
-		<title>Avi's Website $title</title>
+		<title>$title</title>
 	</head>
 	<body>
 		<div id='top'>
@@ -56,14 +61,14 @@ print <<EOF
 			<a href='$back_to_url'>$back_to_link</a>
 		</div>
 		<div class='footerImages'>
-			<a href='http://validator.w3.org/check?uri=referrer'><img src='/images/footer/xhtml.png' alt='valid XHTML' /></a>
+			<a href='http://validator.w3.org/check?uri=referer'><img src='/images/footer/xhtml.png' alt='valid XHTML' /></a>
 <!--			<a href='http://jigsaw.w3.org/validator'><img src='/images/footer/css.png' alt='valid CSS' /></a>	-->
 			<a href='http://vim.org'><img src='/images/footer/vim.gif' alt='Vim' /></a>
 			<a href='http://perl.org'><img src='/images/footer/perl.png' alt='Perl' /></a>
 			<a href='http://httpd.apache.org'><img src='/images/footer/apache.png' alt='Apache'/></a>
 			<a href='http://debian.org'><img src='/images/footer/debian.png' alt='Debian' /></a>
 			<br />
-			<p style='text-align:center;'><a href='http://github.com/BigRedS/play/tree/master/website/'>View Source</a></p>
+			<p style='text-align:center;'><a href='http://github.com/BigRedS/website/'>View Source</a></p>
 		</div>
 	</body>
 </html>
@@ -79,7 +84,6 @@ EOF
 
 sub footer(){
 print <<EOF
-	</div>
 EOF
 }
 

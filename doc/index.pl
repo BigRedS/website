@@ -18,7 +18,7 @@ if (CGI::param('doc') !~ /^$/){
 
 my $file = CGI::param('doc');
 	my $head_lines = "<link rel='alternate' href='$file.txt' type='text/plain' />";
-	&start_html(": doc : $file", $head_lines);
+	&start_html("$file", $head_lines);
 	&header();
 
 	$file.=".mkd";
@@ -35,14 +35,14 @@ my $file = CGI::param('doc');
 	&end_html("/doc/", "back to docs");
 }else{
 
-	&start_html(" : doc ");
+	&start_html("doc ");
 	&header();
 	&intro();
 	open (D,"<$dir");
 	my (@names, @filenames, @descriptions);
 	while (<D>){
 		if ($_ !~ /^#/){
-			my ($name,$filename, $description) = (split(/\t/, $_))[0,1,2];
+			my ($name,$filename, $description) = (split(/\t+/, $_))[0,1,2];
 			$filename =~ s/mkd$/html/;
 			push(@names, $name);
 			push(@filenames, $filename);
@@ -67,7 +67,10 @@ my $file = CGI::param('doc');
 sub intro(){
 print <<EOF
 <div class='intro'>
-	<p>Here's a bunch of stuff I've written at some point and been called upon at some other point to reproduce. It's a mix of useful information and ranting. Currently it's a bit empty while I slowly get round to finding and markdowning all the rest.</p>
+	<p>
+	This is a bunch of stuff I've written at some point and been called upon at some other point to reproduce.
+	It's a mix of useful information and ranting.
+	</p>
 </div>
 
 EOF
