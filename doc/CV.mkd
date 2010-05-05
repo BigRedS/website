@@ -1,0 +1,175 @@
+Curriculum Vitae
+================
+
+Excellent analytical abilities, and extensive experience in modelling complex systems and processes.
+Superb written communication skills, for both technical and non-technical audiences. Experience working
+cross-functionally within a customer focused, multi-site, multi-role environment, maintaining the
+delivery of IT services and technology projects. Passion for interoperability, clarity and simplicity and
+up to date on IT developments.
+
+----
+
+Experience
+----------
+
+### Linux
+* 8 years primary desktop usage of Debian. Use of KDE, Gnome, Fluxbox, Enlightenment
+* 3 years administering Debian servers. Some administration of Ubuntu and CentOS servers
+* Extensive use of apt/dpkg, make/install
+
+Including:
+
+Apache, djbdns, Java, KVM/Qemu, Mediawiki, Munin, MySQL, Nagios, NFSv4, Nmap, PHP, PHPWiki, PostgreSQL,
+Postfix, Proftpd, Samba, Virtualbox
+
+Claws Mail, Emacs, Evolution, Mozilla suite, Vim
+
+### Microsoft
+* Windows XP - 2.5 years support, 5 years regular desktop use
+* Server 2003 - 2.5 years administration
+* Server 2000 - 2.5 years administration
+* Windows Mobile 5 & 6 - 2 years support
+
+Including:
+Active Directory, Bulletproof FTP server, CA ArcServe Backup, Checkpoint Endpoint Encryption, DHCP, DNS,
+Exchange, IIS, StrawberryPerl, Terminal Services Server, Virtualbox.
+
+Mozilla Suite, Office 97-03, Office 2007, Outlook, VNC
+
+### Apple
+* OSX
+
+Entourage, MS Office, Apple Mail
+
+### Other
+* Kace Kbox – 3 months
+* Mimecast – 6 months
+* SonicWall Firewall and VPN – 2 years
+* Netgear and HP managed switches – 2 years
+* Lacie NAS and DAS - 18 months
+* Ethernet network design and installation; Cat5 termination – 2 years
+* BT Meridian PBX troubleshooting and programming – 12 months
+
+### Languages
+* PHP and mod_perl programming for standards-compliant XHTML/CSS
+* Perl and Bash
+
+----
+
+Work:
+-----
+###Service Graphics Digital Print Division, St Ives PLC, London - Junior IT Technician (Full Time)
+October 2007- Present
+
+* My primary role is desktop support to the Service Graphics digital print division of St Ives. It is
+  primarily Windows XP/Server2003 in an Active Directory domain, with some non-domained macs.
+
+* My first major project was the planning and execution of a seamless move of the Jupiter division to a
+  new site at St Ives' head office. This involved configuring a temporary network, building racks
+  containing servers and switchgear. I have since planned and  executed the division of two sites into
+  functional subnets, and the IT side of the closure of another site.
+
+* Support users of Windows and OSX across eight sites, the vast majority remotely via VNC and Terminal
+  Services.
+
+* Specify, order and configure new desktop workstations and servers, troubleshoot problems on current
+  ones, and plan and  execute upgrade programmes.
+
+* Use Perl and Bash to automate administrative tasks, and develop cgi-based interfaces for system and
+  network monitoring and  management.
+
+* Maintain and support Debian-based intranet server, providing a documentation wiki and packaged and
+  custom cgi network  monitoring.
+
+* Configure and operate a network of virtual machines for the testing and evaluation of network
+  monitoring software.
+
+* Liaise with production and studio managers and third-party support companies to arrange for maintenance
+  of the image  processing servers, printers and studio PCs and peripherals.
+
+* Investigate bugs in Service Graphics' bespoke management information system. Manage enhancements, bug
+  fixes and releases with the developer.
+
+###West London Synagogue Religion School (Sunday Mornings)
+September 2000 - September 2002 & September 2007 - Present
+
+* Provision of resources and IT functions for West London Synagogue, including the provisioning and
+  configuring of IT and audio visual equipment.
+
+* Reorganised and catalogued the contents of the resource room. Development of web interface using Perl
+  to allow teachers to order resources.
+
+* Refurbish and repair donated PCs.
+
+* Developed educational web-based software in PHP for use by the children.
+
+* Developing an electronic registration system for the school.
+
+
+### Cycle Surgery Camden, London - Bicycle Mechanic (Full Time)
+September 2006 - October 2007
+
+* A major part of my job was talking to customers about their requirements, and suggesting possible
+  solutions, and being a technical advisor to sales staff.
+
+* Assembled, repaired and quoted for repair on high-end bicycles, including post-crash damage inspections
+  and insurance quotes. This helped the workshop to become the most profitable in the company.
+
+* Expected to recognise any jobs outside of my capabilities, and seek help as necessary.
+
+* On Saturdays I ran the workshop for the busiest day of the week, being completely responsible for
+  deciding which jobs could be taken in, and ensured that those I did accept were completed as promised.
+
+
+### Cycle Surgery West Hampstead, London - Salesman (Weekends & Holidays)
+May 2003 - September 2006
+
+* Primarily responsible for the sale and merchandising of products, this involved identifying customer
+  requirements and facilitating them within our stock.
+
+* Responsible for the workshop stock levels and the processing of warranty claims.
+
+* Having gained a recognised level of competency on the EPOS system (Stockturn), became involved in the
+* training of new members of staff, and assisted the management in administrative tasks.
+
+
+
+----
+
+
+
+Education:
+----------
+
+*2005 - 2006: Queen Mary, University of London*
+
+ *	Year 1 of BEng Aerospace Engineering.
+
+*2004 - 2005: Queen Mary, University of London*
+
+*	Science and Engineering Foundation Programme: designed to prepare students for the degree course.
+*	Modules: Mechanics and Materials, Waves and Fields, Electricity and Atomic Physics, Maths 1,
+*	Maths 2, Communication Skills, Introduction to Engineering.
+
+*2002 - 2003: Christ's College, Finchley*
+
+*	A-Levels: Product Design (C), Physics (D), Maths (E), AS-Level: ICT (B)
+
+----
+
+Hobbies and Interests:
+----------------------
+
+I am a  keen motorcyclist. I am a member of the London Bikers forum and frequently join them on rides
+around the South East, and I plan my own rides and touring holidays. I enjoy the mechanical side of
+motorbikes, and having rebuilt my first bike for my brother to learn on, I am now guiding him through its
+regular servicing and irregular repair.
+
+I offer support to Ubuntu users through the Ubuntu-user and Debian-user mailing lists and the
+linuxquestions.org forums during my spare time, and enjoy the social side of these, the Greater London
+Linux User Group and London Perl Mongers.
+
+I enjoy reading, and have whiled away many an afternoon in second hand bookshops. My bookshelves house
+books on 20th Century history and the history and absurdities of the English language (and languages in
+general), trivia, and of course computing. My excursions into fiction almost entirely consist of humour
+and science fiction, with particular fondness for Grant Naylor and Douglas Adams.
