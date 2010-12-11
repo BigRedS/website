@@ -1,0 +1,79 @@
+Things I don't like about your website
+=======================================
+
+###or "I get too worked up about people doing retarded things with their websites"
+
+For some reason, I'm rather frequently asked my opinion of websites. Mildly less frequently I give it
+without prompting. I got bored of rewriting the same emails again and again, so here's a quick summary of
+the most common completely retarded things people do. I mostly go on the grounds that the idea of the
+website is to get a large number of visitors (since that's a fairly normal scenario). If you've no
+interest in visitors, this doesn't really apply, though I'd wonder why you're making the site in the
+first place.
+
+Following are Bad Things you Should Not Do:
+
+
+Replace it with an 'under construction' page
+--------------------------------------------
+
+There's no situation where this is sensible. 
+
+No the old site was not so horrendously dire that removing it from public access is a worthy and noble
+act of humanity. 
+
+Nobody gains from doing this, but you piss off the whatever visitors you get and several don't come back.
+No-one wants the suspense of a new site. Make one in the background, when it's ready launch it. Breaking
+your website for a week doesn't count as 'hype'. It counts as 'broken': if you've enough visitors for
+your site disappearing for a week to create hype, you've too many visitors for it to disappear for a
+week. 
+
+
+Hide it behind an enter page
+----------------------------
+
+An 'enter page' is one that serves no purpose other than to make you click on 'enter' to get into a
+website. Dictionary.com defines [in the way](http://dictionary.reference.com/browse/In+The+Way) as:
+
+>  forming a hindrance, impediment, or obstruction 
+
+This is a similarly good description of an enter page.
+
+There are times when enter pages are reasonable. If, for example, you've decided to create both a
+flash-based and a plain HTML version of your website, you might greet all visitors with the option of
+visiting either. Though it would make more sense to detect what they're capable of - if they can't run
+flash, they probably want the HTML version. That still meets all the criteria for being In The Way, but
+at least it's through your incompetence rather than stupidity.
+
+In short, an 'enter' page gets in the way of your visitors, and offers absolutely nothing in return.
+
+Degrade Ungracefully
+-----------------------
+
+Flash is a bit of a pain. There's no auto-updating on any of the platforms where it's stable, and most
+adverts are served in it. It's reasonably likely, then, that most of your visitors will not have the
+latest flash, either through being technically minded or through not being technically minded.
+
+Javascript is more of a pain. JavaScript isn't so much a language as a collection of closely-similar
+languages.
+
+So, you can't guarantee that flash or javascript work on your visitor's computers. In fact, while we have
+the <strike>innov</strike>abomination that is IE you can't even gurarantee your CSS will work.
+
+In any case, you should you should make sure your site works in these conditions. 
+
+If you decide to stop striving for CSS validity, you can just add all the IE-isms to your CSS files and
+suddenly you'll degrade into IE gracefully. You could, if you wanted, detect the user agent and write the
+stylesheet href accordingly.
+
+It's piss-easy to make JavaScript degrade gracefully - anything that requires JavaScript should be
+created by it. If there's no JavaScript interpreter, there's no broken JavaScript dependencies.
+
+Flash takes some more work. You've basically got to start again from scratch, which is a pain. You could,
+on the other hand, ask yourself whether flash really is the tool you should be using. If it is, you need
+to decide what functionality you want *every* visitor to have, and give them that in vanilla HTML. A
+message saying "come back with Flash 7" is not how you do this. As well as just people who don't like
+garish adverts, people using screenreaders (the blind, for instance), translators (foreigners) or robots
+(search engines) can only parse plain text. If you want blind people, foreigners or Google to pay
+attention to your website, you want an HTML version.
+
+

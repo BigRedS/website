@@ -13,16 +13,15 @@ Experience
 ----------
 
 ### Linux
-* 8 years primary desktop usage of Debian. Use of KDE, Gnome, Fluxbox, Enlightenment
+* 8 years primary desktop usage of Debian & Ubuntu. Use of KDE, Gnome, Fluxbox, Enlightenment.
 * 3 years administering Debian servers. Some administration of Ubuntu and CentOS servers
 * Extensive use of apt/dpkg, make/install
+* Studying for LPIC-1
 
-Including:
+Apache, bind, djbdns, iptables, JRE, KVM/Qemu, Mediawiki, Munin, MySQL, Nagios, NFSv4, Nmap, PHP, PHPWiki, 
+PostgreSQL, Postfix, Proftpd, Samba, Virtualbox
 
-Apache, djbdns, Java, KVM/Qemu, Mediawiki, Munin, MySQL, Nagios, NFSv4, Nmap, PHP, PHPWiki, PostgreSQL,
-Postfix, Proftpd, Samba, Virtualbox
-
-Claws Mail, Emacs, Evolution, Mozilla suite, Vim
+Claws Mail, Emacs, Evolution, Mozilla suite, Vim, Eclipse
 
 ### Microsoft
 * Windows XP - 2.5 years support, 5 years regular desktop use
@@ -30,7 +29,6 @@ Claws Mail, Emacs, Evolution, Mozilla suite, Vim
 * Server 2000 - 2.5 years administration
 * Windows Mobile 5 & 6 - 2 years support
 
-Including:
 Active Directory, Bulletproof FTP server, CA ArcServe Backup, Checkpoint Endpoint Encryption, DHCP, DNS,
 Exchange, IIS, StrawberryPerl, Terminal Services Server, Virtualbox.
 
@@ -38,17 +36,18 @@ Mozilla Suite, Office 97-03, Office 2007, Outlook, VNC
 
 ### Apple
 * OSX
+* OSX Server
 
 Entourage, MS Office, Apple Mail
 
 ### Other
-* Kace Kbox – 3 months
-* Mimecast – 6 months
-* SonicWall Firewall and VPN – 2 years
-* Netgear and HP managed switches – 2 years
+* Kace Kbox - 3 months
+* Mimecast - 6 months
+* SonicWall Firewall and VPN - 2 years
+* Netgear and HP managed switches - 2 years
 * Lacie NAS and DAS - 18 months
-* Ethernet network design and installation; Cat5 termination – 2 years
-* BT Meridian PBX troubleshooting and programming – 12 months
+* Ethernet network design and installation; Cat5 termination - 2 years
+* BT Meridian PBX troubleshooting and programming - 12 months
 
 ### Languages
 * PHP and mod_perl programming for standards-compliant XHTML/CSS
@@ -58,8 +57,8 @@ Entourage, MS Office, Apple Mail
 
 Work:
 -----
-###Service Graphics Digital Print Division, St Ives PLC, London - Junior IT Technician (Full Time)
-October 2007- Present
+### Service Graphics Digital Print Division, St Ives PLC, London - Junior IT Technician (Full Time)
+October 2007 - Present
 
 * My primary role is desktop support to the Service Graphics digital print division of St Ives. It is
   primarily Windows XP/Server2003 in an Active Directory domain, with some non-domained macs.

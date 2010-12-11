@@ -1,0 +1,33 @@
+
+
+There's this peculiar trend recently for 
+
+Plain Text File
+--------------
+
+These are my default. Incredibly easy to manipulate by hand or machine, small, portable, easy to bring
+under revision control. They only tend to break when you have large or complicated datasets, and I don't
+tend to. 
+
+As an example, to return the 'row(s)' containing 'bar' in the file 'test.txt' you can just
+    $ grep 'bar' test.txt
+And that's it. To replace or update isn't that much more difficult, it's about six lines of perl, for
+example:
+
+
+
+Spreadsheets
+------------
+
+If you have some data, never intend to automate anything and don't mind needing to install a hefty GUI to
+get at your data, spreadsheets are what you want.
+
+You can't really return 'rows' without knobbing around finding nd 
+
+Databases
+---------
+
+Databases are brilliant for large datasets, or large paralell accessing, since the database server itself
+takes care of the locking and atomisation of transactions, so you just need to tell it what to do. 
+
+

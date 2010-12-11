@@ -1,0 +1,107 @@
+KBox
+====
+
+Parameters:
+
+The kbox has two Web UIs:
+	http://kbox.st-ives.int/	admin
+	http://kbox.st-ives.int/admin	non-admin
+
+Counter-intuitively, `/admin/` takes you to the general operation UI, whereas the root takes you to the
+system administrative interface. You almost never need to visit `/`; most things are done in `/admin/`
+
+Web UI admin Logon:
+* username	`admin`
+* password	standard local admin password
+	
+Web UI /admin logon:	
+* get from St Ives IT
+
+KBox Agent:
+
+* AD User:		Currently me.
+* KBox server name:	`kbox.st-ives.int`
+* Client share name:	`client_16`
+
+Database:
+	host:		`kbox.st-ives.int`
+	server:		MySQL 5.1ish
+	username:	`R16`
+	password:	synced with webUI admin logon		
+
+
+Inventory
+-----------
+
+Most of what I've used the KBox for is to find PCs. The *Inventory/Computers* tab provides a rudimentary
+search function, which is aware of the last user logged on. Clicking on a hostname gets you the details
+of the PC, the Service tag of a Dell can be found named *BIOS Serial Number* in Invetory Information.
+
+The Software in the *Inventory/Software* tab is sort-of ordered into labels. Categorising is *hard* since
+Kace never quite saw the need for a good UI here.
+
+* Adobe CS3:
+Components of Adobe CS3.
+
+* Dell
+Software masquerading as drivers; software that Dell hardware requires, and we probably need never
+install or uninstall.
+
+* Drivers
+Genuine drivers. I'm not sure why I felt the need for a distinction, but it's there.
+
+* Free Software:
+Free as in beer. Basically stuff for which we wont get the BSA knocking down our doors to count. Should
+probably have been named 'gratis software' or similar. Incomplete, since it appeared to be useless.
+OpenOffice.org, Acrobat Reader etc.
+
+* Non-standard install:
+Supposed to have authorised applications that are not 'standard'. Things like ACT! and DWG viewers. I was
+to canvas views of what's to go in here at the next IT meeting, but that never happened.
+
+* Per-seat:
+Software for which we pay a license per user. MS Office, Adobe Flash etc.
+
+* Standard Install
+Software which every PC should have, or is allowed to have. The original idea was to use this for
+automated builds, but the MS installer is crap and the KBox can't quite make up its mind how to denote
+version numbers, so this is mildly unworkable at the minute. Good luck!
+
+Agent Installs
+--------------
+
+Agent installs are managed through *Settings/KBox Agent*. I have configured a 'Provisioned Configuration'
+for each subnet, which runs daily looking for new hosts. It would appear that things that're only 'seen'
+over external VPNs are not actually seen, but I've not looked into this. People who are only ever at home
+tend to not appear here.
+
+Configuring an install is realtively simple, Single Machine Provisioning being pretty intuitive
+fill-in-the-blank. Advanced provisioning is only mildly more complex.
+
+Reporting
+---------
+
+There are two ways to do reports. You can either hand-write the SQL, or use the wizard. The wizard
+is less flexible but easier, through the SQL interface you've basically got access to everything
+MySQL5.1, with the exception of table creation (including temporary). The GUI wizard is pretty
+self-explanatory, and I'm not about to teach SQL. Some small points to note:
+
+* Regexp matching is unsurprisingly MySQL builtin, documented at [0].
+* Capitalisation is inverted - SQL statements are lowercase, names are uppercase.
+* If a report's been edited at all with the SQL editor, you cannot load it into the wizard again.
+
+If you do write your own SQL, check the 'auto-generate Layout' box (it's unchecked by default) to get a
+normally pretty good guess as to what you're after. It's modifyable afterwards.
+
+Reports can't take arguments, which is mildly irritating. The 'crap PCs' one therefore will require
+updating, rather than just suppying with different arguments.
+
+
+
+
+
+[0] http://dev.mysql.com/doc/refman/5.1/en/regexp.html
+
+
+
+

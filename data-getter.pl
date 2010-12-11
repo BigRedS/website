@@ -3,17 +3,19 @@
 use strict;
 use 5.010;
 
-use XML::RAI;
+#use XML::RAI;
 use XML::RSSLite;
 use XML::FeedPP;
 use LWP::Simple;
 use DateTime;
 use DateTime::Format::Atom;
+use XML::RSS;
 
 
 my $file = "/home/avi/www/data";
 
-#my %stuff = (&slashdot(), &picasa(),  &atom(), &blog());
+#my %stuff = (&slashdot(), &picasa(),  &atom(), &blog(), &twitter());
+#my %stuff = &twitter();
 my %stuff = &atom();
 
 
@@ -39,13 +41,33 @@ for my $key (reverse sort (%stuff)){
 }
 close FILE;
 
+#sub rss(){
+#	my %return
+#	my $url = shift;
+##my $part = shift;
+##my $content = get($url)
+#
+#	my $rss = XML::RSS->new();
+#	my $data = get( $url );
+#	$rss->parse( $data );
+#
+#	my $channel = $rss->{channel};
+#	my $image   = $rss->{image};
+#
+#
+#
+##	$return{$time} = [$link,$content];	
+#
+#}
+
 sub atom(){
 
 	my @urls = (
 		"http://identi.ca/api/statuses/user_timeline/99267.atom", 
 		"http://forums.theregister.co.uk/feed/user/40790", 
-
+		"http://twitter.com/statuses/user_timeline/21741277.atom",
 	#	"http://github.com/BigRedS.atom",
+		"http://github.com/BigRedS/avi-utils/commits/master.atom",
 		"http://github.com/BigRedS/play/commits/master.atom",
 		"http://github.com/BigRedS/Work/commits/master.atom",
 		"http://github.com/BigRedS/work-web/commits/master.atom",
@@ -77,7 +99,7 @@ sub atom(){
 #	my %return = &rss("http://slashdot.org/firehose.pl?op=rss&content_type=rss&view=userhomepage&fhfilter=%22home%3Alordandmaker%22&orderdir=DESC&orderby=createtime&color=black&duration=-1&startdate=&user_view_uid=960504&logtoken=960504%3A%3AqQuPZQpQoZTAkoJGfmbG6g", "content");
 #	return %return;
 #}
-
+#
 #sub picasa(){
 #	my %drop_box = &rss("http://picasaweb.google.com/data/feed/base/user/ialoneambest/albumid/5369778250591696225?alt=rss&kind=photo&hl=en_GB", "title");
 #	my %albums = &rss("http://picasaweb.google.com/data/feed/base/user/ialoneambest?alt=rss&kind=album&hl=en_GB", "title");
@@ -88,46 +110,49 @@ sub atom(){
 #	my %return = &rss("http://ws.audioscrobbler.com/1.0/user/lordandmaker/recenttracks.rss", "title");
 #	return %return;
 #}
-
+#
 #sub blog(){
 #	my %return = &rss("http://aviswebsite.co.uk/blog/feed/", "content");
 #	return %return;
 #}
-
-sub rss(){
-	my %return;
-	my $url = shift; 
-	my $part = shift; 
-
-	my $content = get($url);
-	my $rai = XML::RAI->parse_string($content);
-	foreach my $item ( @{$rai->items} ) {
-		$content = substr($item->content, 0, 100);
-		$content.="...";  
-		$content = $item->$part;
+#
 
 
-		## This was supposed to be done by TimeDate::Format::RSS
-		## but I couldn't persuade CPAN to tell me why it	
-		## couldn't install it.				
 
-		my $time = $item->issued;			
-		my ($date, $time) = split (/T/, $time);		
-		my ($time, $tz) = split (/\+/, $time);		
-		my ($year,$month,$day) = split(/-/, $date);	
-		my ($h,$m,$s) = split(/:/, $time);
-		my $dt = DateTime->new( 
-			year   => $year,
-			month  => $month,
-			day    => $day,
-			hour   => $h,
-			minute => $m,
-			second => $s,
-			time_zone => "+$tz",
-                );
-		$time = $dt->epoch;
-		my $link = $item->link;
-		$return{$time} = [$link, $content]
-	}
-	return %return
-}
+#sub rss(){
+#	my %return;
+#	my $url = shift; 
+#	my $part = shift; 
+#
+#	my $content = get($url);
+#	my $rai = XML::RAI->parse_string($content);
+#	foreach my $item ( @{$rai->items} ) {
+#		$content = substr($item->content, 0, 100);
+#		$content.="...";  
+#		$content = $item->$part;
+#
+#
+#		## This was supposed to be done by TimeDate::Format::RSS
+#		## but I couldn't persuade CPAN to tell me why it	
+#		## couldn't install it.				
+#
+#		my $time = $item->issued;			
+#		my ($date, $time) = split (/T/, $time);		
+#		my ($time, $tz) = split (/\+/, $time);		
+#		my ($year,$month,$day) = split(/-/, $date);	
+#		my ($h,$m,$s) = split(/:/, $time);
+#		my $dt = DateTime->new( 
+#			year   => $year,
+#			month  => $month,
+#			day    => $day,
+#			hour   => $h,
+#			minute => $m,
+#			second => $s,
+#			time_zone => "+$tz",
+#               );
+#		$time = $dt->epoch;
+#		my $link = $item->link;
+#		$return{$time} = [$link, $content];
+#	}
+#	return %return
+#}

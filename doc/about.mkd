@@ -1,0 +1,30 @@
+About Me
+=======
+
+The two things I'm probably most known for are bikes and computers.
+
+Computers
+---------
+
+I look after computers. I'm involved to varying degrees with four servers as 'personal' projects and help
+look after forty odd at work.
+Work is all Windows, with the exception of two XServes, recreation is all Debian, with the exception of
+one CentOS.
+
+I'm a bit Linuxy. Or Unixy. Most of the time I use Debian or Ubuntu - I like Debian's ethos and Ubuntu's
+people. I've an odd fondness for OpenSolaris, too (which is probably entirely down to my peculiar
+attraction to Sun1 ), and I keep having BSD phases. Haiku's piqued my interest of late, too, but I don't
+have enough spare resources to really run it.
+
+It's been said that I take the first 't' of http rather too literally, I've certainly something of an aversion to the 'ml' bit of HTML, and a complete absence of the middle 'S' in CSS. I don't do design, and in my eyes the presentation of something is always secondary to its function. Though I've still not entirely settled on a font for my shell.
+
+
+Bikes
+-----
+
+Much as I appear to be known as someone who rides mountain bikes, I hardly ever do any more. I rode
+bicycles - mostly mountain bikes but my fair share of abominations - until I noticed engines a couple of
+years ago, and it's been motorbikes since. I tinker with bikes and engines about as much as I do with
+computers, though I'm dimly aware of the the increased risk associated with an engine's equivalent of a
+segfault.
+

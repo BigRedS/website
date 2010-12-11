@@ -29,7 +29,7 @@ and made a product for it.
 Sure, Windows Mobile stayed shit until, hopefully, the middle of 2010, but everyone else just started
 making good smartphones. Within a year Apple's only real claim to the throne was that they used better
 hardware than anyone else (with a matching price tag) and they had that wonderful UI, including
-multitouch.
+multitouch. 
 
 2. They're never really yours
 -----------------------------

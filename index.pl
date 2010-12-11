@@ -13,8 +13,9 @@ open(DATA, "<$data")
  or print "Error opening data file";
 
 &start_html();
-
-&mainpage_header();
+&intro();
+&start_middle();
+#mainpage_header();
 
 {
 	local $/ = "";
@@ -40,6 +41,7 @@ sub make_tr(){
 	$date = &friendly_date($date);
 
 	if (length($content) > 1){
+		$content =~ s/^BiggerRedS\://;
 
 		print "\t\t\t\t<tr><td class='icon'>";
 		print get_icon($link);
@@ -59,6 +61,11 @@ sub get_icon{
 			$url = "/icos/theregister.ico";
 			$alt = "The Register";
 			$link = "http://theregister.co.uk";
+		}
+		when(/twitter/){
+			$url = "/icos/twitter.ico";
+			$alt = "Twitter";
+			$link = "http://twitter.com";
 		}
 		when(/identi/){
 			$url = "/icos/identi.ico";
@@ -124,4 +131,24 @@ sub friendly_date() {
 	return "before the dawn of time";
 	}
 
+}
+
+sub intro() {
+	print <<EOF
+		<div class='content'>
+			<div class='intro'>
+				<p>
+				There are several hundred thousand terabytes of data on The Internet, here are my latest contributions to it: 
+				</p>
+			</div>
+		</div>
+EOF
+
+}
+
+sub start_middle(){
+	print <<EOF
+	<div id='middle'>
+		<table class='main'>
+EOF
 }

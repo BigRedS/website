@@ -1,0 +1,79 @@
+Why Windows will only use 3.somethingGB of your 4GB RAM
+=======================================================
+
+Broadly speaking, Windows runs on two types of processor, 32-bit x86 and 64-bit x86. Famously, 64-bit
+lets you use the 'whole 4GB', whereas 32-bit only lets you use 3.somethingGB of 'the whole 4GB'. I don't
+know why 4GB appears to be the standard unit of 'all memory'.
+
+Anyway, the difference is mostly down to basic maths. The 'bit' value of a chip (32 and 64) above
+describes the length of its addresses. When a processor wants to write to memory, it writes to a specific
+range of addresses, with each address denoting a particular bit (1 or 0) in the memory, and typically
+being one Byte (normally 8 bits) of memory.
+
+The 'width' of a 32-bit processor is 32-bits; the maximum address is therefore:
+
+2<sup>32</sup> = 4294967296 bits
+
+which is exactly 4096MiB, or 4GiB.
+
+Perfect, we have 4GiB of address space, and 4GiB of RAM. 
+
+Memory Holes
+-------------
+
+Not so. The CPU doesn't only communicate with the RAM through its address space, it communicates with
+*everything* through it. Many devices don't need more than a couple of bits, since they're not addressed
+on a one-address-per-bit basis. Hard drives, for instance, aren't interacted with directly by the CPU.
+The CPU talks to the drive controllers, which typically only have a bandwidth of a few bits. These then
+talk to the drives, and between them they agree on what to do with the individual bits.
+
+Other things, though, do take up a lot of memory. The biggest offenders are video cards, which themselves
+have memory on. If you have a 1GiB graphics card, it punches a 1GiB hole in your memory address space.
+
+There's also the backwards-compatibility memory holes. There's a DOS one just below 1MiB. This is still
+at issue in the 64-bit architecture, it's just pushed way north into the top of its range, as we did with
+this hole on 32-bit when that came out.
+
+Anyway, there is a fix!
+
+Physical Address Extension
+--------------------------
+
+PAE is the term given to the method of extending the physical address range. It, helpfully, uses a
+feature of the x86 architecture to get round a problem with the x86 architecture. 
+
+It also involves giving the processor  another 2bits of address space, so a 32-bit PAE-enabled processor
+has 34 bits of address space and can therefore address up to 64GiB of RAM.
+
+Which sort-of fixes things from the processor's perspective - given any 34-bit memory address it can grab
+and manipulate the data there. But everything else works in 32-bit integers so we need some means of
+using 32-bit numbers to describe 34-bit addresses.
+
+In x86, memory is managed through a method known as 'paging'. A 'page' size is a length of memory of
+predefined length. This is then used as the smallest unit of memory for allocating to programs and for
+transfer between devices (swapping [or paging] to disk, for example). A particular memory address can
+then be defined by the page it's in and how far through that page it is. 
+These pages are recorded in a Page Table, so the CPU has somewhere to go and find out where it left them.
+Smaller pages mean more are required, and so a bigger page table is needed. But it also means more empty
+lengths of memory (since programs rarely use exactly an integer multiple of pages).
+
+Handily, with 32-bit page addresses and 32-bit page offsets we can address up to 64GiB of ram using only
+34-bit arithmetic. The CPU then spends a clock cycle or two calculating the 34-bit address and grabs the
+bit(s) of memory. This is a cycle or two it'd be expending anyway (since it *always* needs to convert
+between the page address and the linear address).
+
+
+In Practice, however...
+-----------------------
+
+Now, given my previous rantings about Windows, I should be clear - this isn't Windows' fault. It's a
+problem with x86 and it's mildly exacerbated in practice by previous hackery to get around the same
+problems with the 8- and 16-bit predecessors. It's, traditionally, more of a problem with Windows because
+they were slow to the party with a 64bit OS. It is 2010, there's not much reason to be running 32-bit.
+
+The only rub is that MS don't let you use it properly on their desktop OSs. Servers can do it, but
+desktops can only do it up to a total of 4.5GiB, for licensing reasons.
+I can't honestly comment on Linux's support for this, save to say that I know there is kernel support for
+it shipped by most distros and that I've not seen much in the way of complaints about it. That freedom
+thing with Linux does mean that switching to a 64-bit OS is pretty easy, though.
+

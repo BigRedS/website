@@ -1,0 +1,71 @@
+Computer-based myths that I've got bored of explaining
+=======================================================
+
+Don't worry, there's only four:
+
+
+MAC 						<a id='mac'></a>
+---
+
+It's a fucking 'Mac'.
+
+It doesn't stand for anything, it's not an acronym. It's a bloody Macintosh.
+
+(Unless 'it' is an ethernet address, obviously).
+
+
+RAID is backup					<a id='raid'></a>
+--------------
+
+RAID is what you use when you need high availability. When you need to be able to have disks fail and be
+replaced without users noticing.
+
+Backups are what you use when you don't want to lose data. When you've `rm -rf`'d the wrong directory or
+someone's nicked the server. They're in a different box, room, building, continent. As far away as
+practicable. They're *not* immediate, because they're a protection against user error. If you
+accidentally delete a directory on the working copy, obviously you need for it to still be on the backup.
+
+If you have a RAID, you still need to back it up. If you just need to back things up, you don't need a
+RAID. You probably don't want one - it's a bunch more complexity for high-availability you shouldn't be
+using (if your backup's online, it's not a backup. It's a copy).
+
+
+Swap space should be 2xRAM			<a id='swap'></a>
+--------------------------
+
+This was true for an old version of Solaris. Actually, that's a bit of a lie - it was in the
+documentation for an old version of Solaris (version 4ish), but only as a sort of reccomended guideline.
+It's never been true of Linux.
+
+Your swap space is what RAM is paged out to when the OS runs out of it, so you need enough swap space to
+store everything you want in ram that wont fit in it. In general:
+
+      [ram you want to use] - [ram you have] = [swap space you should configure]
+
+Though, really, if you give a toss about performance:
+
+      [ram you want to use] - [ram you have] = [ram you need to buy]
+
+With one caveat:
+
+* Linux laptops generally hibernate to swap. Swap therefore needs to be at least as big as all the ram
+   plus the swap you might be using when hibernating.
+
+
+iWhile we're here, there's another argument about efficiency of swap files versus swap partitions. In
+general, it would appear that they're about equal.
+
+But they're both still achingly slow. If you're concerned about performance (and you are if you're asking
+that question), you should be using ram.
+
+Packet collisions are *bad*			<a id='packet_collisions'></a>
+---------------------------
+
+Don't be silly, they're a necessary side-effect of how Etherenet works and what makes it so great. *Too
+many* ethernet collisions are bad, yes. But by definition too many of anything is bad.
+
+There are a large number of explanations of Ethernet and TCP/IP on the net, which you can use to work out
+what constitutes 'too many'. Sticking ethernet lines near power lines doesn't make that much of a
+difference.
+
+

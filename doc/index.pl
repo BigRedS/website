@@ -68,9 +68,10 @@ sub intro(){
 print <<EOF
 <div class='intro'>
 	<p>
-	This is a bunch of stuff I've written at some point and been called upon at some other point to reproduce.
-	It's a mix of useful information and ranting.
-	</p>
+	This is a bunch of stuff I've written at some point and been called upon at some other point to reproduce. 
+	It's a mix of useful information and ranting. 
+	
+	</p>	
 </div>
 
 EOF

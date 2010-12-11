@@ -2,14 +2,16 @@ Windows
 =======
 
 Here be rants. I've annoyed too many people by venting into IRC or instant messaging, so I just do it
-here now. It's less agressive - if you want to know why I'm swearing at my computer, I'll point you here.
+here now. It's less agressive - if you want to know why I'm swearing at my computer, I'll point you here. 
 
 This is mostly about XP. It's the only one use. I like to think some of these are unbroken in later
 versions of Windows, but given that most microsofties disagree with me on the idea that these are
 problems, I'm not holding my breath.
 
+<a id='exe'></a>
 
-File extensions dictate the executability of the file		<a id='exe'></a>
+
+File extensions dictate the executability of the file		
 -----------------------------------------------------
 
 This is plain retarded. I'm not sure the removal of the need to explicitly say "yes, I do want to execute
@@ -30,10 +32,13 @@ with it. Which is really handy - if I can get a file onto a Windows desktop and 
 I can pretty much guarantee my executable will be run. Which is handy for people with malicious intent, 
 but pretty stupid from a security standpoint.
 
-No tools							<a id='impotent'></a>
+<a id='impotent'></a>
+
+
+No tools							
 --------
 
-It's damn hard to get anything done on a Windows PC. Even a stable one.
+It's damn hard to get anything done on a Windows PC.
 
 Firstly, it ships with approximately nothing of use whatsoever besides an OS. You can play solitaire, or
 write documents in WordPad. Sometimes you get MS Works, which is peculiarly incompatile with any MS
@@ -52,14 +57,19 @@ requires a grep, it's XML. But it's not just grep it's missing:
 * shell scripting (again, possibly non-portably 'fixed' with powershell')
 * compatibility with anything else at all
 
+<a id='reboot'></a>
 
-Endless Rebooting						<a id='reboot'></a>
-------------------
+
+Endless Rebooting
+-----------------
 
 Seriously, this is the 21st century. And it was the 21st Century when XP was first released. But even in 
 the 20th century I came to expect uptimes greater than four weeks.
 
-Hardware compatibility						<a id='incompatibility'></a>
+<a id='incompatibility'></a>
+
+
+Hardware compatibility						
 ----------------------
 
 Windows XP does not have hardware compatibility. MS, quite understandably, view themselves as being in a 
@@ -86,7 +96,10 @@ Which is, in short, fucking retarded. I use Linux LiveCDs to get round it, Dell 
 of receipts to see what's in the box. I don't know if either of those count as 'elegant', but I suppose
 they each work.
 
-Windows 7 was my idea						<a id='notmyfault'></a>
+<a id='notmyfault'></a>
+
+
+Windows 7 was my idea
 ---------------------
 
 Seriously? Listening to customers is now a plus point? Some kind of nice-to-have extra? Some innovation
@@ -95,7 +108,10 @@ in Windows 7?
 Explains why most of the rest of Windows are so horribly user unfriendly, I suppose. But to advertise the
 fact you've not listened for the first 25 or so years of producing software?
 
-Documentation							<a id='documentation'></a>
+<a id='documentation'></a>
+
+
+Documentation
 --------------
 
 Where the hell is it?
@@ -105,8 +121,10 @@ see how long it takes to find an explanation of a fix.
 
 Now try finding one from Microsoft.
 
+<a id='singleuser'></a>
 
-It's a single-user system					<a id='singleuser'></a>
+
+It's a single-user system
 -------------------------
 
 Someone on my network is using a computer. I want to connect to it, upgrade Firefox and log out. I want
@@ -117,7 +135,10 @@ actually use their PCs, so you can only have one person logged in at a time.
 How on earth this made it to the standard corporate desktop OS I've no idea, but I think MS genuinely
 have to be saluted for their achievement. Supporting XP is a nightmare.
 
-There's More Than One Way To Do It				<a id='tmtowtdi'></a>
+<a id='tmtowtdi'></a>
+
+
+There's More Than One Way To Do It
 ----------------------------------
 
 This probably looks mildly odd from a perly person, but it's a pretty good way to sum up the problem. On
@@ -133,7 +154,10 @@ than every Windows PC configuring WiFi in the same way. This doesn't just affect
 graphics cards, network cards, power management and input devices. Printers probably get it worst. In
 fact, problems with Windows printing are probably deserving of an entire rant to themselves.
 
-Discrete Updates						<a id='dredge-for-updates'></a>
+<a id='dredge-for-updates'></a>
+
+
+Discrete Updates
 -----------------
 
 No, this isn't the fault of MS. But if anyone can fix it, it's Microsoft.
@@ -152,15 +176,20 @@ like and see what of those are now out of date and see what I can find on the ma
 And I pray to someone that this all happens to work together, likely through fluke more than anything
 else.
 
-Drive letters								<a id='c'></a>
+<a id='c'></a>
+
+
+Drive letters
 -------------
 
 Operating systems are supposed to provide a useful abstraction of the hardware to users and applications.
 Making the distinction between drives an inconvenience is not a useful abstraction. It's hardly an
 abstraction at all.
 
+<a id='blobs'></a>
 
-Everything is in binary, particularly the registry			<a id='blobs'></a>
+
+Everything is in binary, particularly the registry
 --------------------------------------------------
 
 Again, I don't know what to say beyond the title to explain why this is a monumentally bad idea.
@@ -178,7 +207,10 @@ many better ways there are of configuring things than with files that can't be r
 to lump in here an insistence on configuring everything via a series of checkboxes and radio buttons,
 rather than just letting the user say what they want the thing to do.
 
-Installer distribution is still pre-internet				<a id='cd'></a>
+<a id='cd'></a>
+
+											
+Installer distribution is still pre-internet
 --------------------------------------------
 
 It's all based off a do-not-copy CD that is trivial to copy. Given the abundance of Windows installer CD
@@ -197,7 +229,10 @@ the quality of Windows aside) or other crap in it. In short, it's more convenien
 MS lose nothing. Except the odd 500mb download, which is nothing, really (have you seen the size of
 Windows Updates?).
 
-Software distribution is still pre-internet				<a id='internet'></a>
+<a id='internet'></a>
+
+
+Software distribution is still pre-internet
 --------------------------------------------
 
 Firstly, there's no repositories. Those don't have a bad side.
@@ -208,14 +243,17 @@ download it. No, I need to google the name of the `dll`, pick the result that lo
 download a file that could be anything, really. And then put it in my system folder and let Windows run
 it with Administrative rights.
 
+<a id='exemsicab'></a>
 
-The installers are crap							<a id='exemsicab'></a>
+
+The installers are crap
 -----------------------
 
 There is no standardisation whatsoever with software installation. There isn't even a standard for guis.
 But the complete absence of a reasonable, standardised, universal means of installation is irritating as
-soon as there's more than on PC, or you're maintaining someone else's computer. You can't script update
-installation without seven or eight goes first to make sure the script is correct. For each install.
+soon as there's more than one PC, or you're maintaining someone else's computer, or even just doing the
+routine reinstall-to-keep-it-working. You can't script update installation without seven or eight goes
+first to make sure the script is correct, and you need to repeatedly test it for each installer.
 
 Yes, I know, `.exe` files are the standard installer file format. Well, those and `.msi` and `.cab`. Obviously,
 there are other ways of doing it (I've seen both `.bat` and `.vbs` installers), but that's getting towards
@@ -225,24 +263,25 @@ The biggie is that running `install-software.exe --quiet` for example doesn't wo
 does for four or five completely unrelated applications. 
 
 Sure *something* works to do a silent install accepting all defaults, but that something is different for
-every piece of software. It's not even consistent from the same developer. Windows needs something
-analogous to Debian's `apt-get -i software.deb`.
+every piece of software.
+<a id='unsupport'></a>
 
-And repositories.
 
-It's unsupported							<a id='unsupport'></a>
+It's unsupported
 ----------------
 
 Not in the hardware sense of the word - that's further up. No, when Windows fails, there's nowhere to
 turn to to say what happened and find a solution. There are, yes, thousands of forums where you can post
 a question and perhaps a few tens of uninvolved people will read it and maybe in a couple of days someone
-who's seen the problem before will come along with a solution.
+who's seen the problem before one will come along with a possible solution.
 
 And that's all well and good. Except you *pay for* Windows, and one of the things I'm told you're paying
 for is support. But there isn't any.
 
+<a id='installer'></a>
 
-The installer is crap							<a id='installer'></a>
+
+The installer is crap
 ---------------------
 
 Seriously, it's difficult to find evidence that any thought at all went into its 'design'. It's even

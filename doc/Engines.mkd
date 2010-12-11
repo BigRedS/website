@@ -1,0 +1,131 @@
+Engine characteristics
+======================
+
+
+Power and torque
+----------------
+
+Power (P) and torque (&tau;) are linked by engine speed; the faster the engine is spinning (&omega;), the
+more power it produces. Power is the product of rotational torque and rotational velocity:
+
+>	P = &tau; &bull; &omega;
+<!--  P = T * w 			-->
+
+Where all are measured in SI units. The SI unit of torque (&tau;) is Newton Metres (Nm), which is the
+normal one (unless you're Jeremy Clarkson). Power (P) here is measured in Watts (W), whereas the value
+is normally given in Horsepower (HP); 1HP =~ 758 W. Speed here is measured as the angular velocity
+(&omega;) in radians per second (<sup>c</sup>s<sup>-1</sup>) though revolutions per minute (RPM) is the
+normal unit; 1rpm = 120&pi;<sup>c</sup>s<sup>-1</sup>. This is of little relevance, though - I'm not going
+to use much in the way of numbers.
+
+The engine's power comes from the explosions going on in the cylinder. In short, the more fuel burnt per
+cycle, and the more efficient the combustion, the more power the engine will produce. Hence bigger
+engines being more powerful. This is a pretty basic concept, so for the rest of this we'll assume that
+any comparisons involve engines of equal displacement.
+
+
+Stroke
+------
+
+In short, engines are either 'long stroke', 'short stroke' or somewhere in the middle. The particular
+definitions of each depend on what the rest of the engines in a field are like (piston aero engines tend
+to be _really_ long stroke, while F1 engines are incredibly short), but I'm refraining from numbers for
+the moment anyway.
+
+There are two important differences between them - how fast the piston must move and how lonng the
+crankshaft webs are (the webs are the bits that join [and hold apart] the main bearing journal and the
+connecting rod journal):
+
+    short stroke	long stroke
+                          _
+         _               | |
+      __| |__          __| |__
+
+
+Longer stroke engines have pistons that move very far up and down the cylinder. For a given engine speed,
+the piston must move faster than for a short-stroke engine (since it must move further in the same time)
+and so more stress is put on all the parts that do the accelerating.
+The crankarm web is also a lot longer, so when it is horizontal (assuming a vertical cylinder), the long
+stroke piston will have a greater turning moment on the crankshaft, and so produce more torque.
+
+Short stroke engines, for a given displacement, have wider cylinders, which calls for bigger heads and so
+allows for more valves and spark plugs. More valves means better control of gas (fuel/air mixture and
+exhaust) movement, more spark plugs means better control of combustion.
+
+Carburettor
+-----------
+
+Carburettors take advantage of a wonderfully simple principle that is almost completely absent from
+intuition - the Venturi effect.
+
+The Venturi effect is the drop in pressure when a fluid (that is a liquid or a gas) flows through a
+constricted section of pipe.
+
+A carburettor effectively consists of a restriction in a pipe (a Venturi tube) with a hole in the side,
+leading to some petrol (a jet). It takes advantage of the drop in pressure in the constriction to draw the fuel
+into the air. The faster the air flows through the venturi, the further the pressure drops, and so the faster 
+the petrol is drawn up. This isn't a linear relationship, though; the pressure increases with the squares of 
+the velocities.
+
+The ratio of fuel:air mixture has a great effect on the engine. Combustion, being a chemical reaction, is
+moderately scientific. All chemical reactions require some ratio of inputs, and create some ratio of
+outputs. Where there's an excess of one input, some of that just doesn't get used. We want to burn *all*
+of what we put into our cylinder, so we need to get the ratio right, and obviously we need to get its
+combustion right.
+
+The carburettor's contribution to good combustion is a well-mixed fuel-air mixture. The aim is for the
+fuel to be atomised in the air; that is for it to exist as a cloud of evenly-distributed single atoms of
+fuel. A good approximation is acheived by forcing a fast flow of fuel through a narrow nozzle.
+
+The fuel-air mixture is affected by two things - the size of the jet and the diameter of the venturi.
+
+Bigger jets allow higher petrol flows, but the larger the jet, the less well the fuel atomises.
+
+Venturi sizes have a fairly large knock-on effect. The air flow through the carb is produced by the
+action of the cylinder - on the 'suck' stroke it pulls in a volume of air equivalent to its displacement.
+The volume flow rate (that is m<sup>3</sup> per second) is therefore (mostly) dictated by the cyclinder.
+
+If we were use a too small venturi, the constriction would limit the flow rate such that the cylinder
+cannot pull in a full displacement's worth of air in the suck part of the stroke, and so it chokes.
+
+Putting that flow of air through a too large venturi means it doesn't flow particularly quickly, and so
+the pressure drop is low. This means the force pulling the fuel into the flow decreases and 'leans' the
+mixture; it reduces the amount of fuel in the mixture.
+
+
+Balance
+-------
+
+Engines, basically consisting of a bunch of explosions and associated rapidly moving lumps of metal, tend
+to vibrate. Because these are caused by the operation of the engine, they're all cyclic, normally with a 
+frequency of an integer multiple of the engine's rate of rotation.
+
+The balance is ordered into these multiples.
+
+Primary imbalance ocurrs at the same frequency as the engine's rotation and  is caused mostly by unbalanced
+rotating masses, that is objects rotating about a point other than their centre of mass. These include the 
+crankshaft's deviation from its rotational axis to meet it (the cranks that give it its name) and potentially 
+bits of the gearbox.
+
+Secondary imbalance is caused mostly by linear movement - that of the pistons and connecting rods, for
+example
+
+We find, in the main, that the more frequent the vibrations, the lower their magnitude. In general, those
+past the second harmonic of the engine (i.e. tertiary imbalance and so on) are generally taken as negligible.
+
+There are two ways to overcome these:
+
+You can build a balanced engine in the first place. Or, at least a first- and second- order balanced
+engine. There is no engine that is *completely* balanced, since the Real World wont let us carry on
+ignoring minor inonsistencies. The flat eight is the simplest engine with inherent primary and secondary
+balance, and no-one uses it.
+
+More commonly, you can add counterweights to create balance. Achieving primary balance is reasonably
+simple - since the motion you are combating is that caused by eccentric rotation, you only need apply
+counterweights such that all rotation is concentric. This is why crankshafts are often 'overbuilt' with
+counter-weights.
+
+These do, however, almost always aggravate the secondary imbalance. Of principal cause is the fact that 
+the piston only fires in one direction. This is mitigated to good effect in a flat twin, however the fact 
+that the pistons cannot share a crank journal creates a rotational vibration around an axis perpendicular 
+to the plane parallel to both the pistons and the crank.

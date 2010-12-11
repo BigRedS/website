@@ -59,7 +59,7 @@ And then either reboot, or run
     # ln -s /tmp /var/tmp
     # cp -R /var/tmp2/* /var/tmp
 
-/dev/shm is a shared memory device. It's implemented with [http://en.wikipedia.org/wiki/Tmpfs tmpfs],
+/dev/shm is a shared memory device. It's implemented with [tmpfs](http://en.wikipedia.org/wiki/Tmpfs),
 which is basically a filesystem that exists entirely in memory. It's generally mounted exec for some
 reason, you want to change that to noexec, by having the following in `/etc/fstab`:
 
@@ -76,7 +76,7 @@ Firewall
 
 Configure a firewall. Linux uses IPTables for its firewall which, in the greatest tradition of these
 things, requires understanding and a keyboard to implement. If that puts you off,
-[http://www.fs-security.com/ Firestarter] is highly regarded for generating IPTables rules and probably
+[Firestarter](http://www.fs-security.com/ Firestarter) is highly regarded for generating IPTables rules and probably
 in your repos.
 
 Rootkit Detection
@@ -88,10 +88,9 @@ out because they replace the usual tools for finding compromises with compromise
 You need, therefore, to install the rootkit detectors *before* you get compromised, else you're likely to
 not notice them. The two biggies are Rootkit Hunter and Rootcheck. They're also trivial to install.
 
-For rootcheck, copy and paste the instructions (seriously, it's 4 commnands) from [a
-href="http://www.ossec.net/main/rootcheck here] to make sure you get the latest version.
+For rootcheck, copy and paste the instructions (seriously, it's 4 commands) from [here](http://www.ossec.net/main/rootcheck) to make sure you get the latest version.
 
-Go [http://www.rootkit.nl/projects/rootkit_hunter.html here] to get the latest download link, then modify
+Go [here](http://www.rootkit.nl/projects/rootkit_hunter.html) to get the latest download link, then modify
 the below accordingly:
 
     # wget http://downloads.rootkit.nl/rkhunter-1.2.7.tar.gz

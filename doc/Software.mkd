@@ -10,7 +10,7 @@ Productivity
 ### Mail clients
 
 * [Thunderbird](http://en-gb.www.mozillamessaging.com/en-GB/thunderbird) is easy-to-use and full of Mozilla goodness.
-* [Claws Mail](http://www.claws-mail.org/) is powerful and reasonably lightweight. It's based on the more awesome but less stable [http://sylpheed.sraoss.jp/en/ Sylpheed/:
+* [Claws Mail](http://www.claws-mail.org/) is powerful and reasonably lightweight. It's based on the more awesome but less stable [Sylpheed](http://sylpheed.sraoss.jp/en/)
 
 ### Office Suites
 * [OpenOffice.org](http://openoffice.org) is the default free Office suite. It's mostly feature-complete with respect to MS office, and as of version 3.2 can do OOXML (*.docx, *.xlsx etc.) files if you're into that kind of thing.
@@ -44,3 +44,6 @@ Utilities
 * [Spybot S&D](http://www.safer-networking.org/index2.html) for unearthing spyware.
 * [Ad-Aware](http://www.lavasoft.com/products/ad_aware.php) for adware. Spybot + Ad-Aware tends to be a good combination.
 
+Other
+-------
+* [Ubuntu](http://ubuntu.com) Probably the Linux I suggested.
