@@ -1,0 +1,379 @@
+*
+* You have some suspicious patch lines:
+*
+* In data-getter.pl
+* trailing whitespace (line 59)
+data-getter.pl:59:##	$return{$time} = [$link,$content];	
+* trailing whitespace (line 124)
+data-getter.pl:124:#	my $url = shift; 
+* trailing whitespace (line 125)
+data-getter.pl:125:#	my $part = shift; 
+* trailing whitespace (line 131)
+data-getter.pl:131:#		$content.="...";  
+* trailing whitespace (line 136)
+data-getter.pl:136:#		## but I couldn't persuade CPAN to tell me why it	
+* trailing whitespace (line 137)
+data-getter.pl:137:#		## couldn't install it.				
+* trailing whitespace (line 139)
+data-getter.pl:139:#		my $time = $item->issued;			
+* trailing whitespace (line 140)
+data-getter.pl:140:#		my ($date, $time) = split (/T/, $time);		
+* trailing whitespace (line 141)
+data-getter.pl:141:#		my ($time, $tz) = split (/\+/, $time);		
+* trailing whitespace (line 142)
+data-getter.pl:142:#		my ($year,$month,$day) = split(/-/, $date);	
+* trailing whitespace (line 144)
+data-getter.pl:144:#		my $dt = DateTime->new( 
+* In doc/CV.mkd
+* trailing whitespace (line 21)
+doc/CV.mkd:21:Apache, bind, djbdns, iptables, JRE, KVM/Qemu, Mediawiki, Munin, MySQL, Nagios, NFSv4, Nmap, PHP, PHPWiki, 
+* In doc/Data.mkd
+* trailing whitespace (line 3)
+doc/Data.mkd:3:There's this peculiar trend recently for 
+* trailing whitespace (line 10)
+doc/Data.mkd:10:tend to. 
+* trailing whitespace (line 25)
+doc/Data.mkd:25:You can't really return 'rows' without knobbing around finding nd 
+* trailing whitespace (line 31)
+doc/Data.mkd:31:takes care of the locking and atomisation of transactions, so you just need to tell it what to do. 
+* In doc/Engines.mkd
+* trailing whitespace (line 66)
+doc/Engines.mkd:66:into the air. The faster the air flows through the venturi, the further the pressure drops, and so the faster 
+* trailing whitespace (line 67)
+doc/Engines.mkd:67:the petrol is drawn up. This isn't a linear relationship, though; the pressure increases with the squares of 
+* trailing whitespace (line 100)
+doc/Engines.mkd:100:to vibrate. Because these are caused by the operation of the engine, they're all cyclic, normally with a 
+* trailing whitespace (line 106)
+doc/Engines.mkd:106:rotating masses, that is objects rotating about a point other than their centre of mass. These include the 
+* trailing whitespace (line 107)
+doc/Engines.mkd:107:crankshaft's deviation from its rotational axis to meet it (the cranks that give it its name) and potentially 
+* trailing whitespace (line 128)
+doc/Engines.mkd:128:These do, however, almost always aggravate the secondary imbalance. Of principal cause is the fact that 
+* trailing whitespace (line 129)
+doc/Engines.mkd:129:the piston only fires in one direction. This is mitigated to good effect in a flat twin, however the fact 
+* trailing whitespace (line 130)
+doc/Engines.mkd:130:that the pistons cannot share a crank journal creates a rotational vibration around an axis perpendicular 
+* In doc/Flotilla.mkd
+* trailing whitespace (line 51)
+doc/Flotilla.mkd:51:**May 29th**	
+* trailing whitespace (line 58)
+doc/Flotilla.mkd:58:**May 30th** 
+* indent SP followed by a TAB (line 74)
+doc/Flotilla.mkd:74: 		repeats Ashdod offer.
+* indent SP followed by a TAB (line 78)
+doc/Flotilla.mkd:78: 		television broadcasts them.
+* trailing whitespace (line 82)
+doc/Flotilla.mkd:82: 		Activists 
+* indent SP followed by a TAB (line 82)
+doc/Flotilla.mkd:82: 		Activists 
+* trailing whitespace (line 88)
+doc/Flotilla.mkd:88:	
+* trailing whitespace (line 90)
+doc/Flotilla.mkd:90:* *1400*	Israeli PM Netanyahu returns from Canada visit. 
+* In doc/PAE.mkd
+* trailing whitespace (line 19)
+doc/PAE.mkd:19:Perfect, we have 4GiB of address space, and 4GiB of RAM. 
+* trailing whitespace (line 43)
+doc/PAE.mkd:43:feature of the x86 architecture to get round a problem with the x86 architecture. 
+* trailing whitespace (line 55)
+doc/PAE.mkd:55:then be defined by the page it's in and how far through that page it is. 
+* In doc/README.mkd
+* trailing whitespace (line 7)
+doc/README.mkd:7:All the scripts expect argument(s); run them with none to get usage information, or read this document. 
+* trailing whitespace (line 10)
+doc/README.mkd:10:which are mentioned in comments at the top of each script. Only apachewalk requires perl 5.10 but, seriously, it's 
+* trailing whitespace (line 21)
+doc/README.mkd:21:       DocumentRoot definition. Based on a string comparison. 
+* trailing whitespace (line 27)
+doc/README.mkd:27:it out for you. Supposed to be a clone of a2dissite for apache 1.x all-config-in-one-file style configuration, but I 
+* trailing whitespace (line 42)
+doc/README.mkd:42:Checks denyhosts' files for evidence of supplied IP address being blocked, and removes them. If it doesn't find any it 
+* trailing whitespace (line 54)
+doc/README.mkd:54:         according to OUTPUT. 
+* trailing whitespace (line 68)
+doc/README.mkd:68:The script starts at a given apache config file, and prints out every line of config. It follows all Includes, so does actually 
+* trailing whitespace (line 69)
+doc/README.mkd:69:print out the whole config. 
+* trailing whitespace (line 71)
+doc/README.mkd:71:By default, it prefixes each line of config with the name of the file it was found in, which is handy for grepping in 
+* trailing whitespace (line 72)
+doc/README.mkd:72:"where the hell is that Alias configured?" moments. As it comes across an include, it parses the included file (or the 
+* trailing whitespace (line 73)
+doc/README.mkd:73:files in the included directory) before carrying on with that file. I don't know if this is the same order as Apache 
+* trailing whitespace (line 74)
+doc/README.mkd:74:parses it, but it makes little difference since different scopes have different precedence. It is handy that it does 
+* trailing whitespace (line 75)
+doc/README.mkd:75:this when you make use of the fact that the regex by which it determines an 'Include' directive is configured at the 
+* trailing whitespace (line 76)
+doc/README.mkd:76:top of the file, you can alter this to use it on PHP scripts or anything else with a standard 'include' style directive 
+* trailing whitespace (line 86)
+doc/README.mkd:86:        
+* trailing whitespace (line 88)
+doc/README.mkd:88:        a reverse lookup for the resulting IP address. 
+* trailing whitespace (line 99)
+doc/README.mkd:99:Has no usage, which is incredibly of slack for me. This needs work but I never use it. It will, one day, be more 
+* trailing whitespace (line 102)
+doc/README.mkd:102:It goes through the contents of qmail's rcpthosts file, and checks each address against the maillogs, to find when that 
+* In doc/Websites.mkd
+* trailing whitespace (line 19)
+doc/Websites.mkd:19:There's no situation where this is sensible. 
+* trailing whitespace (line 22)
+doc/Websites.mkd:22:act of humanity. 
+* trailing whitespace (line 28)
+doc/Websites.mkd:28:week. 
+* trailing whitespace (line 37)
+doc/Websites.mkd:37:>  forming a hindrance, impediment, or obstruction 
+* trailing whitespace (line 62)
+doc/Websites.mkd:62:In any case, you should you should make sure your site works in these conditions. 
+* In doc/Windows.mkd
+* trailing whitespace (line 5)
+doc/Windows.mkd:5:here now. It's less agressive - if you want to know why I'm swearing at my computer, I'll point you here. 
+* trailing whitespace (line 14)
+doc/Windows.mkd:14:File extensions dictate the executability of the file		
+* trailing whitespace (line 38)
+doc/Windows.mkd:38:No tools							
+* trailing whitespace (line 72)
+doc/Windows.mkd:72:Hardware compatibility						
+* trailing whitespace (line 212)
+doc/Windows.mkd:212:											
+* In doc/about.mkd
+* unresolved merge conflict (line 2)
+doc/about.mkd:2:=======
+* In doc/iPhone.mkd
+* trailing whitespace (line 32)
+doc/iPhone.mkd:32:multitouch. 
+* In doc/index.pl
+* trailing whitespace (line 71)
+doc/index.pl:71:	This is a bunch of stuff I've written at some point and been called upon at some other point to reproduce. 
+* trailing whitespace (line 72)
+doc/index.pl:72:	It's a mix of useful information and ranting. 
+* trailing whitespace (line 73)
+doc/index.pl:73:	
+* trailing whitespace (line 74)
+doc/index.pl:74:	</p>	
+* In doc/kbox.mkd
+* trailing whitespace (line 1)
+doc/kbox.mkd:1:KBox
+* trailing whitespace (line 2)
+doc/kbox.mkd:2:====
+* trailing whitespace (line 3)
+doc/kbox.mkd:3:
+* trailing whitespace (line 4)
+doc/kbox.mkd:4:Parameters:
+* trailing whitespace (line 5)
+doc/kbox.mkd:5:
+* trailing whitespace (line 6)
+doc/kbox.mkd:6:The kbox has two Web UIs:
+* trailing whitespace (line 7)
+doc/kbox.mkd:7:	http://kbox.st-ives.int/	admin
+* trailing whitespace (line 8)
+doc/kbox.mkd:8:	http://kbox.st-ives.int/admin	non-admin
+* trailing whitespace (line 9)
+doc/kbox.mkd:9:
+* trailing whitespace (line 10)
+doc/kbox.mkd:10:Counter-intuitively, `/admin/` takes you to the general operation UI, whereas the root takes you to the
+* trailing whitespace (line 11)
+doc/kbox.mkd:11:system administrative interface. You almost never need to visit `/`; most things are done in `/admin/`
+* trailing whitespace (line 12)
+doc/kbox.mkd:12:
+* trailing whitespace (line 13)
+doc/kbox.mkd:13:Web UI admin Logon:
+* trailing whitespace (line 14)
+doc/kbox.mkd:14:* username	`admin`
+* trailing whitespace (line 15)
+doc/kbox.mkd:15:* password	standard local admin password
+* trailing whitespace (line 16)
+doc/kbox.mkd:16:	
+* trailing whitespace (line 17)
+doc/kbox.mkd:17:Web UI /admin logon:	
+* trailing whitespace (line 18)
+doc/kbox.mkd:18:* get from St Ives IT
+* trailing whitespace (line 19)
+doc/kbox.mkd:19:
+* trailing whitespace (line 20)
+doc/kbox.mkd:20:KBox Agent:
+* trailing whitespace (line 21)
+doc/kbox.mkd:21:
+* trailing whitespace (line 22)
+doc/kbox.mkd:22:* AD User:		Currently me.
+* trailing whitespace (line 23)
+doc/kbox.mkd:23:* KBox server name:	`kbox.st-ives.int`
+* trailing whitespace (line 24)
+doc/kbox.mkd:24:* Client share name:	`client_16`
+* trailing whitespace (line 25)
+doc/kbox.mkd:25:
+* trailing whitespace (line 26)
+doc/kbox.mkd:26:Database:
+* trailing whitespace (line 27)
+doc/kbox.mkd:27:	host:		`kbox.st-ives.int`
+* trailing whitespace (line 28)
+doc/kbox.mkd:28:	server:		MySQL 5.1ish
+* trailing whitespace (line 29)
+doc/kbox.mkd:29:	username:	`R16`
+* trailing whitespace (line 30)
+doc/kbox.mkd:30:	password:	synced with webUI admin logon		
+* trailing whitespace (line 31)
+doc/kbox.mkd:31:
+* trailing whitespace (line 32)
+doc/kbox.mkd:32:
+* trailing whitespace (line 33)
+doc/kbox.mkd:33:Inventory
+* trailing whitespace (line 34)
+doc/kbox.mkd:34:-----------
+* trailing whitespace (line 35)
+doc/kbox.mkd:35:
+* trailing whitespace (line 36)
+doc/kbox.mkd:36:Most of what I've used the KBox for is to find PCs. The *Inventory/Computers* tab provides a rudimentary
+* trailing whitespace (line 37)
+doc/kbox.mkd:37:search function, which is aware of the last user logged on. Clicking on a hostname gets you the details
+* trailing whitespace (line 38)
+doc/kbox.mkd:38:of the PC, the Service tag of a Dell can be found named *BIOS Serial Number* in Invetory Information.
+* trailing whitespace (line 39)
+doc/kbox.mkd:39:
+* trailing whitespace (line 40)
+doc/kbox.mkd:40:The Software in the *Inventory/Software* tab is sort-of ordered into labels. Categorising is *hard* since
+* trailing whitespace (line 41)
+doc/kbox.mkd:41:Kace never quite saw the need for a good UI here.
+* trailing whitespace (line 42)
+doc/kbox.mkd:42:
+* trailing whitespace (line 43)
+doc/kbox.mkd:43:* Adobe CS3:
+* trailing whitespace (line 44)
+doc/kbox.mkd:44:Components of Adobe CS3.
+* trailing whitespace (line 45)
+doc/kbox.mkd:45:
+* trailing whitespace (line 46)
+doc/kbox.mkd:46:* Dell
+* trailing whitespace (line 47)
+doc/kbox.mkd:47:Software masquerading as drivers; software that Dell hardware requires, and we probably need never
+* trailing whitespace (line 48)
+doc/kbox.mkd:48:install or uninstall.
+* trailing whitespace (line 49)
+doc/kbox.mkd:49:
+* trailing whitespace (line 50)
+doc/kbox.mkd:50:* Drivers
+* trailing whitespace (line 51)
+doc/kbox.mkd:51:Genuine drivers. I'm not sure why I felt the need for a distinction, but it's there.
+* trailing whitespace (line 52)
+doc/kbox.mkd:52:
+* trailing whitespace (line 53)
+doc/kbox.mkd:53:* Free Software:
+* trailing whitespace (line 54)
+doc/kbox.mkd:54:Free as in beer. Basically stuff for which we wont get the BSA knocking down our doors to count. Should
+* trailing whitespace (line 55)
+doc/kbox.mkd:55:probably have been named 'gratis software' or similar. Incomplete, since it appeared to be useless.
+* trailing whitespace (line 56)
+doc/kbox.mkd:56:OpenOffice.org, Acrobat Reader etc.
+* trailing whitespace (line 57)
+doc/kbox.mkd:57:
+* trailing whitespace (line 58)
+doc/kbox.mkd:58:* Non-standard install:
+* trailing whitespace (line 59)
+doc/kbox.mkd:59:Supposed to have authorised applications that are not 'standard'. Things like ACT! and DWG viewers. I was
+* trailing whitespace (line 60)
+doc/kbox.mkd:60:to canvas views of what's to go in here at the next IT meeting, but that never happened.
+* trailing whitespace (line 61)
+doc/kbox.mkd:61:
+* trailing whitespace (line 62)
+doc/kbox.mkd:62:* Per-seat:
+* trailing whitespace (line 63)
+doc/kbox.mkd:63:Software for which we pay a license per user. MS Office, Adobe Flash etc.
+* trailing whitespace (line 64)
+doc/kbox.mkd:64:
+* trailing whitespace (line 65)
+doc/kbox.mkd:65:* Standard Install
+* trailing whitespace (line 66)
+doc/kbox.mkd:66:Software which every PC should have, or is allowed to have. The original idea was to use this for
+* trailing whitespace (line 67)
+doc/kbox.mkd:67:automated builds, but the MS installer is crap and the KBox can't quite make up its mind how to denote
+* trailing whitespace (line 68)
+doc/kbox.mkd:68:version numbers, so this is mildly unworkable at the minute. Good luck!
+* trailing whitespace (line 69)
+doc/kbox.mkd:69:
+* trailing whitespace (line 70)
+doc/kbox.mkd:70:Agent Installs
+* trailing whitespace (line 71)
+doc/kbox.mkd:71:--------------
+* trailing whitespace (line 72)
+doc/kbox.mkd:72:
+* trailing whitespace (line 73)
+doc/kbox.mkd:73:Agent installs are managed through *Settings/KBox Agent*. I have configured a 'Provisioned Configuration'
+* trailing whitespace (line 74)
+doc/kbox.mkd:74:for each subnet, which runs daily looking for new hosts. It would appear that things that're only 'seen'
+* trailing whitespace (line 75)
+doc/kbox.mkd:75:over external VPNs are not actually seen, but I've not looked into this. People who are only ever at home
+* trailing whitespace (line 76)
+doc/kbox.mkd:76:tend to not appear here.
+* trailing whitespace (line 77)
+doc/kbox.mkd:77:
+* trailing whitespace (line 78)
+doc/kbox.mkd:78:Configuring an install is realtively simple, Single Machine Provisioning being pretty intuitive
+* trailing whitespace (line 79)
+doc/kbox.mkd:79:fill-in-the-blank. Advanced provisioning is only mildly more complex.
+* trailing whitespace (line 80)
+doc/kbox.mkd:80:
+* trailing whitespace (line 81)
+doc/kbox.mkd:81:Reporting
+* trailing whitespace (line 82)
+doc/kbox.mkd:82:---------
+* trailing whitespace (line 83)
+doc/kbox.mkd:83:
+* trailing whitespace (line 84)
+doc/kbox.mkd:84:There are two ways to do reports. You can either hand-write the SQL, or use the wizard. The wizard
+* trailing whitespace (line 85)
+doc/kbox.mkd:85:is less flexible but easier, through the SQL interface you've basically got access to everything
+* trailing whitespace (line 86)
+doc/kbox.mkd:86:MySQL5.1, with the exception of table creation (including temporary). The GUI wizard is pretty
+* trailing whitespace (line 87)
+doc/kbox.mkd:87:self-explanatory, and I'm not about to teach SQL. Some small points to note:
+* trailing whitespace (line 88)
+doc/kbox.mkd:88:
+* trailing whitespace (line 89)
+doc/kbox.mkd:89:* Regexp matching is unsurprisingly MySQL builtin, documented at [0].
+* trailing whitespace (line 90)
+doc/kbox.mkd:90:* Capitalisation is inverted - SQL statements are lowercase, names are uppercase.
+* trailing whitespace (line 91)
+doc/kbox.mkd:91:* If a report's been edited at all with the SQL editor, you cannot load it into the wizard again.
+* trailing whitespace (line 92)
+doc/kbox.mkd:92:
+* trailing whitespace (line 93)
+doc/kbox.mkd:93:If you do write your own SQL, check the 'auto-generate Layout' box (it's unchecked by default) to get a
+* trailing whitespace (line 94)
+doc/kbox.mkd:94:normally pretty good guess as to what you're after. It's modifyable afterwards.
+* trailing whitespace (line 95)
+doc/kbox.mkd:95:
+* trailing whitespace (line 96)
+doc/kbox.mkd:96:Reports can't take arguments, which is mildly irritating. The 'crap PCs' one therefore will require
+* trailing whitespace (line 97)
+doc/kbox.mkd:97:updating, rather than just suppying with different arguments.
+* trailing whitespace (line 98)
+doc/kbox.mkd:98:
+* trailing whitespace (line 99)
+doc/kbox.mkd:99:
+* trailing whitespace (line 100)
+doc/kbox.mkd:100:
+* trailing whitespace (line 101)
+doc/kbox.mkd:101:
+* trailing whitespace (line 102)
+doc/kbox.mkd:102:
+* trailing whitespace (line 103)
+doc/kbox.mkd:103:[0] http://dev.mysql.com/doc/refman/5.1/en/regexp.html
+* trailing whitespace (line 104)
+doc/kbox.mkd:104:
+* trailing whitespace (line 105)
+doc/kbox.mkd:105:
+* trailing whitespace (line 106)
+doc/kbox.mkd:106:
+* trailing whitespace (line 107)
+doc/kbox.mkd:107:
+* In fun.pm
+* trailing whitespace (line 49)
+fun.pm:49:					<a href='http://b.avi.co'>blog</a> 
+* In index.pl
+* trailing whitespace (line 141)
+index.pl:141:				There are several hundred thousand terabytes of data on The Internet, here are my latest contributions to it: 
+* In styles.css
+* trailing whitespace (line 95)
+styles.css:95:	margin-bottom:3em;		
+* trailing whitespace (line 270)
+styles.css:270:	width:416px;	
