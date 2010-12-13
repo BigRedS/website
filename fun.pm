@@ -45,7 +45,8 @@ content-language: en
 <!--					<a href='/about/'>about</a> 	-->
 					<a href='/contact/'>contact</a>
 					<a href='/find/'>find</a>
-					<a href='/blog/'>blog</a> 
+					<br />
+					<a href='http://b.avi.co'>blog</a> 
 			</div>
 		</div>
 EOF
