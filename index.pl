@@ -2,6 +2,7 @@
 
 use strict;
 use 5.010;
+use DBI;
 
 push (@INC, "/home/avi/www");
 
@@ -17,15 +18,37 @@ open(DATA, "<$data")
 &start_middle();
 #mainpage_header();
 
-{
-	local $/ = "";
-	while (<DATA>){
-		my ($date, $link, $content) = (split(/\n/, $_))[0,1,2];
-		if ($content =~ m/^[A-Za-z]/){
-			&make_tr($date, $link, $content);
-		}
-	}
+my ($f, $dbUser, $dbHost, $dbPass);
+my $config = "/home/avi/.website-db.conf";
+open($f,"<",$config) or die "Error opening config file $config";
+foreach(<$f>){
+        chomp $_; 
+        my ($k,$v) = split(/=/, $_);
+        given($k){
+                when(/db_user/){
+                        $dbUser = $v; 
+                }   
+                when(/db_host/){
+                        $dbHost = $v; 
+                }   
+                when(/db_pass/){
+                        $dbPass = $v; 
+                }   
+        }   
 }
+
+my $dataSource = "dbi:mysql:avi_datagetter:avi.co";
+my $db = DBI->connect($dataSource, $dbUser, $dbPass);
+
+my($time,$link,$title,$name);              
+ 
+my $q = $db->prepare("select time, link, title, name from feeds order by time limit 30;");
+$q->execute();
+$q->bind_columns(\$time, \$link, \$title, \$name);
+while($q->fetch()){
+	&make_tr($time, $link, $title);
+}
+
 &mainpage_footer();
 &end_html();
 
